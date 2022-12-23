@@ -34,7 +34,7 @@ const Home: NextPage = () => {
               Just A <span className={`transition-all delay-500 ${startAnimate ? 'text-white' : 'text-white/40'}`}>Fullstuck</span> Developer <br />From Indonesia
             </h1>
             <div className="mt-4 text-white/60 select-none">
-              <p>{"I'm Vocational School Student Of Software Engineer"}</p>
+              <p>{"I'm Vocational High School Student Of Software Engineer"}</p>
               <p>{"Interest In Frontend Development, UI & UX Design, And Problem Solving"}</p>
             </div>
             <button className="py-2 px-4 bg-white w-max text-black mt-6 font-bold
@@ -71,6 +71,43 @@ const Home: NextPage = () => {
             <a className="cursor-pointer lg:w-max w-full text-center text-white hover:text-black border-2 border-black hover:bg-transparent py-2 px-4 active:scale-95 mt-6 inline-block text-lg font-medium bg-black">See More Project</a>
           </Container>
 
+        </section>
+
+        <section className="mt-6 text-white">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="#000" fillOpacity="1" d="M0,192L1440,160L1440,320L0,320Z"></path>
+          </svg>
+          <div className="bg-black border-2 border-black py-4">
+            <Container className={container({ size: "medium" })}>
+              <div>
+                <h1 className="text-2xl font-bold">Tech Stack Or Tools</h1>
+                <p className="text-lg text-white/80">{"I've Currently Used"}</p>
+              </div>
+              <ul className="grid grid-cols-12 gap-4 mt-4">
+                <li className="font-medium col-span-6 md:col-span-4 lg:col-span-3 py-2 px-4 bg-black border-2 border-white text-white">
+                  Next JS
+                </li>
+                <li className="font-medium col-span-6 md:col-span-4 lg:col-span-3 py-2 px-4 bg-red-600 border-2 border-white text-white">
+                  Laravel
+                </li>
+                <li className="font-medium col-span-6 md:col-span-4 lg:col-span-3 py-2 px-4 bg-sky-600 border-2 border-white text-white">
+                  Tailwind CSS
+                </li>
+                <li className="font-medium col-span-6 md:col-span-4 lg:col-span-3 py-2 px-4 bg-blue-600 border-2 border-white text-white">
+                  Typescript
+                </li>
+                <li className="font-medium col-span-6 md:col-span-4 lg:col-span-3 py-2 px-4 bg-blue-800 border-2 border-white text-white">
+                  My SQL
+                </li>
+                <li className="font-medium col-span-6 md:col-span-4 lg:col-span-3 py-2 px-4 bg-orange-600 border-2 border-white text-white">
+                  Git
+                </li>
+              </ul>
+            </Container>
+          </div>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" className="rotate-180">
+            <path fill="#000" fillOpacity="1" d="M0,192L1440,160L1440,320L0,320Z"></path>
+          </svg>
         </section>
       </main>
     </>

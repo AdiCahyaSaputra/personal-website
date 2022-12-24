@@ -31,7 +31,7 @@ const Home: NextPage = () => {
           <Container className={container({ size: "medium" })}>
 
             <h1 className={`text-3xl font-bold text-white/80 selection:text-black selection:bg-black`}>
-              Just A <span className={`transition-all delay-500 ${startAnimate ? 'text-white' : 'text-white/40'}`}>Fullstuck</span> Developer <br />From Indonesia
+              Just A <span className={`transition-all delay-500 ${startAnimate ? 'text-white' : 'text-white/80'}`}>Fullstuck</span> Developer <br />From Indonesia
             </h1>
             <div className="mt-4 text-white/60 select-none">
               <p>{"I'm Vocational High School Student Of Software Engineer"}</p>
@@ -46,16 +46,16 @@ const Home: NextPage = () => {
           </Container>
         </section>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#000" fillOpacity="1" d="M0,160L1440,224L1440,0L0,0Z"></path></svg>
-        <section className="bg-white min-h-screen pb-10">
+        <section className="bg-white pb-10">
 
           <Container className={container({ size: "medium", className: "h-full" })}>
             <div>
-              <h1 className="text-3xl font-bold">What Have I Done</h1>
-              <p className="text-lg">
+              <h1 className="text-3xl font-bold selection:text-white selection:bg-black">What Have I Done</h1>
+              <p className="text-lg selection:text-white selection:bg-black">
                 While Working On Programming Hell
               </p>
             </div>
-            <figure className="mt-4">
+            <figure className="mt-4 select-none">
               <div className="lg:w-8/12 overflow-hidden group cursor-pointer bg-black aspect-video relative">
                 <Image
                   src={FeaturedIMG}
@@ -68,7 +68,7 @@ const Home: NextPage = () => {
                 <p className="text-lg">The Place To Rent Your Car If You Need Emergency Money</p>
               </figcaption>
             </figure>
-            <a className="cursor-pointer lg:w-max w-full text-center text-white hover:text-black border-2 border-black hover:bg-transparent py-2 px-4 active:scale-95 mt-6 inline-block text-lg font-medium bg-black">See More Project</a>
+            <a className="select-none cursor-pointer lg:w-max w-full text-center text-white hover:text-black border-2 border-black hover:bg-transparent py-2 px-4 active:scale-95 mt-6 inline-block text-lg font-medium bg-black">See More Project</a>
           </Container>
 
         </section>

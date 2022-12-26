@@ -8,6 +8,7 @@ import FeaturedIMG from '../public/img/featured.jpg'
 // Components
 import Navbar from "../components/reusable/global/Navbar"
 import Container, { container } from "../components/reusable/global/Container"
+import HeroSection from "../components/section/HeroSection"
 
 const Home: NextPage = () => {
   const [startAnimate, setStartAnimate] = useState(false)
@@ -27,24 +28,7 @@ const Home: NextPage = () => {
       </Head>
       <Navbar startAnimate={startAnimate} />
       <main>
-        <section className="flex bg-black text-white flex-col justify-center h-screen">
-          <Container className={container({ size: "medium" })}>
-
-            <h1 className={`text-3xl font-bold text-white/80 selection:text-black selection:bg-black`}>
-              Just A <span className={`transition-all delay-500 ${startAnimate ? 'text-white' : 'text-white/80'}`}>Fullstuck</span> Developer <br />From Indonesia
-            </h1>
-            <div className="mt-4 text-white/60 select-none">
-              <p>{"I'm Vocational High School Student Of Software Engineer"}</p>
-              <p>{"Interest In Frontend Development, UI & UX Design, And Problem Solving"}</p>
-            </div>
-            <button className="py-2 px-4 bg-white w-max text-black mt-6 font-bold
-              hover:bg-transparent hover:text-white border-2 border-white select-none
-              active:scale-95">
-              Open To Collaborate With You {':)'}
-            </button>
-
-          </Container>
-        </section>
+        <HeroSection startAnimate={startAnimate} />
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#000" fillOpacity="1" d="M0,160L1440,224L1440,0L0,0Z"></path></svg>
         <section className="bg-white pb-10">
 

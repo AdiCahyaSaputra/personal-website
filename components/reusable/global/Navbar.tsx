@@ -31,7 +31,7 @@ const Navbar: React.FC<Props> = ({ startAnimate }) => {
             <span className={`border-b-2 ${startAnimate ? 'border-white' : 'border-white/40'} transition-all`}>Adi</span>cs.
           </h1>
 
-          <ul className={`transition-all md:flex md:items-center md:space-x-4 md:static fixed ${isActive ? 'top-0 translate-y-[65px]' : 'bottom-0 -translate-y-[65px]'} inset-x-0 p-8 md:p-0 md:bg-transparent bg-black md:border-none border-b border-white/20 space-y-4 md:space-y-0`}>
+          <ul className={`transition-all md:flex md:items-center md:space-x-4 md:static fixed md:translate-y-0 ${isActive ? 'top-0 translate-y-[65px]' : 'bottom-0 -translate-y-[65px]'} inset-x-0 p-8 md:p-0 md:bg-transparent bg-black md:border-none border-b border-white/20 space-y-4 md:space-y-0`}>
             <li><a className={navLink({ intent: "active" })}>Me</a></li>
             <li><a className={navLink()}>Projects</a></li>
             <li><a className={navLink()}>Blog</a></li>

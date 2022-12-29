@@ -17,11 +17,11 @@ const HeroSection: React.FC<Props> = ({ startAnimate }) => {
           <p>{"I'm Vocational High School Student Of Software Engineer"}</p>
           <p>{"Interest In Frontend Development, UI & UX Design, And Problem Solving"}</p>
         </div>
-        <button className="py-2 px-4 bg-white w-max text-black mt-6 font-bold
-              hover:bg-transparent hover:text-white border-2 border-white select-none
+        <a href="#contact" className="py-2 px-4 bg-white w-max text-black mt-6 font-bold
+              hover:bg-transparent hover:text-white border-2 border-white select-none inline-block
               active:scale-95">
           Open To Collaborate With You {':)'}
-        </button>
+        </a>
 
       </Container>
     </section >

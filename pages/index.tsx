@@ -45,15 +45,10 @@ const Home: NextPage = () => {
 
       </main>
 
-      <footer className="p-4 bg-black select-none h-screen text-white">
+      <footer id="contact" className="p-4 bg-black select-none h-screen text-white relative">
         <Container className={container({ size: "large" })}>
 
-          <div className="flex items-center justify-between text-xl">
-            <h3>&copy; Copyright 2023 </h3>
-            <p>Adi Cahya Saputra</p>
-          </div>
-
-          <div className="mt-12">
+          <div className="mt-8">
             <h3 className="text-xl font-bold">You Can Contact Me Via Email</h3>
             <div className="flex space-x-2 items-end">
               <EnvelopeIcon className="w-6 aspect-square" />
@@ -68,6 +63,13 @@ const Home: NextPage = () => {
               <a href="https://www.youtube.com/@adics" className="hover:underline text-xl mt-2 text-white/80">/@adics</a>
               <a href="https://github.com/AdiCahyaSaputra" className="hover:underline text-xl mt-2 text-white/80">/AdiCahyaSaputra</a>
             </div>
+          </div>
+
+          <div className="absolute bottom-0 border-t border-white/30 lg:text-xl text-lg inset-x-0 py-4">
+            <Container className={container({ size: "large", className: "items-center justify-between flex" })}>
+              <h3>&copy; Copyright 2023 </h3>
+              <p>Adi Cahya Saputra</p>
+            </Container>
           </div>
 
         </Container>

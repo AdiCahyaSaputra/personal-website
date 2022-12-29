@@ -16,7 +16,7 @@ const blogs = [
 const BlogSection: React.FC = () => {
 
   return (
-    <section className="py-12 lg:h-screen">
+    <section className="py-12 h-screen">
       <Container className={container({ size: "medium" })}>
 
         <h1 className="text-2xl font-bold selection:bg-black selection:text-white">Blog</h1>

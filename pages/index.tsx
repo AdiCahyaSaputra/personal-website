@@ -1,14 +1,17 @@
 // Lib
 import { NextPage } from "next"
 import Head from "next/head"
-import Image from 'next/image'
 import { useState, useEffect } from "react"
-import FeaturedIMG from '../public/img/featured.jpg'
 
 // Components
 import Navbar from "../components/reusable/global/Navbar"
-import Container, { container } from "../components/reusable/global/Container"
+import BlogSection from "../components/section/BlogSection"
 import HeroSection from "../components/section/HeroSection"
+import ProjectSection from "../components/section/ProjectSection"
+import SkillSection from "../components/section/SkillSection"
+import Container, { container } from "../components/reusable/global/Container"
+
+import { EnvelopeIcon, AtSymbolIcon, PlayIcon } from "@heroicons/react/24/outline"
 
 const Home: NextPage = () => {
   const [startAnimate, setStartAnimate] = useState(false)
@@ -23,77 +26,52 @@ const Home: NextPage = () => {
 
   return (
     <>
+
       <Head>
         <title>Adics</title>
       </Head>
-      <Navbar startAnimate={startAnimate} />
+
       <main>
+        <div className="absolute inset-x-0 top-0 h-[65px] bg-black"></div>
+        <Navbar startAnimate={startAnimate} />
         <HeroSection startAnimate={startAnimate} />
+
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#000" fillOpacity="1" d="M0,160L1440,224L1440,0L0,0Z"></path></svg>
-        <section className="bg-white pb-10">
 
-          <Container className={container({ size: "medium", className: "h-full" })}>
-            <div>
-              <h1 className="text-3xl font-bold selection:text-white selection:bg-black">What Have I Done</h1>
-              <p className="text-lg selection:text-white selection:bg-black">
-                While Working On Programming Hell
-              </p>
-            </div>
-            <figure className="mt-4 select-none">
-              <div className="lg:w-8/12 overflow-hidden group cursor-pointer bg-black aspect-video relative">
-                <Image
-                  src={FeaturedIMG}
-                  alt="Featured IMG"
-                  className="absolute inset-0 group-hover:scale-95 transition-all"
-                />
-              </div>
-              <figcaption className="cursor-pointer mt-4 group">
-                <a className="text-2xl group-hover:underline font-bold">Rental Mobil</a>
-                <p className="text-lg">The Place To Rent Your Car If You Need Emergency Money</p>
-              </figcaption>
-            </figure>
-            <a className="select-none cursor-pointer lg:w-max w-full text-center text-white hover:text-black border-2 border-black hover:bg-transparent py-2 px-4 active:scale-95 mt-6 inline-block text-lg font-medium bg-black">See More Project</a>
-          </Container>
+        <ProjectSection />
+        <SkillSection />
+        <BlogSection />
 
-        </section>
 
-        <section className="mt-6 text-white">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-            <path fill="#000" fillOpacity="1" d="M0,192L1440,160L1440,320L0,320Z"></path>
-          </svg>
-          <div className="bg-black border-2 border-black py-4">
-            <Container className={container({ size: "medium" })}>
-              <div>
-                <h1 className="text-2xl font-bold">Tech Stack Or Tools</h1>
-                <p className="text-lg text-white/80">{"I've Currently Used"}</p>
-              </div>
-              <ul className="grid grid-cols-12 gap-4 mt-4">
-                <li className="font-medium col-span-6 md:col-span-4 lg:col-span-3 py-2 px-4 bg-black border-2 border-white text-white">
-                  Next JS
-                </li>
-                <li className="font-medium col-span-6 md:col-span-4 lg:col-span-3 py-2 px-4 bg-red-600 border-2 border-white text-white">
-                  Laravel
-                </li>
-                <li className="font-medium col-span-6 md:col-span-4 lg:col-span-3 py-2 px-4 bg-sky-600 border-2 border-white text-white">
-                  Tailwind CSS
-                </li>
-                <li className="font-medium col-span-6 md:col-span-4 lg:col-span-3 py-2 px-4 bg-blue-600 border-2 border-white text-white">
-                  Typescript
-                </li>
-                <li className="font-medium col-span-6 md:col-span-4 lg:col-span-3 py-2 px-4 bg-blue-800 border-2 border-white text-white">
-                  My SQL
-                </li>
-                <li className="font-medium col-span-6 md:col-span-4 lg:col-span-3 py-2 px-4 bg-orange-600 border-2 border-white text-white">
-                  Git
-                </li>
-              </ul>
-            </Container>
-          </div>
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" className="rotate-180">
-            <path fill="#000" fillOpacity="1" d="M0,192L1440,160L1440,320L0,320Z"></path>
-          </svg>
-        </section>
       </main>
+
+      <footer className="p-4 bg-black select-none h-screen text-white">
+        <Container className={container({ size: "large" })}>
+
+          <div className="flex items-center justify-between text-xl">
+            <h3>&copy; Copyright 2023 </h3>
+            <p>Adi Cahya Saputra</p>
+          </div>
+
+          <div className="mt-12">
+            <h3 className="text-xl font-bold">You Can Contact Me Via Email</h3>
+            <div className="flex space-x-2 items-end">
+              <EnvelopeIcon className="w-6 aspect-square" />
+              <p className="text-xl mt-2 text-white/80 select-all selection:bg-white selection:text-black">adics631@gmail.com</p>
+            </div>
+          </div>
+
+          <div className="mt-8">
+            <h3 className="text-xl font-bold">Also Follow My Social Media</h3>
+            <div className="flex flex-col">
+              <a href="https://www.instagram.com/adi.tsx" className="hover:underline text-xl mt-2 text-white/80">/adi.tsx</a>
+              <a href="https://www.youtube.com/@adics" className="hover:underline text-xl mt-2 text-white/80">/@adics</a>
+              <a href="https://github.com/AdiCahyaSaputra" className="hover:underline text-xl mt-2 text-white/80">/AdiCahyaSaputra</a>
+            </div>
+          </div>
+
+        </Container>
+      </footer>
     </>
   )
 }

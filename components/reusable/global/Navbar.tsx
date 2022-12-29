@@ -3,7 +3,7 @@ import { cva } from 'class-variance-authority'
 import { Bars3CenterLeftIcon } from '@heroicons/react/24/outline'
 import { useState } from "react"
 
-const navLink = cva("font-medium", {
+const navLink = cva("font-medium cursor-pointer", {
   variants: {
     intent: {
       deactive: "text-white/40 hover:text-white",
@@ -23,10 +23,11 @@ const Navbar: React.FC<Props> = ({ startAnimate }) => {
   const [isActive, setIsActive] = useState(false)
 
   return (
-    <nav className='select-none bg-black/60 backdrop-blur-md z-50 text-white border-b fixed inset-x-0 top-0 border-white/20'>
+    <nav className='select-none bg-black/60 backdrop-blur-md z-50 text-white border-b sticky inset-x-0 top-0 border-white/20'>
       <Container className={container({ size: "large" })}>
 
         <div className="flex items-center py-4 justify-between">
+
           <h1 className="text-xl font-bold cursor-pointer">
             <span className={`border-b-2 ${startAnimate ? 'border-white' : 'border-white/40'} transition-all`}>Adi</span>cs.
           </h1>
@@ -40,6 +41,7 @@ const Navbar: React.FC<Props> = ({ startAnimate }) => {
           <button onClick={() => setIsActive(!isActive)} className="md:hidden cursor-pointer">
             <Bars3CenterLeftIcon className="w-8 aspect-square rotate-180" />
           </button>
+
         </div>
 
       </Container>

@@ -10,7 +10,7 @@ const HeroSection: React.FC<Props> = ({ startAnimate }) => {
     <section className="flex bg-black text-white flex-col justify-center h-screen" >
       <Container className={container({ size: "medium" })}>
 
-        <h1 className={`text-3xl font-bold text-white/80 selection:text-black selection:bg-black`}>
+        <h1 className={`text-3xl font-bold text-white/80 selection:text-black selection:bg-white`}>
           Just A <span className={`transition-all delay-500 ${startAnimate ? 'text-white' : 'text-white/80'}`}>Fullstuck</span> Developer <br />From Indonesia
         </h1>
         <div className="mt-4 text-white/60 select-none">

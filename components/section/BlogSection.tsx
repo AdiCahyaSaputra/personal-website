@@ -19,7 +19,14 @@ const BlogSection: React.FC = () => {
     <section className="py-12 h-screen">
       <Container className={container({ size: "medium" })}>
 
-        <h1 className="text-2xl font-bold selection:bg-black selection:text-white">Blog</h1>
+        <div>
+
+          <h1 className="text-3xl font-bold selection:text-white selection:bg-black">{"I'm Also Writing A Blog"}</h1>
+          <p className="text-lg selection:text-white selection:bg-black">
+            To Inspire Other Developers
+          </p>
+
+        </div>
 
         <div className="mt-6 space-y-2 lg:w-8/12">
 
@@ -36,7 +43,12 @@ const BlogSection: React.FC = () => {
 
         </div>
 
-        <a className="select-none cursor-pointer lg:w-max w-full text-center text-white hover:text-black border-2 border-black hover:bg-transparent py-2 px-4 active:scale-95 mt-6 inline-block text-lg font-medium bg-black">See More Blog</a>
+        <div className="mt-6 relative lg:w-max group overflow-hidden">
+          <a className="select-none cursor-pointer transition-all duration-500 lg:w-max w-full text-center text-black group-hover:text-white border-2 border-black py-2 px-4 active:scale-95 inline-block text-lg font-medium bg-transparent relative z-10">
+            See More Blog
+          </a>
+          <div className="duration-500 absolute left-0 top-0 w-full h-full bg-black translate-x-full group-hover:translate-x-0 transition-all z-0"/>
+        </div>
 
       </Container>
     </section>

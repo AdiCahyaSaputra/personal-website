@@ -41,7 +41,12 @@ const ProjectSection: React.FC = () => {
 
         </figure>
 
-        <a className="select-none cursor-pointer lg:w-max w-full text-center text-white hover:text-black border-2 border-black hover:bg-transparent py-2 px-4 active:scale-95 mt-6 inline-block text-lg font-medium bg-black">See More Project</a>
+        <div className="mt-6 relative lg:w-max group overflow-hidden">
+          <a className="select-none cursor-pointer transition-all duration-500 lg:w-max w-full text-center text-black group-hover:text-white border-2 border-black py-2 px-4 active:scale-95 inline-block text-lg font-medium bg-transparent relative z-10">
+            See More Project
+          </a>
+          <div className="duration-500 absolute left-0 top-0 w-full h-full bg-black translate-y-full group-hover:translate-y-0 transition-all z-0"/>
+        </div>
 
       </Container>
 

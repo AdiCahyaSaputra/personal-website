@@ -34,7 +34,7 @@ const Home: NextPage = () => {
       <main>
         <div className="absolute inset-x-0 top-0 h-[65px] bg-black"></div>
         <Navbar startAnimate={startAnimate} />
-        <HeroSection startAnimate={startAnimate} />
+        <HeroSection />
 
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#000" fillOpacity="1" d="M0,160L1440,224L1440,0L0,0Z"></path></svg>
 
@@ -57,7 +57,7 @@ const Home: NextPage = () => {
           </div>
 
           <div className="mt-8">
-            <h3 className="text-xl font-bold">Also Follow My Social Media</h3>
+            <h3 className="text-xl font-bold">Or From The Other Links ?</h3>
             <div className="flex flex-col">
               <a href="https://www.instagram.com/adi.tsx" className="hover:underline text-xl mt-2 text-white/80">/adi.tsx</a>
               <a href="https://www.youtube.com/@adics" className="hover:underline text-xl mt-2 text-white/80">/@adics</a>
@@ -65,9 +65,20 @@ const Home: NextPage = () => {
             </div>
           </div>
 
+          <div className="mt-8">
+            <h3 className="text-xl font-bold">Something Is Missing ?</h3>
+            <p className="text-lg text-white/80 mt-2">Maybe I Should Not Be Here For Now</p>
+            <div onClick={() => window.scrollTo(0, 0)} className="relative cursor-pointer w-max mt-2 group overflow-hidden">
+              <button className="text-lg font-bold group-hover:text-black transition-all duration-500 w-max py-2 px-4 bg-transparent border-2 border-white text-white relative z-10">
+                Restart From Top
+              </button>
+              <div className="z-0 absolute left-0 top-0 w-full h-full translate-y-full group-hover:translate-y-0 transition-all duration-500 bg-white" />
+            </div>
+          </div>
+
           <div className="absolute bottom-0 border-t border-white/30 lg:text-xl text-lg inset-x-0 py-4">
             <Container className={container({ size: "large", className: "items-center justify-between flex" })}>
-              <h3>&copy; Copyright 2023 </h3>
+              <h3>&copy; 2023 </h3>
               <p>Adi Cahya Saputra</p>
             </Container>
           </div>

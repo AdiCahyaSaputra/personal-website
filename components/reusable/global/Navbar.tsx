@@ -23,7 +23,7 @@ const Navbar: React.FC<Props> = ({ startAnimate }) => {
   const [isActive, setIsActive] = useState(false)
 
   return (
-    <nav className='select-none bg-black/60 backdrop-blur-md z-50 text-white border-b sticky inset-x-0 top-0 border-white/20'>
+    <nav className={`select-none ${isActive ? 'bg-black' : 'bg-black/40'} backdrop-blur-md z-50 text-white border-b sticky inset-x-0 top-0 border-white/20`}>
       <Container className={container({ size: "large" })}>
 
         <div className="flex items-center py-4 justify-between">

@@ -24,6 +24,12 @@ const Home: NextPage = () => {
     return () => clearTimeout(to)
   }, [])
 
+  const clickHandler = () => {
+    setTimeout(() => {
+      window.scrollTo(0, 0)
+    }, 500);
+  }
+
   return (
     <>
 
@@ -68,8 +74,8 @@ const Home: NextPage = () => {
           <div className="mt-8">
             <h3 className="text-xl font-bold">Something Is Missing ?</h3>
             <p className="text-lg text-white/80 mt-2">Maybe I Should Not Be Here For Now</p>
-            <div onClick={() => window.scrollTo(0, 0)} className="relative cursor-pointer w-max mt-2 group overflow-hidden">
-              <button className="text-lg font-bold group-hover:text-black transition-all duration-500 w-max py-2 px-4 bg-transparent border-2 border-white text-white relative z-10">
+            <div onClick={clickHandler} className="relative cursor-pointer w-max mt-2 group overflow-hidden">
+              <button className="text-lg active:scale-95 font-bold group-hover:text-black transition-all duration-500 w-max py-2 px-4 bg-transparent border-2 border-white text-white relative z-10">
                 Restart From Top
               </button>
               <div className="z-0 absolute left-0 top-0 w-full h-full translate-y-full group-hover:translate-y-0 transition-all duration-500 bg-white" />

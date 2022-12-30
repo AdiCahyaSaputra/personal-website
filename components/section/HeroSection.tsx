@@ -2,6 +2,13 @@ import React from 'react'
 import Container, { container } from "../reusable/global/Container"
 
 const HeroSection: React.FC = () => {
+
+  const clickHandler = () => {
+    setTimeout(() => {
+      window.scrollTo(0, document.body.scrollHeight)
+    }, 500);
+  }
+
   return (
     <section className="flex bg-black text-white flex-col justify-center h-screen" >
       <Container className={container({ size: "medium" })}>
@@ -14,8 +21,8 @@ const HeroSection: React.FC = () => {
           <p>{"Interest In Frontend Development, UI & UX Design, And Problem Solving"}</p>
         </div>
         <div className="relative mt-6 w-max group overflow-hidden">
-          <a onClick={() => window.scrollTo(0, document.body.scrollHeight)} className="py-2 px-4 bg-transparent w-max text-white font-bold
-            border-2 border-white select-none inline-block group-hover:text-black
+          <a onClick={clickHandler} className="py-2 px-4 bg-transparent w-max text-white font-bold
+            border-2 border-white select-none inline-block group-hover:text-black cursor-pointer
             active:scale-95 relative z-10 transition-all duration-500">
             Open To Collaborate With You {':)'}
           </a>

@@ -1,0 +1,132 @@
+[
+  {
+    "year": 2022,
+    "date": "Sep 6",
+    "title": "Rental Mobil",
+    "shortDesc": "The Place To Rent Your Car If You Need Emergency Money",
+    "slug": "rental-mobil",
+    "status": "On Progress",
+    "peoples": [
+      {
+        "username": "@AdiCahyaSaputra",
+        "link": "https://github.com/AdiCahyaSaputra",
+        "note": "as a Frontend"
+      },
+      {
+        "username": "@26kito",
+        "link": "https://github.com/26kito",
+        "note": "as a Backend"
+      }
+    ],
+    "links": [
+      {
+        "url": "https://rental-mobil-fe.vercel.app/",
+        "label": "demo",
+        "note": "with dummy data"
+      },
+      {
+        "url": "https://github.com/AdiCahyaSaputra/rental-mobil-fe",
+        "label": "repository",
+        "note": "for frontend"
+      },
+      {
+        "url": "https://github.com/26kito/rental-mobil",
+        "label": "repository",
+        "note": "for backend"
+      }
+    ],
+    "techStack": [
+      {
+        "name": "Next JS 12",
+        "note": "Frontend",
+        "link": "https://nextjs.org"
+      },
+      {
+        "name": "Laravel 9",
+        "note": "Backend",
+        "link": "https://laravel.com/"
+      }
+    ],
+    "readme": "This Project Is Still Under Maintenance Because There Is A Problem When We Trying To Host The API"
+  },
+  {
+    "year": 2022,
+    "date": "May 29",
+    "title": "Toko Online",
+    "shortDesc": "Very Minimalistic E-Commerce ft.Discord Friends",
+    "slug": "toko-online",
+    "status": "On Progress",
+    "peoples": [
+      {
+        "username": "@AdiCahyaSaputra",
+        "link": "https://github.com/AdiCahyaSaputra",
+        "note": "as a Frontend"
+      },
+      {
+        "username": "@pradana4648",
+        "link": "https://github.com/pradana4648",
+        "note": "as a Backend"
+      }
+    ],
+    "links": [
+      {
+        "url": "https://toko-online-dc.vercel.app/",
+        "label": "demo",
+        "note": "with dummy data"
+      },
+      {
+        "url": "https://github.com/AdiCahyaSaputra/toko-online-dc",
+        "label": "repository",
+        "note": "for frontend"
+      }
+    ],
+    "techStack": [
+      {
+        "name": "Next JS 12",
+        "note": "Frontend",
+        "link": "https://nextjs.org"
+      },
+      {
+        "name": "Spring Boot 3",
+        "note": "Backend",
+        "link": "https://spring.io/projects/spring-boot"
+      }
+    ],
+    "readme": "This Project Is Still Under Maintenance Because There Is A Problem When We Trying To Host The API"
+  },
+  {
+    "year": 2021,
+    "date": "Dec 6",
+    "title": "Auto Manage Files",
+    "shortDesc": "Manage Your Downloads Folder Programmatically",
+    "slug": "amf",
+    "status": "Done",
+    "peoples": [
+      {
+        "username": "@AdiCahyaSaputra",
+        "link": "https://github.com/AdiCahyaSaputra",
+        "note": "as a Person"
+      }
+    ],
+    "links": [
+      {
+        "url": "https://auto-manage-files.vercel.app/",
+        "label": "see demo",
+        "note": "on landing page"
+      },
+      {
+        "url": "https://github.com/AdiCahyaSaputra/auto-manage-files",
+        "label": "repository",
+        "note": "for scipt"
+      }
+    ],
+    "techStack": [
+      {
+        "name": "Node JS 16",
+        "note": "Script",
+        "link": "https://nodejs.org/en/"
+      }
+    ],
+    "readme": "So, What Are You Waiting For ? Hire Me Now"
+  }
+]

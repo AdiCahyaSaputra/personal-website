@@ -32,17 +32,17 @@ const Navbar: React.FC = () => {
 
   const navItems = [
     {
-      className: navLink({ intent: router.asPath === '/' ? 'active' : 'deactive' }),
+      className: navLink({ intent: router.asPath === "/" ? 'active' : 'deactive' }),
       link: '/',
       name: 'Me'
     },
     {
-      className: navLink({ intent: router.asPath === '/projects' ? 'active' : 'deactive' }),
+      className: navLink({ intent: router.asPath.includes("/projects") ? 'active' : 'deactive' }),
       link: '/projects',
       name: 'Projects'
     },
     {
-      className: navLink({ intent: router.asPath === '/blog' ? 'active' : 'deactive' }),
+      className: navLink({ intent: router.asPath.includes("/blog") ? 'active' : 'deactive' }),
       link: '/blog',
       name: 'Blog'
     },

@@ -13,7 +13,7 @@ const HeroSection: React.FC = () => {
     <section className="flex bg-black text-white flex-col justify-center h-screen" >
       <Container className={container({ size: "medium" })}>
 
-        <h1 className={`text-3xl transition-all font-bold text-white hover:text-white/60 group selection:text-black selection:bg-white`}>
+        <h1 className={`text-3xl transition-all font-bold text-white hover:text-white/60 group selection:text-black selection:bg-white w-max`}>
           Just A <span className={`group-hover:text-white`}>Fullstuck</span> Developer <br />From Indonesia
         </h1>
         <div className="mt-4 text-white/60 select-none">

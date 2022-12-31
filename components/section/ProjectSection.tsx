@@ -9,6 +9,12 @@ import Image from 'next/image'
 const ProjectSection: React.FC = () => {
   const router = useRouter()
 
+  const clickHandler = () => {
+    setTimeout(() => {
+      router.push('/projects')
+    }, 500);
+  }
+
   return (
     <section className="bg-white pb-10">
 
@@ -44,7 +50,7 @@ const ProjectSection: React.FC = () => {
         </figure>
 
         <div className="mt-6 relative lg:w-max group overflow-hidden">
-          <a onClick={() => router.push('/projects')} className="select-none cursor-pointer transition-all duration-500 lg:w-max w-full text-center text-black group-hover:text-white border-2 border-black py-2 px-4 active:scale-95 inline-block text-lg font-medium bg-transparent relative z-10">
+          <a onClick={clickHandler} className="select-none cursor-pointer transition-all duration-500 lg:w-max w-full text-center text-black group-hover:text-white border-2 border-black py-2 px-4 active:scale-95 inline-block text-lg font-medium bg-transparent relative z-10">
             See More Project
           </a>
           <div className="duration-500 absolute left-0 top-0 w-full h-full bg-black translate-y-full group-hover:translate-y-0 transition-all z-0" />

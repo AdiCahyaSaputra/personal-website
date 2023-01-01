@@ -37,7 +37,7 @@ const SkillSection: React.FC = () => {
           <div>
 
             <h1 className="text-2xl font-bold selection:bg-white selection:text-black">Tech Stack Or Tools</h1>
-            <p className="text-lg text-white/80 selection:bg-white selection:text-black">{"I've Currently Used"}</p>
+            <p className="text-lg text-white/60 selection:bg-white selection:text-black">{"I've currently used"}</p>
 
           </div>
 

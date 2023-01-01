@@ -60,7 +60,7 @@ const ProjectDetail: NextPage<Props> = ({ currentArticle }) => {
 
             <div className="py-6 selection:text-black selection:bg-white border-b-2 border-white border-dashed">
               <h1 className="text-2xl font-bold">Detail Of : {currentArticle.title} (Project)</h1>
-              <p className="text-lg">
+              <p className="text-lg mt-1">
                 Status - <span className={status({ intent: currentArticle.status === "Done" ? "done" : "onProgress" })}>{currentArticle.status}</span>
               </p>
             </div>
@@ -96,7 +96,7 @@ const ProjectDetail: NextPage<Props> = ({ currentArticle }) => {
 
             <div className='mt-4 border-2 border-yellow-600 p-4 lg:w-max'>
               <h2 className='text-xl font-bold'>Readme Please</h2>
-              <p>{currentArticle.readme}</p>
+              <p className='text-white/60 md:text-md text-sm mt-1'>{currentArticle.readme}</p>
             </div>
 
           </Container>

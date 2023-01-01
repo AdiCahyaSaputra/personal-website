@@ -50,7 +50,7 @@ const Projects: NextPage<Props> = ({ projectArticles2022, projectArticles2021 })
 
             <div className="py-6 selection:text-black selection:bg-white">
               <h1 className="text-2xl font-bold">Here, The All Project</h1>
-              <p className="text-lg">That I Have Done Before</p>
+              <p className="text-lg text-white/60">That I Have Done Before</p>
             </div>
 
             <div>
@@ -58,7 +58,7 @@ const Projects: NextPage<Props> = ({ projectArticles2022, projectArticles2021 })
               <h3 className="text-xl font-medium selection:text-black selection:bg-white">2022</h3>
               <div className="py-4 px-8 border-l-2 border-dashed ml-4 border-white my-4">
                 {projectArticles2022.map((article, index) => (
-                  <Article {...article} key={index}/>
+                  <Article {...article} key={index} />
                 ))}
               </div>
 
@@ -69,7 +69,7 @@ const Projects: NextPage<Props> = ({ projectArticles2022, projectArticles2021 })
               <h3 className="text-xl font-medium selection:text-black selection:bg-white">2021</h3>
               <div className="py-4 px-8 border-l-2 border-dashed ml-4 border-white my-4">
                 {projectArticles2021.map((article, index) => (
-                  <Article {...article} key={index}/>
+                  <Article {...article} key={index} />
                 ))}
               </div>
 

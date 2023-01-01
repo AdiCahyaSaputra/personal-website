@@ -37,8 +37,8 @@ const FooterSection: React.FC = () => {
 
         <div className="mt-8">
           <h3 className="text-xl font-bold">Something Is Missing ?</h3>
-          <p className="text-lg text-white/80 mt-2">Maybe I Should Not Be Here For Now</p>
-          <div onClick={clickHandler} className="relative cursor-pointer w-max mt-2 group overflow-hidden">
+          <p className="text-lg text-white/80 mt-2">Maybe I should not be here for now</p>
+          <div onClick={clickHandler} className="relative cursor-pointer w-max mt-4 group overflow-hidden">
             <button className="text-lg active:scale-95 font-bold group-hover:text-black transition-all duration-500 w-max py-2 px-4 bg-transparent border-2 border-white text-white relative z-10">
               Restart From Top
             </button>

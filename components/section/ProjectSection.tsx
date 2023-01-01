@@ -23,8 +23,8 @@ const ProjectSection: React.FC = () => {
         <div>
 
           <h1 className="text-3xl font-bold selection:text-white selection:bg-black">What Have I Done</h1>
-          <p className="text-lg selection:text-white selection:bg-black">
-            While Working On Programming Hell
+          <p className="text-lg selection:text-white selection:bg-black text-black/60">
+            While working on programming hell
           </p>
 
         </div>
@@ -43,7 +43,7 @@ const ProjectSection: React.FC = () => {
           <figcaption className="cursor-pointer mt-4 group">
 
             <a onClick={() => router.push('/projects/rental-mobil')} className="text-2xl group-hover:underline font-bold">Rental Mobil</a>
-            <p className="text-lg">The Place To Rent Your Car If You Need Emergency Money</p>
+            <p className="text-lg text-black/60">The place to rent your car if you need emergency money</p>
 
           </figcaption>
 

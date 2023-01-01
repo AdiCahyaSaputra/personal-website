@@ -14,7 +14,7 @@ const Article: React.FC<IProjectArticle> = ({ date, title, shortDesc, slug }) =>
 
       <div className="mt-2">
         <a onClick={() => router.push('/projects/' + slug)} className="select-none cursor-pointer hover:underline text-xl font-bold">{title}</a>
-        <p className="text-lg">{shortDesc}</p>
+        <p className="text-lg text-white/60">{shortDesc}</p>
       </div>
 
     </article>

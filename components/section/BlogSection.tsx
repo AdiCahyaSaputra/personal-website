@@ -4,12 +4,12 @@ const blogs = [
   {
     link: "https://adics.hashnode.dev/using-useref-to-multiple-elements-in-react-js",
     label: <>Using <code className="bg-black/10">useRef()</code> To Multiple Elements In React JS</>,
-    desc: <>Just Like <code>querySelectorAll()</code> In ReactJS Using <code>useRef()</code> Hooks</>
+    desc: <>Just like <code>querySelectorAll()</code> in ReactJS using <code>useRef()</code> hooks</>
   },
   {
     link: "https://adics.hashnode.dev/apa-itu-internet",
     label: <>How Internet Work</>,
-    desc: <>Explain About How Internet Work In Indonesian (Bahasa)</>
+    desc: <>Explain about how internet work in Indonesian (Bahasa)</>
   },
 ]
 
@@ -22,8 +22,8 @@ const BlogSection: React.FC = () => {
         <div>
 
           <h1 className="text-3xl font-bold selection:text-white selection:bg-black">{"I'm Also Writing A Blog"}</h1>
-          <p className="text-lg selection:text-white selection:bg-black">
-            To Inspire Other Developers
+          <p className="text-lg selection:text-white selection:bg-black text-black/60">
+            To inspire other developers
           </p>
 
         </div>
@@ -35,7 +35,7 @@ const BlogSection: React.FC = () => {
               <a href={blog.link} className="text-xl font-bold cursor-pointer hover:underline select-none">
                 {blog.label}
               </a>
-              <p className="mt-2 selection:bg-black selection:text-white">
+              <p className="mt-2 selection:bg-black selection:text-white text-black/60">
                 {blog.desc}
               </p>
             </article>

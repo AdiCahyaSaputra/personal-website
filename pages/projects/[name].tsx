@@ -2,6 +2,7 @@ import React from 'react'
 import Head from 'next/head'
 import { cva } from 'class-variance-authority'
 import { GetServerSideProps, NextPage } from 'next'
+import { useRouter } from 'next/router'
 
 // Components
 import Navbar from 'components/reusable/global/Navbar'
@@ -10,7 +11,6 @@ import Container, { container } from 'components/reusable/global/Container'
 
 // Interface
 import IProjectArticle from 'lib/interface/IProjectArticle'
-import { useRouter } from 'next/router'
 
 const status = cva("font-bold", {
   variants: {

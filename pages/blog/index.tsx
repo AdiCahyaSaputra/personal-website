@@ -1,14 +1,22 @@
 // Lib
 import { NextPage } from "next"
+import FeaturedBlog from "../../public/img/featured-blog.jpg"
 import { useRouter } from "next/router"
 
 // Components
 import Navbar from "components/reusable/global/Navbar"
 import Head from "next/head"
 import Container, { container } from "components/reusable/global/Container"
+import Image from "next/image"
 
 const Blog: NextPage = () => {
   const router = useRouter()
+
+  const clickHandler = () => {
+    setTimeout(() => {
+      window.location.href = "https://adics.hashnode.dev/using-useref-to-multiple-elements-in-react-js"
+    }, 500)
+  }
 
   return (
     <>
@@ -27,6 +35,40 @@ const Blog: NextPage = () => {
             <div className="py-6 selection:text-black selection:bg-white">
               <h1 className="text-2xl font-bold">Interesting Stuff Here (Maybe)</h1>
               <p className="text-lg text-white/60 mt-1">{"I'm"} Just Start Blogging And I {"Don't"}<br /> Know How To Write A Good Article For Now.</p>
+            </div>
+
+            <div className="grid grid-cols-12 gap-4">
+
+              <figure className="col-span-12 flex md:flex-row flex-col gap-4">
+
+                <div className="relative aspect-video bg-black lg:w-6/12 md:w-full">
+                  <Image
+                    src={FeaturedBlog}
+                    alt="blog"
+                    className="absolute inset-0 group-hover:scale-95 transition-all border-2 border-white"
+                    placeholder="blur"
+                  />
+                </div>
+
+                <figcaption className="lg:w-4/12">
+
+                  <div>
+                    <p className="font-medium text-white/60">Aug 29, 2022</p>
+                    <h1 className="lg:text-3xl text-2xl font-bold mt-2">Using <code className="bg-red-800/80">useRef()</code> To Multiple Elements In React JS</h1>
+                    <p className="text-lg mt-2 text-white/60">Just like <code className="bg-white/10">querySelectorAll()</code> in ReactJS using <code className="bg-white/10">useRef()</code> hooks</p>
+                  </div>
+
+                  <div className="mt-6 relative lg:w-max group overflow-hidden">
+                    <button onClick={clickHandler} className="select-none cursor-pointer transition-all duration-500 lg:w-max w-full text-center text-white group-hover:text-black border-2 border-white py-2 px-4 active:scale-95 text-lg font-medium bg-transparent relative z-10">
+                      See On Hasnode
+                    </button>
+                    <div className="duration-500 absolute left-0 top-0 w-full h-full bg-white translate-x-full group-hover:translate-x-0 transition-all z-0" />
+                  </div>
+
+                </figcaption>
+
+              </figure>
+
             </div>
 
           </Container>

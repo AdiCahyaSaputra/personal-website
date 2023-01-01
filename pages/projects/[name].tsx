@@ -96,7 +96,7 @@ const ProjectDetail: NextPage<Props> = ({ currentArticle }) => {
 
             <div className='mt-4 border-2 border-yellow-600 p-4 lg:w-max'>
               <h2 className='text-xl font-bold'>Readme Please</h2>
-              <p className='text-white/60 md:text-md text-sm mt-1'>{currentArticle.readme}</p>
+              <p className='text-white/60 md:text-base text-sm mt-1'>{currentArticle.readme}</p>
             </div>
 
           </Container>

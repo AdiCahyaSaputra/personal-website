@@ -3,7 +3,7 @@
     "year": 2022,
     "date": "Sep 6",
     "title": "Rental Mobil",
-    "shortDesc": "The Place To Rent Your Car If You Need Emergency Money",
+    "shortDesc": "The place to rent your car if you need emergency money",
     "slug": "rental-mobil",
     "status": "On Progress",
     "peoples": [
@@ -47,13 +47,13 @@
         "link": "https://laravel.com/"
       }
     ],
-    "readme": "This Project Is Still Under Maintenance Because There Is A Problem When We Trying To Host The API"
+    "readme": "This project is still under maintenance because there is a problem when we trying to host the API"
   },
   {
     "year": 2022,
     "date": "May 29",
     "title": "Toko Online",
-    "shortDesc": "Very Minimalistic E-Commerce ft.Discord Friends",
+    "shortDesc": "Very minimalistic e-commerce ft.Discord friends",
     "slug": "toko-online",
     "status": "On Progress",
     "peoples": [
@@ -92,13 +92,13 @@
         "link": "https://spring.io/projects/spring-boot"
       }
     ],
-    "readme": "This Project Is Still Under Maintenance Because There Is A Problem When We Trying To Host The API"
+    "readme": "This project is still under maintenance because there is a problem when we trying to host the API"
   },
   {
     "year": 2021,
     "date": "Dec 6",
     "title": "Auto Manage Files",
-    "shortDesc": "Manage Your Downloads Folder Programmatically",
+    "shortDesc": "Manage your downloads folder programmatically",
     "slug": "amf",
     "status": "Done",
     "peoples": [
@@ -127,6 +127,6 @@
         "link": "https://nodejs.org/en/"
       }
     ],
-    "readme": "So, What Are You Waiting For ? Hire Me Now"
+    "readme": "So, what are you waiting for ? Hire me now"
   }
 ]

@@ -29,19 +29,19 @@ const Blog: NextPage = () => {
 
         <Navbar />
 
-        <section className="bg-black text-white min-h-screen pb-10">
+        <section className="selection:text-black selection:bg-white bg-black text-white min-h-screen pb-10">
           <Container className={container({ size: "medium" })}>
 
             <div className="py-6 selection:text-black selection:bg-white">
               <h1 className="text-2xl font-bold">Interesting Stuff Here (Maybe)</h1>
-              <p className="text-lg text-white/60 mt-1">{"I'm"} Just Start Blogging And I {"Don't"}<br /> Know How To Write A Good Article For Now.</p>
+              <p className="text-lg text-white/60 mt-1">{"I'm"} just start blogging and I {"don't"}<br /> know how to write a good Article for now.</p>
             </div>
 
             <div className="grid grid-cols-12 gap-4">
 
-              <figure className="col-span-12 flex md:flex-row flex-col gap-4">
+              <figure className="col-span-12 flex lg:flex-row flex-col gap-4">
 
-                <div className="relative aspect-video bg-black lg:w-6/12 md:w-full">
+                <div className="relative aspect-video bg-black md:w-6/12 w-full">
                   <Image
                     src={FeaturedBlog}
                     alt="blog"
@@ -50,11 +50,11 @@ const Blog: NextPage = () => {
                   />
                 </div>
 
-                <figcaption className="lg:w-4/12">
+                <figcaption className="lg:w-4/12 md:w-6/12">
 
                   <div>
                     <p className="font-medium text-white/60">Aug 29, 2022</p>
-                    <h1 className="lg:text-3xl text-2xl font-bold mt-2">Using <code className="bg-red-800/80">useRef()</code> To Multiple Elements In React JS</h1>
+                    <a className="select-none cursor-pointer hover:underline inline-block lg:text-3xl text-2xl font-bold mt-2">Using <code className="bg-red-800/80">useRef()</code> To Multiple Elements In React JS</a>
                     <p className="text-lg mt-2 text-white/60">Just like <code className="bg-white/10">querySelectorAll()</code> in ReactJS using <code className="bg-white/10">useRef()</code> hooks</p>
                   </div>
 

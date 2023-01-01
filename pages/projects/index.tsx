@@ -50,7 +50,7 @@ const Projects: NextPage<Props> = ({ projectArticles2022, projectArticles2021 })
 
             <div className="py-6 selection:text-black selection:bg-white">
               <h1 className="text-2xl font-bold">Here, The All Project</h1>
-              <p className="text-lg text-white/60">That I Have Done Before</p>
+              <p className="text-lg text-white/60">That I have done before</p>
             </div>
 
             <div>

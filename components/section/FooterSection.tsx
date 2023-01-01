@@ -15,7 +15,7 @@ const FooterSection: React.FC = () => {
   }
 
   return (
-    <footer id="contact" className="p-4 border-t border-white/60 bg-black select-none h-screen text-white relative">
+    <footer id="contact" className="p-4 bg-black select-none h-screen text-white relative">
       <Container className={container({ size: "large" })}>
 
         <div className="mt-8">

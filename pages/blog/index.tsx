@@ -39,9 +39,9 @@ const Blog: NextPage = () => {
 
             <div className="grid grid-cols-12 gap-4">
 
-              <figure className="col-span-12 flex lg:flex-row flex-col gap-4">
+              <figure className="col-span-12 flex lg:items-center lg:flex-row flex-col gap-4">
 
-                <div className="relative aspect-video bg-black md:w-6/12 w-full">
+                <div className="relative aspect-video bg-black lg:w-6/12">
                   <Image
                     src={FeaturedBlog}
                     alt="blog"
@@ -50,24 +50,33 @@ const Blog: NextPage = () => {
                   />
                 </div>
 
-                <figcaption className="lg:w-4/12 md:w-6/12">
+                <figcaption className="lg:w-4/12">
 
                   <div>
                     <p className="font-medium text-white/60">Aug 29, 2022</p>
-                    <a className="select-none cursor-pointer hover:underline inline-block lg:text-3xl text-2xl font-bold mt-2">Using <code className="bg-red-800/80">useRef()</code> To Multiple Elements In React JS</a>
-                    <p className="text-lg mt-2 text-white/60">Just like <code className="bg-white/10">querySelectorAll()</code> in ReactJS using <code className="bg-white/10">useRef()</code> hooks</p>
-                  </div>
-
-                  <div className="mt-6 relative lg:w-max group overflow-hidden">
-                    <button onClick={clickHandler} className="select-none cursor-pointer transition-all duration-500 lg:w-max w-full text-center text-white group-hover:text-black border-2 border-white py-2 px-4 active:scale-95 text-lg font-medium bg-transparent relative z-10">
-                      See On Hasnode
-                    </button>
-                    <div className="duration-500 absolute left-0 top-0 w-full h-full bg-white translate-x-full group-hover:translate-x-0 transition-all z-0" />
+                    <a href="https://adics.hashnode.dev/using-useref-to-multiple-elements-in-react-js" className="select-none cursor-pointer hover:underline inline-block lg:text-3xl text-2xl font-bold mt-2">Using <code className="bg-red-800/80">useRef()</code> To Multiple Elements In React JS</a>
+                    <p className="text-lg mt-1 text-white/60">Just like <code className="bg-white/10">querySelectorAll()</code> in ReactJS using <code className="bg-white/10">useRef()</code> hooks</p>
                   </div>
 
                 </figcaption>
 
               </figure>
+
+              <div className="col-span-12 py-4">
+                <article>
+
+                  <div>
+                    <p className="font-medium text-white/60">Aug 29, 2022</p>
+                    <a href="https://adics.hashnode.dev/apa-itu-internet" className="select-none cursor-pointer hover:underline inline-block text-2xl font-bold mt-2">
+                      How Internet Work
+                    </a>
+                    <p className="text-lg mt-1 text-white/60">
+                      Explain about how internet work in Indonesia (Bahasa)
+                    </p>
+                  </div>
+
+                </article>
+              </div>
 
             </div>
 

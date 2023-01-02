@@ -12,12 +12,6 @@ import Image from "next/image"
 const Blog: NextPage = () => {
   const router = useRouter()
 
-  const clickHandler = () => {
-    setTimeout(() => {
-      window.location.href = "https://adics.hashnode.dev/using-useref-to-multiple-elements-in-react-js"
-    }, 500)
-  }
-
   return (
     <>
 

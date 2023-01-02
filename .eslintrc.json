@@ -1,6 +1,3 @@
 {
-  "extends": [
-    "airbnb",
-    "airbnb/hooks"
-  ]
+  "extends": "next/core-web-vitals"
 }

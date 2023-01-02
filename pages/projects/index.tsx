@@ -12,24 +12,22 @@ import IProjectArticle from "lib/interface/IProjectArticle"
 
 export const getStaticProps: GetStaticProps = async () => {
   const data: IProjectArticle[] = require('asset/data/projects.json')
-
-  const projectArticles2022 = data.filter(article => article.year === 2022)
-  const projectArticles2021 = data.filter(article => article.year === 2021)
+  const years: number[] = Array.from(new Set(data.map(article => article.year)))
 
   return {
     props: {
-      projectArticles2022,
-      projectArticles2021
+      data,
+      years
     }
   }
 }
 
 type Props = {
-  projectArticles2022: IProjectArticle[],
-  projectArticles2021: IProjectArticle[],
+  data: IProjectArticle[],
+  years: number[]
 }
 
-const Projects: NextPage<Props> = ({ projectArticles2022, projectArticles2021 }) => {
+const Projects: NextPage<Props> = ({ data, years }) => {
 
   const router = useRouter()
 
@@ -53,27 +51,18 @@ const Projects: NextPage<Props> = ({ projectArticles2022, projectArticles2021 })
               <p className="text-lg text-white/60">That I have done before</p>
             </div>
 
-            <div>
+            {years.map((year, index) => (
+              <div key={index}>
 
-              <h3 className="text-xl font-medium selection:text-black selection:bg-white">2022</h3>
-              <div className="py-4 px-8 border-l-2 border-dashed ml-4 border-white my-4">
-                {projectArticles2022.map((article, index) => (
-                  <Article {...article} key={index} />
-                ))}
+                <h3 className="text-xl font-medium selection:text-black selection:bg-white">{year}</h3>
+                <div className="py-4 px-8 border-l-2 border-dashed ml-4 border-white my-4">
+                  {data.filter(article => article.year === year).map((article, index) => (
+                    <Article {...article} key={index}/>
+                  ))}
+                </div>
+
               </div>
-
-            </div>
-
-            <div>
-
-              <h3 className="text-xl font-medium selection:text-black selection:bg-white">2021</h3>
-              <div className="py-4 px-8 border-l-2 border-dashed ml-4 border-white my-4">
-                {projectArticles2021.map((article, index) => (
-                  <Article {...article} key={index} />
-                ))}
-              </div>
-
-            </div>
+            ))}
 
           </Container>
 

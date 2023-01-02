@@ -21,11 +21,11 @@ const HeroSection: React.FC = () => {
           <p>{"Interest in Frontend Development, UI & UX Design, And problem solving"}</p>
         </div>
         <div className="relative mt-6 w-max group overflow-hidden">
-          <a onClick={clickHandler} className="py-2 px-4 bg-transparent w-max text-white font-bold
-            border-2 border-white select-none inline-block group-hover:text-black cursor-pointer
+          <button onClick={clickHandler} className="py-2 px-4 bg-transparent w-max text-white font-bold
+            border-2 border-white select-none group-hover:text-black cursor-pointer
             active:scale-95 relative z-10 transition-all duration-500">
             Open to collaborate with you {':)'}
-          </a>
+          </button>
           <div className="z-0 absolute py-2 px-4 left-0 top-0 w-full h-full bg-white -translate-x-full group-hover:translate-x-0 transition-all duration-500" />
         </div>
 

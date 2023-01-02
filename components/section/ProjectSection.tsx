@@ -16,7 +16,7 @@ const ProjectSection: React.FC = () => {
   }
 
   return (
-    <section className="bg-white pb-10">
+    <section className="bg-white py-12">
 
       <Container className={container({ size: "medium", className: "h-full" })}>
 

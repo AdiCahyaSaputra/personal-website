@@ -4,11 +4,11 @@ import { Bars3CenterLeftIcon } from '@heroicons/react/24/outline'
 import { useEffect, useState } from "react"
 import { useRouter } from "next/router"
 
-const navLink = cva("font-medium cursor-pointer", {
+const navLink = cva("cursor-pointer", {
   variants: {
     intent: {
       deactive: "text-white/40 hover:text-white",
-      active: "text-white py-2 px-4 rounded bg-white/20"
+      active: "font-bold text-white py-2 px-4 rounded bg-white/20"
     }
   },
   defaultVariants: {

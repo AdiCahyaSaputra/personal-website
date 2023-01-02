@@ -1,3 +1,4 @@
+import { useRouter } from "next/router"
 import Container, { container } from "../reusable/global/Container"
 
 const blogs = [
@@ -14,6 +15,13 @@ const blogs = [
 ]
 
 const BlogSection: React.FC = () => {
+  const router = useRouter()
+  
+  const clickHandler = () => {
+      setTimeout(() => {
+        router.push('/blog')
+      }, 500);
+    }
 
   return (
     <section className="py-12 h-screen">
@@ -35,7 +43,7 @@ const BlogSection: React.FC = () => {
               <a href={blog.link} className="text-xl font-bold cursor-pointer hover:underline select-none">
                 {blog.label}
               </a>
-              <p className="mt-2 selection:bg-black selection:text-white text-black/60">
+              <p className="mt-1 selection:bg-black selection:text-white text-black/60">
                 {blog.desc}
               </p>
             </article>
@@ -44,7 +52,7 @@ const BlogSection: React.FC = () => {
         </div>
 
         <div className="mt-6 relative lg:w-max group overflow-hidden">
-          <a className="select-none cursor-pointer transition-all duration-500 lg:w-max w-full text-center text-black group-hover:text-white border-2 border-black py-2 px-4 active:scale-95 inline-block text-lg font-medium bg-transparent relative z-10">
+          <a onClick={clickHandler} className="select-none cursor-pointer transition-all duration-500 lg:w-max w-full text-center text-black group-hover:text-white border-2 border-black py-2 px-4 active:scale-95 inline-block text-lg font-medium bg-transparent relative z-10">
             See More Blog
           </a>
           <div className="duration-500 absolute left-0 top-0 w-full h-full bg-black translate-x-full group-hover:translate-x-0 transition-all z-0"/>

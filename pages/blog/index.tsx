@@ -1,5 +1,5 @@
 // Lib
-import { NextPage } from "next"
+import { GetStaticProps, NextPage } from "next"
 import FeaturedBlog from "../../public/img/featured-blog.jpg"
 import { useRouter } from "next/router"
 
@@ -9,7 +9,24 @@ import Head from "next/head"
 import Container, { container } from "components/reusable/global/Container"
 import Image from "next/image"
 
-const Blog: NextPage = () => {
+// Interface
+import IBlog from "lib/interface/IBlog"
+
+export const getStaticProps: GetStaticProps = async () => {
+  const data: IBlog[] = require('asset/data/blog.json')
+
+  return {
+    props: {
+      data
+    }
+  }
+}
+
+type Props = {
+  data: IBlog[]
+}
+
+const Blog: NextPage<Props> = ({ data }) => {
   const router = useRouter()
 
   return (
@@ -56,21 +73,23 @@ const Blog: NextPage = () => {
 
               </figure>
 
-              <div className="col-span-12 py-4">
-                <article>
+              {data.map((blog, index) => (
+                <div key={index} className="col-span-12 py-4">
+                  <article>
 
-                  <div>
-                    <p className="font-medium text-white/60">Aug 29, 2022</p>
-                    <a href="https://adics.hashnode.dev/apa-itu-internet" className="select-none cursor-pointer hover:underline inline-block text-2xl font-bold mt-2">
-                      How Internet Work
-                    </a>
-                    <p className="text-lg mt-1 text-white/60">
-                      Explain about how internet work in Indonesia (Bahasa)
-                    </p>
-                  </div>
+                    <div>
+                      <p className="font-medium text-white/60">{blog.date}</p>
+                      <a href="https://adics.hashnode.dev/apa-itu-internet" className="select-none cursor-pointer hover:underline inline-block text-2xl font-bold mt-2">
+                        {blog.title}
+                      </a>
+                      <p className="text-lg mt-1 text-white/60">
+                        {blog.desc}
+                      </p>
+                    </div>
 
-                </article>
-              </div>
+                  </article>
+                </div>
+              ))}
 
             </div>
 

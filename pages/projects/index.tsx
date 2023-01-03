@@ -12,7 +12,7 @@ import IProjectArticle from "lib/interface/IProjectArticle"
 
 export const getStaticProps: GetStaticProps = async () => {
   const data: IProjectArticle[] = require('asset/data/projects.json')
-  const years: number[] = Array.from(new Set(data.map(article => article.year)))
+  const years: number[] = Array.from(new Set(data.map(article => article.year))).sort().reverse()
 
   return {
     props: {

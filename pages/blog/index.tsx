@@ -79,7 +79,7 @@ const Blog: NextPage<Props> = ({ data }) => {
 
                     <div>
                       <p className="font-medium text-white/60">{blog.date}</p>
-                      <a href="https://adics.hashnode.dev/apa-itu-internet" className="select-none cursor-pointer hover:underline inline-block text-2xl font-bold mt-2">
+                      <a href={blog.link} className="select-none cursor-pointer hover:underline inline-block text-2xl font-bold mt-2">
                         {blog.title}
                       </a>
                       <p className="text-lg mt-1 text-white/60">

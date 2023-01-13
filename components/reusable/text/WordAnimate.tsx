@@ -10,12 +10,12 @@ const WordAnimate: React.FC<Props> = ({ text }) => {
   const words = text.split(' ')
 
   return (
-    <p className='overflow-hidden space-x-1'>
+    <p className='overflow-hidden'>
       {words.map((word, index) => (
         <motion.span
           key={index}
           variants={wordAnmate}
-          className='inline-block'
+          className='inline-block mr-1'
         >
           {word}
         </motion.span>

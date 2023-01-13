@@ -16,14 +16,14 @@ const ProjectSection: React.FC = () => {
   }
 
   return (
-    <section className="bg-white py-12">
+    <section className="bg-black text-white py-12">
 
       <Container className={container({ size: "medium", className: "h-full" })}>
 
         <div>
 
-          <h1 className="text-3xl font-bold selection:text-white selection:bg-black">What Have I Done</h1>
-          <p className="text-lg selection:text-white selection:bg-black text-black/60">
+          <h1 className="text-3xl font-bold selection:text-black selection:bg-white">What Have I Done</h1>
+          <p className="text-lg selection:text-black selection:bg-white text-white/60">
             While working on programming hell
           </p>
 
@@ -31,7 +31,7 @@ const ProjectSection: React.FC = () => {
 
         <figure className="mt-4 select-none">
 
-          <div className="lg:w-8/12 overflow-hidden group cursor-pointer bg-black aspect-video relative">
+          <div className="lg:w-6/12 border-2 border-white overflow-hidden group cursor-pointer bg-black aspect-video relative">
             <Image
               src={FeaturedIMG}
               alt="Featured IMG"
@@ -43,17 +43,17 @@ const ProjectSection: React.FC = () => {
           <figcaption className="cursor-pointer mt-4 group">
 
             <a onClick={() => router.push('/projects/rental-mobil')} className="text-2xl group-hover:underline font-bold">Rental Mobil</a>
-            <p className="text-lg text-black/60">The place to rent your car if you need emergency money</p>
+            <p className="text-lg text-white/60">The place to rent your car if you need emergency money</p>
 
           </figcaption>
 
         </figure>
 
         <div className="mt-6 relative lg:w-max group overflow-hidden">
-          <button onClick={clickHandler} className="select-none cursor-pointer transition-all duration-500 lg:w-max w-full text-center text-black group-hover:text-white border-2 border-black py-2 px-4 active:scale-95 text-lg font-medium bg-transparent relative z-10">
+          <button onClick={clickHandler} className="select-none cursor-pointer transition-all duration-500 lg:w-max w-full text-center text-white group-hover:text-black border-2 border-white py-2 px-4 active:scale-95 text-lg font-medium bg-transparent relative z-10">
             See More Project
           </button>
-          <div className="duration-500 absolute left-0 top-0 w-full h-full bg-black translate-y-full group-hover:translate-y-0 transition-all z-0" />
+          <div className="duration-500 absolute left-0 top-0 w-full h-full bg-white translate-y-full group-hover:translate-y-0 transition-all z-0" />
         </div>
 
       </Container>

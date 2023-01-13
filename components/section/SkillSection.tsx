@@ -30,7 +30,7 @@ const techStacks = [
 
 const SkillSection: React.FC = () => {
   return (
-    <section className="mt-6 text-white">
+    <section className="py-10 bg-black text-white">
       <div className="bg-black border-2 border-black py-12">
         <Container className={container({ size: "medium" })}>
 

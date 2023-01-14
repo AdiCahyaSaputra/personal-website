@@ -52,7 +52,7 @@ const HeroSection: React.FC = () => {
               }
             }}
           >
-            I'm vocational high school student of Software Engineer
+            {"I'm vocational high school student of Software Engineer"}
           </motion.p>
           <motion.p
             variants={{

@@ -1,7 +1,7 @@
 export const stagger = {
   show: {
     transition: {
-      staggerChildren: 0.04
+      staggerChildren: 0.08
     }
   }
 }

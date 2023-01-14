@@ -39,7 +39,7 @@ const BlogSection: React.FC = () => {
         <div className="mt-6 space-y-2 lg:w-8/12">
 
           {blogs.map((blog, index) => (
-            <article key={index} className="p-4 border-2 border-white">
+            <article key={index} className="p-4 border-2 border-red-600">
               <a href={blog.link} className="text-xl font-bold cursor-pointer hover:underline select-none">
                 {blog.label}
               </a>

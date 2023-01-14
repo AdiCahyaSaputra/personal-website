@@ -1,11 +1,11 @@
-import WordAnimate from 'components/reusable/text/WordAnimate'
 import React from 'react'
 import Container, { container } from "../reusable/global/Container"
 import { motion } from 'framer-motion'
 import { stagger, headlineAnimate } from 'lib/motion/variants'
+import WordAnimate from 'components/reusable/text/WordAnimate'
 
 const headlineText = [
-  "Just A Fullstuck Developer", 
+  "Just A Fullstuck Developer",
   "From Indonesia"
 ]
 
@@ -29,26 +29,48 @@ const HeroSection: React.FC = () => {
         >
           <div className={`overflow-hidden text-3xl transition-all font-bold text-white selection:text-black selection:bg-white w-max`}>
             {headlineText.map((text, index) => (
-              <motion.h1
-                key={index}
-                variants={headlineAnimate}
-              >
-                {text}
-              </motion.h1>
+              <WordAnimate text={text} key={index} />
             ))}
           </div>
         </motion.div>
 
-        <div
-          className="mt-4 text-white/60 select-none"
+        <motion.div
+          className="mt-4 text-white/60 select-none overflow-hidden"
+          variants={stagger}
         >
-          <motion.div
-            variants={stagger}
+          <motion.p
+            variants={{
+              hidden: {
+                opacity: .2
+              },
+              show: {
+                opacity: 1,
+                transition: {
+                  ease: 'easeIn',
+                  duration: '.8'
+                }
+              }
+            }}
           >
-            <WordAnimate text="I'm vocational high school student of Software Engineer" />
-            <WordAnimate text="Interest in Frontend Development, UI & UX Design, And problem solving" />
-          </motion.div>
-        </div>
+            I'm vocational high school student of Software Engineer
+          </motion.p>
+          <motion.p
+            variants={{
+              hidden: {
+                opacity: .2
+              },
+              show: {
+                opacity: 1,
+                transition: {
+                  ease: 'easeIn',
+                  duration: '.8'
+                }
+              }
+            }}
+          >
+            Interest in Frontend Development, UI & UX Design, And problem solving
+          </motion.p>
+        </motion.div>
 
         <div className='overflow-hidden'>
           <motion.div

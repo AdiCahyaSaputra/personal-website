@@ -31,7 +31,7 @@ const ProjectSection: React.FC = () => {
 
         <figure className="mt-4 select-none">
 
-          <div className="lg:w-6/12 border-2 border-white overflow-hidden group cursor-pointer bg-black aspect-video relative">
+          <div className="lg:w-6/12 border-2 border-red-600 overflow-hidden group cursor-pointer bg-black aspect-video relative">
             <Image
               src={FeaturedIMG}
               alt="Featured IMG"

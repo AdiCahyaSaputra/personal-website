@@ -56,7 +56,7 @@ const Blog: NextPage<Props> = ({ data }) => {
                   <Image
                     src={FeaturedBlog}
                     alt="blog"
-                    className="absolute inset-0 group-hover:scale-95 transition-all border-2 border-white"
+                    className="absolute inset-0 group-hover:scale-95 transition-all border-2 border-red-600"
                     placeholder="blur"
                   />
                 </div>

@@ -54,8 +54,8 @@ const Projects: NextPage<Props> = ({ data, years }) => {
             {years.map((year, index) => (
               <div key={index}>
 
-                <h3 className="text-xl text-red-600 font-bold selection:text-black selection:bg-white">{year}</h3>
-                <div className="py-4 px-8 border-l-2 border-dashed ml-4 border-white my-4">
+                <h3 className="text-xl text-white font-bold selection:text-black selection:bg-white">{year}</h3>
+                <div className="py-4 px-8 border-l-2 border-dashed ml-4 border-red-600 my-4">
                   {data.filter(article => article.year === year).map((article, index) => (
                     <Article {...article} key={index} />
                   ))}

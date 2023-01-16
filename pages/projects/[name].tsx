@@ -57,7 +57,7 @@ const ProjectDetail: NextPage<Props> = ({ currentArticle }) => {
 
             <BackButton link='/projects' />
 
-            <div className="py-6 selection:text-black selection:bg-white border-b-2 border-white border-dashed">
+            <div className="py-6 selection:text-black selection:bg-white border-b-2 border-red-600 border-dashed">
               <h1 className="text-2xl font-bold">Detail Of : {currentArticle.title} (Project)</h1>
               <p className="text-lg mt-1">
                 Status - <span className={status({ intent: currentArticle.status === "Done" ? "done" : "onProgress" })}>{currentArticle.status}</span>

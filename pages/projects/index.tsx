@@ -38,7 +38,7 @@ const Projects: NextPage<Props> = ({ data, years }) => {
         <title>Adics</title>
       </Head>
 
-      <main>
+      <main className="bg-black">
 
         <Navbar />
 

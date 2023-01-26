@@ -4,11 +4,11 @@ import { Bars3CenterLeftIcon } from '@heroicons/react/24/outline'
 import { useEffect, useState } from "react"
 import { useRouter } from "next/router"
 
-const navLink = cva("cursor-pointer", {
+const navLink = cva("cursor-pointer text-sm uppercase tracking-widest md:w-max w-full inline-block", {
   variants: {
     intent: {
       deactive: "text-white/40 hover:text-white",
-      active: "font-bold text-white py-2 px-4 rounded bg-white/20"
+      active: "font-bold text-red-600 py-2 px-4 rounded bg-red-600/20"
     }
   },
   defaultVariants: {
@@ -50,7 +50,6 @@ const Navbar: React.FC = () => {
 
   return (
     <>
-      <div className="absolute inset-x-0 top-0 h-[65px] bg-black"></div>
       <nav className={`select-none ${isActive ? 'bg-black' : 'bg-black/40'} backdrop-blur-md z-50 text-white border-b sticky inset-x-0 top-0 border-white/20`}>
         <Container className={container({ size: "large" })}>
 

@@ -36,7 +36,7 @@ const Blog: NextPage<Props> = ({ data }) => {
         <title>Adics</title>
       </Head>
 
-      <main>
+      <main className="bg-black">
 
         <Navbar />
 

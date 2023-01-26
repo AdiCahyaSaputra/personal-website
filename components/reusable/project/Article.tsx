@@ -10,7 +10,7 @@ const Article: React.FC<IProjectArticle> = ({ date, title, shortDesc, slug }) =>
   return (
     <article className="p-4 selection:text-black selection:bg-white">
 
-      <p>{date}</p>
+      <p className='text-sm'>{date}</p>
 
       <div className="mt-2">
         <a onClick={() => router.push('/projects/' + slug)} className="select-none cursor-pointer hover:underline text-xl font-bold">{title}</a>

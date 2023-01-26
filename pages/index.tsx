@@ -18,7 +18,7 @@ const Home: NextPage = () => {
         <title>Adics</title>
       </Head>
 
-      <main>
+      <main className="bg-black">
         <Navbar />
         <HeroSection />
         <ProjectSection />

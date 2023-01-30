@@ -27,11 +27,12 @@ const FooterSection: React.FC = () => {
         </div>
 
         <div className="mt-8">
-          <h3 className="text-xl font-bold">Or From The Other Links ?</h3>
+          <h3 className="text-xl font-bold">Or From The Other Links</h3>
           <div className="flex flex-col">
-            <a href="https://www.instagram.com/adi.tsx" className="hover:underline text-xl mt-2 text-white/80">/adi.tsx</a>
-            <a href="https://www.youtube.com/@adics" className="hover:underline text-xl mt-2 text-white/80">/@adics</a>
-            <a href="https://github.com/AdiCahyaSaputra" className="hover:underline text-xl mt-2 text-white/80">/AdiCahyaSaputra</a>
+            <a href="https://www.instagram.com/adi.tsx" className="hover:underline text-xl mt-2 text-white/80">/instagram</a>
+            <a href="https://www.youtube.com/@adics" className="hover:underline text-xl mt-2 text-white/80">/youtube</a>
+            <a href="https://github.com/AdiCahyaSaputra" className="hover:underline text-xl mt-2 text-white/80">/github</a>
+            <a href="https://www.linkedin.com/in/adi-cahya-saputra-746a8423b" className="hover:underline text-xl mt-2 text-white/80">/linkedin</a>
           </div>
         </div>
 

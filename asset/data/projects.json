@@ -128,5 +128,45 @@
       }
     ],
     "readme": "So, what are you waiting for ? Hire me now"
+  },
+  {
+    "year": 2023,
+    "date": "Jan 29",
+    "title": "Personal Branding",
+    "shortDesc": "For my english practical examination",
+    "slug": "pbe",
+    "status": "Done",
+    "peoples": [
+      {
+        "username": "@AdiCahyaSaputra",
+        "link": "https://github.com/AdiCahyaSaputra",
+        "note": "as a Person"
+      }
+    ],
+    "links": [
+      {
+        "url": "https://auto-manage-files.vercel.app/",
+        "label": "see demo",
+        "note": "to interact with it"
+      },
+      {
+        "url": "https://github.com/AdiCahyaSaputra/personal-branding-english",
+        "label": "repository",
+        "note": "is currently private"
+      }
+    ],
+    "techStack": [
+      {
+        "name": "Next JS 12",
+        "note": "Frontend",
+        "link": "https://nextjs.org"
+      },
+      {
+        "name": "Framer Motion",
+        "note": "Animation Physics",
+        "link": "https://www.framer.com"
+      }
+    ],
+    "readme": "First time trying Framer Motion I'm sorry for bad Animation"
   }
 ]

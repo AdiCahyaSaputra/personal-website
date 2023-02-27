@@ -12,7 +12,7 @@ const HeroSection: React.FC = () => {
   return (
     <section
       className="flex bg-black text-white flex-col justify-center h-screen" >
-      <Container className={container({ size: "medium" })}>
+      <Container className={container({ size: "large" })}>
 
         <div className={`overflow-hidden text-3xl transition-all font-bold text-white selection:text-black selection:bg-white w-max`}>
           <h1>Just A Fullstuck Developer <br />From Indonesia</h1>

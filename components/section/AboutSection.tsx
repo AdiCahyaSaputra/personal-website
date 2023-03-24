@@ -7,14 +7,14 @@ const AboutSection: React.FC = () => {
       <Container className={container({ size: "large" })}>
 
         <div className='border-t-2 space-x-4 font-semibold py-2 flex justify-between items-center uppercase tracking-widest border-white'>
-          <p>Personal</p>
+          <p className='text-lg'>Personal</p>
 
           <div className='w-full space-y-2'>
             <div className='w-full bg-white h-px' />
             <div className='w-full bg-white h-px' />
           </div>
 
-          <p>Life</p>
+          <p className='text-lg'>Information</p>
         </div>
 
         <div className='grid grid-cols-12 gap-x-6 mt-4 gap-y-4'>

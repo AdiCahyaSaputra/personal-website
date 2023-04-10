@@ -14,11 +14,11 @@ const HeroSection: React.FC = () => {
       className="flex bg-black text-white flex-col justify-center h-screen" >
       <Container className={container({ size: "large" })}>
 
-        <div className={`overflow-hidden text-3xl transition-all font-bold text-white selection:text-black selection:bg-white w-max`}>
-          <h1>Just A Fullstuck Developer <br />From Indonesia</h1>
+        <div className={`overflow-hidden text-3xl transition-all font-bold text-white selection:text-black selection:bg-white w-max leading-[45px]`}>
+          <h1>Just A Full<span className='border-red-600 border-b-2'>stuck</span> Developer <br />From Indonesia</h1>
         </div>
 
-        <div className="mt-4 text-white/60 select-none overflow-hidden">
+        <div className="mt-4 text-lg text-white/60 select-none overflow-hidden">
           <p>
             {"I'm vocational high school student of Software Engineer"}
           </p>

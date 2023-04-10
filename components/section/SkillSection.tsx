@@ -16,8 +16,8 @@ const SkillSection: React.FC = () => {
           <div className='md:order-1 order-2 md:w-3/12 w-full md:p-4 space-y-4'>
 
             <div>
-              <h1 className='font-bold pb-2 border-b-2 border-white md:w-max'>Frontend</h1>
-              <ul className='flex items-center space-x-2 mt-2'>
+              <h1 className='font-bold text-xl pb-2 border-b-2 border-white md:w-max'>Frontend</h1>
+              <ul className='text-lg flex items-center space-x-2 mt-2'>
                 <li className='hover:text-sky-500'>React&nbsp;JS</li>
                 <li>Next&nbsp;JS</li>
                 <li className='hover:text-cyan-500'>Tailwind&nbsp;CSS</li>
@@ -25,8 +25,8 @@ const SkillSection: React.FC = () => {
             </div>
 
             <div className='md:pl-4'>
-              <h1 className='font-bold pb-2 border-b-2 border-white md:w-max'>Backend</h1>
-              <ul className='flex items-center space-x-2 mt-2'>
+              <h1 className='font-bold text-xl pb-2 border-b-2 border-white md:w-max'>Backend</h1>
+              <ul className='text-lg flex items-center space-x-2 mt-2'>
                 <li className='hover:text-red-600'>Laravel</li>
                 <li>Next&nbsp;JS</li>
               </ul>
@@ -37,16 +37,16 @@ const SkillSection: React.FC = () => {
           <div className='order-3 md:w-3/12 w-full md:flex flex-col items-end items-start md:p-4 space-y-4'>
 
             <div>
-              <h1 className='font-bold pb-2 border-b-2 border-white md:w-max'>Database</h1>
-              <ul className='flex items-center space-x-2 mt-2'>
+              <h1 className='font-bold text-xl pb-2 border-b-2 border-white md:w-max'>Database</h1>
+              <ul className='flex text-lg items-center space-x-2 mt-2'>
                 <li className='hover:text-blue-600'>MySQL</li>
                 <li className='hover:text-purple-500'>MariaDB</li>
               </ul>
             </div>
 
             <div className='pr-4'>
-              <h1 className='font-bold pb-2 border-b-2 border-white md:w-max'>Others</h1>
-              <ul className='flex items-center space-x-2 mt-2'>
+              <h1 className='font-bold text-xl pb-2 border-b-2 border-white md:w-max'>Others</h1>
+              <ul className='flex text-lg items-center space-x-2 mt-2'>
                 <li className='hover:text-green-600'>Neovim&nbsp;(IDE)</li>
                 <li className='hover:text-orange-600'>Git</li>
               </ul>
@@ -56,7 +56,7 @@ const SkillSection: React.FC = () => {
 
         </div>
 
-        <ul className='flex space-x-3 md:justify-center items-center md:py-4 mt-10'>
+        <ul className='flex space-x-3 text-lg md:justify-center items-center md:py-4 mt-10'>
           <li className='hover:text-blue-500'>Typescript</li>
           <li className='hover:text-yellow-500'>Javascript</li>
           <li className='hover:text-green-700'>Node&nbsp;JS</li>

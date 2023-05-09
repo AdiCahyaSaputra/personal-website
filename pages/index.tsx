@@ -8,7 +8,7 @@ import HeroSection from "../components/section/HeroSection"
 import FooterSection from "../components/section/FooterSection"
 import AboutSection from "components/section/AboutSection"
 import SkillSection from "components/section/SkillSection"
-import CurrentActivitySection from "components/section/CurrentActivitySection"
+import ExperienceSection from "components/section/ExperienceSection"
 
 const Home: NextPage = () => {
   return (
@@ -23,7 +23,7 @@ const Home: NextPage = () => {
         <HeroSection />
         <AboutSection/>
         <SkillSection/>
-        <CurrentActivitySection/>
+        <ExperienceSection/>
       </main>
 
       <FooterSection />

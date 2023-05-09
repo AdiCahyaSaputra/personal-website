@@ -19,17 +19,17 @@ const AboutSection: React.FC = () => {
 
         <div className='grid grid-cols-12 text-white/60 text-lg gap-x-6 mt-4 gap-y-4'>
 
-          <div className='md:col-span-4 col-span-12 tracking-wide'>
+          <div className='lg:col-span-4 col-span-12 tracking-wide'>
             <p>
               Hello, My name&apos;s Adi Cahya Saputra. Currently I live in Jakarta, Indonesia as a Vocational High School student and will graduate this year
             </p>
           </div>
-          <div className='md:col-span-4 col-span-12 tracking-wide'>
+          <div className='lg:col-span-4 col-span-12 tracking-wide'>
             <p>
               After graduating, I want to continue studying in college and looking for as many relationship as possible while also trying many new thing such as freelancing or contributing to open source projects
             </p>
           </div>
-          <div className='md:col-span-4 col-span-12 tracking-wide'>
+          <div className='lg:col-span-4 col-span-12 tracking-wide'>
             <p>
               I like to spend my day to learn something new or digging deeper about the topics that I have learned before.
             </p>

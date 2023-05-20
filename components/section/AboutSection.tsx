@@ -17,7 +17,7 @@ const AboutSection: React.FC = () => {
           <p className='text-xl'>Info</p>
         </div>
 
-        <div className='grid grid-cols-12 text-white font-light text-lg gap-x-6 mt-4 gap-y-4'>
+        <div className='grid grid-cols-12 text-white/80 font-light text-lg gap-x-6 mt-4 gap-y-4'>
 
           <div className='lg:col-span-4 col-span-12 tracking-wide'>
             <p>

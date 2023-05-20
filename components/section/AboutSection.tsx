@@ -17,21 +17,21 @@ const AboutSection: React.FC = () => {
           <p className='text-xl'>Info</p>
         </div>
 
-        <div className='grid grid-cols-12 text-white/60 text-lg gap-x-6 mt-4 gap-y-4'>
+        <div className='grid grid-cols-12 text-white font-light text-lg gap-x-6 mt-4 gap-y-4'>
 
           <div className='lg:col-span-4 col-span-12 tracking-wide'>
             <p>
-              Hello, My name&apos;s Adi Cahya Saputra. Currently I live in Jakarta, Indonesia as a Vocational High School student and will graduate this year
+              Hello, My name&apos;s <span className='font-normal'>Adi Cahya Saputra</span>. Currently I live in <span className='font-normal'>Jakarta</span>, Indonesia as a Student majoring in <span className='font-normal'>Informatics Engineering</span>
             </p>
           </div>
           <div className='lg:col-span-4 col-span-12 tracking-wide'>
             <p>
-              After graduating, I want to continue studying in college and looking for as many relationship as possible while also trying many new thing such as freelancing or contributing to open source projects
+              I like to spend my day honing my Frontend Development skills to create <span className='font-normal'>beautifully designed</span> and <span className='font-normal'>high performing</span> website that captivate audiences and drive results.
             </p>
           </div>
           <div className='lg:col-span-4 col-span-12 tracking-wide'>
             <p>
-              I like to spend my day to learn something new or digging deeper about the topics that I have learned before.
+              I can transform your <span className='font-normal'>ideas</span> into a seamless digital reality, delivering <br/><span className='font-normal'>pixel-perfect</span> designs and flawless user interfaces for your website.
             </p>
           </div>
 

@@ -19,7 +19,7 @@ const FooterSection: React.FC = () => {
       <Container className={container({ size: "large" })}>
 
         <div className="mt-8">
-          <h3 className="text-xl font-bold">You Can Contact Me Via Email</h3>
+          <h3 className="text-xl font-bold">Let&apos;s Make It Together &nbsp;{":)"}</h3>
           <div className="flex space-x-2 items-end">
             <EnvelopeIcon className="w-6 aspect-square" />
             <p className="text-xl mt-2 text-white/80 select-all selection:bg-white selection:text-black">adics631@gmail.com</p>
@@ -27,7 +27,7 @@ const FooterSection: React.FC = () => {
         </div>
 
         <div className="mt-8">
-          <h3 className="text-xl font-bold">Or From The Other Links</h3>
+          <h3 className="text-xl font-bold">Wanna See Me In Other Places ?</h3>
           <div className="flex flex-col">
             <a href="https://www.instagram.com/adi.tsx" className="hover:underline text-xl mt-2 text-white/80">/instagram</a>
             <a href="https://www.youtube.com/@adics" className="hover:underline text-xl mt-2 text-white/80">/youtube</a>

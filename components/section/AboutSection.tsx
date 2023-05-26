@@ -21,17 +21,17 @@ const AboutSection: React.FC = () => {
 
           <div className='lg:col-span-4 col-span-12 tracking-wide'>
             <p>
-              Hello, My name&apos;s <span className='font-normal'>Adi Cahya Saputra</span>. Currently I live in <span className='font-normal'>Jakarta</span>, Indonesia as a Student majoring in <span className='font-normal'>Informatics Engineering</span>
+              Hello, My name&apos;s <span className='font-normal text-white'>Adi Cahya Saputra</span>. Currently I live in <span className='font-normal text-white'>Jakarta</span>, Indonesia as a Student majoring in <span className='font-normal text-white'>Informatics Engineering</span>
             </p>
           </div>
           <div className='lg:col-span-4 col-span-12 tracking-wide'>
             <p>
-              I like to spend my day honing my Frontend Development skills to create <span className='font-normal'>beautifully designed</span> and <span className='font-normal'>high performing</span> website that captivate audiences and drive results.
+              I like to spend my day honing my Frontend Development skills to create <span className='font-normal text-white'>beautifully designed</span> and <span className='font-normal text-white'>high performing</span> website that captivate audiences and drive results.
             </p>
           </div>
           <div className='lg:col-span-4 col-span-12 tracking-wide'>
             <p>
-              I can transform your <span className='font-normal'>ideas</span> into a seamless digital reality, delivering <br/><span className='font-normal'>pixel-perfect</span> designs and flawless user interfaces for your website.
+              I can transform your <span className='font-normal text-white'>ideas</span> into a seamless digital reality, delivering <br/><span className='font-normal text-white'>pixel-perfect</span> designs and flawless user interfaces for your website.
             </p>
           </div>
 

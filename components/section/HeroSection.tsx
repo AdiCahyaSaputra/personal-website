@@ -17,7 +17,7 @@ const HeroSection: React.FC = () => {
         <div className={`overflow-hidden text-3xl transition-all font-bold text-white selection:text-black selection:bg-white w-max leading-[40px]`}>
           <h1>
             Fullstuck Person Who Will <br />
-            Help You <span className='underline decoration-wavy decoration-red-600 underline-offset-[5px] decoration-from-font'>Realize</span> Your Idea
+            Help You <span className='text-red-500'>Realize</span> Your Idea
           </h1>
         </div>
 

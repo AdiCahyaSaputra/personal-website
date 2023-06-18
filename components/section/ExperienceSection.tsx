@@ -1,3 +1,5 @@
+'use client'
+
 import { cva } from 'class-variance-authority'
 import InfoCard from 'components/reusable/experience/InfoCard'
 import Container, { container } from 'components/reusable/global/Container'

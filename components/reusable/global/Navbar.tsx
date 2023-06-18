@@ -1,8 +1,10 @@
+'use client'
+
 import Container, { container } from "./Container"
 import { cva } from 'class-variance-authority'
 import { Bars3CenterLeftIcon } from '@heroicons/react/24/outline'
 import { useEffect, useState } from "react"
-import { useRouter } from "next/router"
+import { usePathname, useRouter } from "next/navigation"
 
 const navLink = cva("cursor-pointer text-sm uppercase tracking-widest md:w-max w-full inline-block", {
   variants: {
@@ -21,6 +23,7 @@ const Navbar: React.FC = () => {
   const [startAnimate, setStartAnimate] = useState(false)
 
   const router = useRouter()
+  const pathname = usePathname()
 
   useEffect(() => {
     const to = setTimeout(() => {
@@ -32,19 +35,14 @@ const Navbar: React.FC = () => {
 
   const navItems = [
     {
-      className: navLink({ intent: router.asPath === "/" ? 'active' : 'deactive' }),
+      className: navLink({ intent: pathname === "/" ? 'active' : 'deactive' }),
       link: '/',
       name: 'Me'
     },
     {
-      className: navLink({ intent: router.asPath.includes("/projects") ? 'active' : 'deactive' }),
+      className: navLink({ intent: pathname?.includes("/projects") ? 'active' : 'deactive' }),
       link: '/projects',
       name: 'Projects'
-    },
-    {
-      className: navLink({ intent: router.asPath.includes("/blog") ? 'active' : 'deactive' }),
-      link: '/blog',
-      name: 'Blog'
     },
   ]
 

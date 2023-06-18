@@ -1,3 +1,5 @@
+'use client'
+
 import React from 'react'
 import Container, { container } from "../reusable/global/Container"
 

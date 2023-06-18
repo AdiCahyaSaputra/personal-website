@@ -13,17 +13,17 @@ const HeroSection: React.FC = () => {
 
   return (
     <section
-      className="flex bg-black text-white flex-col justify-center h-screen" >
+      className="flex bg-background flex-col justify-center h-screen" >
       <Container className={container({ size: "large" })}>
 
-        <div className={`overflow-hidden text-3xl transition-all font-bold text-white selection:text-black selection:bg-white w-max leading-[40px]`}>
+        <div className={`overflow-hidden text-3xl transition-all font-bold selection:text-background selection:bg-foreground w-max leading-[40px]`}>
           <h1>
             Fullstuck Person Who Will <br />
             Help You <span className='text-red-500'>Realize</span> Your Idea
           </h1>
         </div>
 
-        <div className="mt-4 text-lg text-white/60 select-none overflow-hidden">
+        <div className="mt-4 text-lg text-muted-foreground select-none overflow-hidden">
           <p>
             Passionate in the field of Software Engineering
           </p>

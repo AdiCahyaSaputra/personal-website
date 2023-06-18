@@ -5,11 +5,12 @@ import { cva } from 'class-variance-authority'
 import { Bars3CenterLeftIcon } from '@heroicons/react/24/outline'
 import { useEffect, useState } from "react"
 import { usePathname, useRouter } from "next/navigation"
+import { ThemeToggle } from "./ThemeToggle"
 
 const navLink = cva("cursor-pointer text-sm uppercase tracking-widest md:w-max w-full inline-block", {
   variants: {
     intent: {
-      deactive: "text-white/40 hover:text-white",
+      deactive: "text-foreground/40 hover:text-foreground",
       active: "font-bold text-red-600 py-2 px-4 rounded bg-red-600/20"
     }
   },
@@ -48,7 +49,7 @@ const Navbar: React.FC = () => {
 
   return (
     <>
-      <nav className={`select-none ${isActive ? 'bg-black' : 'bg-black/40'} backdrop-blur-md z-50 text-white border-b sticky inset-x-0 top-0 border-white/20`}>
+      <nav className={`select-none ${isActive ? 'bg-background' : 'bg-background/40'} backdrop-blur-md z-50 border-b sticky inset-x-0 top-0 border-primary/20`}>
         <Container className={container({ size: "large" })}>
 
           <div className="flex items-center py-4 justify-between">
@@ -57,7 +58,7 @@ const Navbar: React.FC = () => {
               <span className={`border-b-2 ${startAnimate ? 'border-red-600' : 'border-red-600/40'} transition-all`}>Adi</span>cs.
             </h1>
 
-            <ul className={`transition-all md:flex md:items-center md:space-x-4 md:static fixed md:translate-y-0 ${isActive ? 'top-0 translate-y-[65px]' : '-top-full -translate-y-full'} inset-x-0 p-8 md:p-0 md:bg-transparent bg-black md:border-none border-b border-white/20 space-y-4 md:space-y-0`}>
+            <ul className={`transition-all md:flex md:items-center md:space-x-4 md:static fixed md:translate-y-0 ${isActive ? 'top-0 translate-y-[65px]' : '-top-full -translate-y-full'} inset-x-0 p-8 md:p-0 md:bg-transparent bg-background md:border-none border-b border-primary/20 space-y-4 md:space-y-0`}>
               {navItems.map((nav, index) => (
                 <li key={index}>
                   <a
@@ -67,6 +68,7 @@ const Navbar: React.FC = () => {
                   </a>
                 </li>
               ))}
+              <ThemeToggle />
             </ul>
 
             <button onClick={() => setIsActive(!isActive)} className="md:hidden cursor-pointer">

@@ -10,7 +10,7 @@ import FooterSection from "components/section/FooterSection"
 const Page: NextPage = () => {
   return (
     <>
-      <main className="bg-black w-full">
+      <main className="bg-white dark:bg-background w-full">
         <Navbar />
         <HeroSection />
         <AboutSection />

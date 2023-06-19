@@ -1,9 +1,10 @@
 import Container, { container } from 'components/reusable/global/Container'
 import React from 'react'
-import data from 'asset/data/projects.json'
 
 import Article from 'components/reusable/project/Article'
+import IProjectArticle from '@/lib/interface/IProjectArticle'
 
+const data: IProjectArticle[] = require('../../asset/data/projects.json')
 const years: number[] = Array.from(new Set(data.map(article => article.year))).sort().reverse()
 
 const Projects = () => {

@@ -51,7 +51,7 @@ const FooterSection: React.FC = () => {
 
         <div className="absolute bottom-0 border-t border-primary/30 text-lg inset-x-0 py-4">
           <Container className={container({ size: "large", className: "items-center justify-between flex" })}>
-            <h3>&copy; 2023 built with <a href='https://ui.shadcn.com/' className='pb-1 border-b border-primary font-bold'>shadcn/ui</a></h3>
+            <h3>&copy; 2023</h3>
             <p>Adi Cahya Saputra</p>
           </Container>
         </div>

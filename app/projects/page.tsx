@@ -8,20 +8,20 @@ const years: number[] = Array.from(new Set(data.map(article => article.year))).s
 
 const Projects = () => {
   return (
-    <section className="bg-black text-white min-h-screen pb-10">
+    <section className="bg-background text-foreground min-h-screen pb-10">
 
       <Container className={container({ size: "medium" })}>
 
-        <div className="py-6 selection:text-black selection:bg-white">
-          <h1 className="text-2xl font-bold">Here, The All Project</h1>
-          <p className="text-lg text-white/60">That I have done before</p>
+        <div className="py-6">
+          <h1 className="text-2xl font-bold text-foreground">Here, The All Project</h1>
+          <p className="text-lg text-muted-foreground">That I have done before</p>
         </div>
 
         {years.map((year, index) => (
           <div key={index} className='group'>
 
-            <h3 className="text-xl text-white/60 group-hover:text-white font-bold selection:text-black selection:bg-white">{year}</h3>
-            <div className="py-4 px-8 border-l ml-4 border-red-600 my-4">
+            <h3 className="text-xl text-muted-foreground group-hover:text-foreground font-bold">{year}</h3>
+            <div className="divide-y-2 divide-y-foreground py-4 px-8 border-l ml-4 dark:border-red-600 border-blue-600 my-4">
               {data.filter(article => article.year === year).map((article, index) => (
                 <Article {...article} key={index} />
               ))}

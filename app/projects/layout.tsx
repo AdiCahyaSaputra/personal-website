@@ -10,7 +10,7 @@ type TProps = {
 const Layout = ({ children }: TProps) => {
   return (
     <>
-      <main className='bg-black'>
+      <main className='bg-background'>
         <Navbar />
         {children}
       </main>

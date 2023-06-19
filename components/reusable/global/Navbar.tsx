@@ -11,7 +11,7 @@ const navLink = cva("cursor-pointer text-sm uppercase tracking-widest md:w-max w
   variants: {
     intent: {
       deactive: "text-foreground/40 hover:text-foreground",
-      active: "font-bold text-red-600 py-2 px-4 rounded bg-red-600/20"
+      active: "font-bold dark:text-red-600 text-blue-600 py-2 px-4 rounded dark:bg-red-600/20 bg-blue-600/20"
     }
   },
   defaultVariants: {
@@ -49,16 +49,16 @@ const Navbar: React.FC = () => {
 
   return (
     <>
-      <nav className={`select-none ${isActive ? 'bg-background' : 'bg-background/40'} backdrop-blur-md z-50 border-b sticky inset-x-0 top-0 border-primary/20`}>
+      <nav className={`select-none ${isActive ? 'dark:bg-black bg-secondary' : 'dark:bg-black/20 bg-secondary/40'} backdrop-blur-md z-50 border-b sticky inset-x-0 top-0 border-primary/20`}>
         <Container className={container({ size: "large" })}>
 
           <div className="flex items-center py-4 justify-between">
 
             <h1 onClick={() => router.push('/')} className="text-xl font-bold cursor-pointer">
-              <span className={`border-b-2 ${startAnimate ? 'border-red-600' : 'border-red-600/40'} transition-all`}>Adi</span>cs.
+              <span className={`border-b-2 ${startAnimate ? 'dark:border-red-600 border-blue-600' : 'dark:border-red-600/40 border-blue-600'} transition-all`}>Adi</span>cs.
             </h1>
 
-            <ul className={`transition-all md:flex md:items-center md:space-x-4 md:static fixed md:translate-y-0 ${isActive ? 'top-0 translate-y-[65px]' : '-top-full -translate-y-full'} inset-x-0 p-8 md:p-0 md:bg-transparent bg-background md:border-none border-b border-primary/20 space-y-4 md:space-y-0`}>
+            <ul className={`transition-all md:flex md:items-center md:space-x-4 md:static fixed md:translate-y-0 ${isActive ? 'top-0 translate-y-[65px]' : '-top-full -translate-y-full'} inset-x-0 p-8 md:p-0 md:bg-transparent md:dark:bg-transparent dark:bg-black bg-secondary md:border-none border-b border-primary/20 space-y-4 md:space-y-0`}>
               {navItems.map((nav, index) => (
                 <li key={index}>
                   <a

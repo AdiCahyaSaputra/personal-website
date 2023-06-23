@@ -51,7 +51,7 @@ const FooterSection: React.FC = () => {
           <h3 className="text-xl font-bold">Wanna See Me In Other Places ?</h3>
           <div className="flex flex-col">
             {links.map((link, idx) => (
-              <a href={link.link} className="pb-1 hover:border-b border-foreground w-max text-xl mt-2 text-muted-foreground hover:text-foreground">{link.name}</a>
+              <a key={idx} href={link.link} className="pb-1 hover:border-b border-foreground w-max text-xl mt-2 text-muted-foreground hover:text-foreground">{link.name}</a>
             ))}
           </div>
         </div>

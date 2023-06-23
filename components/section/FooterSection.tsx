@@ -8,6 +8,25 @@ import Container, { container } from "../reusable/global/Container"
 // Icons
 import { EnvelopeIcon } from "@heroicons/react/24/outline"
 
+const links = [
+  {
+    link: 'https://www.instagram.com/adi.tsx',
+    name: '/instagram'
+  },
+  {
+    link: 'https://www.youtube.com/@adics',
+    name: '/youtube'
+  },
+  {
+    link: 'https://github.com/AdiCahyaSaputra',
+    name: '/github'
+  },
+  {
+    link: 'https://www.linkedin.com/in/adi-cahya-saputra-746a8423b',
+    name: '/linkedin'
+  },
+]
+
 const FooterSection: React.FC = () => {
 
   const clickHandler = () => {
@@ -31,10 +50,9 @@ const FooterSection: React.FC = () => {
         <div className="mt-8">
           <h3 className="text-xl font-bold">Wanna See Me In Other Places ?</h3>
           <div className="flex flex-col">
-            <a href="https://www.instagram.com/adi.tsx" className="hover:underline text-xl mt-2 text-muted-foreground hover:text-foreground">/instagram</a>
-            <a href="https://www.youtube.com/@adics" className="hover:underline text-xl mt-2 text-muted-foreground hover:text-foreground">/youtube</a>
-            <a href="https://github.com/AdiCahyaSaputra" className="hover:underline text-xl mt-2 text-muted-foreground hover:text-foreground">/github</a>
-            <a href="https://www.linkedin.com/in/adi-cahya-saputra-746a8423b" className="hover:underline text-xl mt-2 text-muted-foreground hover:text-foreground">/linkedin</a>
+            {links.map((link, idx) => (
+              <a href={link.link} className="pb-1 hover:border-b border-foreground w-max text-xl mt-2 text-muted-foreground hover:text-foreground">{link.name}</a>
+            ))}
           </div>
         </div>
 

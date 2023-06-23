@@ -13,7 +13,7 @@ const Article: React.FC<IProjectArticle> = ({ date, title, shortDesc, slug }) =>
 
       <div className="mt-2">
         <div className='flex items-center space-x-1'>
-          <Link className='select-none cursor-pointer peer hover:underline text-xl font-bold' href={`/projects/${slug}`}>
+          <Link className='select-none cursor-pointer peer text-xl font-bold' href={`/projects/${slug}`}>
             {title}
           </Link>
           <ArrowUpRight className='w-6 stroke-muted-foreground peer-hover:translate-x-2 transition-all'/>

@@ -23,10 +23,10 @@ const ExperienceSection: React.FC = () => {
             <TabsTrigger value="education" className='text-lg'>Education</TabsTrigger>
           </TabsList>
 
-          <TabsContent value="experience" className='w-full grid grid-cols-12 gap-4'>
+          <TabsContent value="experience" className='w-full space-y-2 pl-1'>
 
             {experiences.map((experience, index) => (
-              <Card key={index} className="w-full md:col-span-3 col-span-12 items-start">
+              <Card key={index} className="w-full">
                 <CardHeader>
                   <CardTitle className='text-lg'>{experience.title}</CardTitle>
                   <CardDescription>{experience.year.start} - {experience.year.end}</CardDescription>
@@ -42,10 +42,10 @@ const ExperienceSection: React.FC = () => {
 
           </TabsContent>
 
-          <TabsContent value="education" className='w-full grid grid-cols-12 gap-4 mt-0'>
+          <TabsContent value="education" className='w-full space-y-2 pl-1'>
 
             {educations.map((education, index) => (
-              <Card key={index} className="w-full md:col-span-3 col-span-12 items-start">
+              <Card key={index} className="w-full">
                 <CardHeader>
                   <CardTitle className='text-lg'>{education.title}</CardTitle>
                   <CardDescription>{education.year.start} - {education.year.end}</CardDescription>

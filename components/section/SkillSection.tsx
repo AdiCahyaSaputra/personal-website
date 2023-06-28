@@ -17,18 +17,19 @@ const SkillSection: React.FC = () => {
 
             <div>
               <h1 className='font-bold text-xl pb-2 border-b-2 border-foreground'>Frontend</h1>
-              <ul className='text-lg text-foreground/80 flex items-center space-x-2 mt-2'>
-                <li className='hover:text-sky-500'>React&nbsp;JS</li>
-                <li className='hover:text-black dark:hover:text-white'>Next&nbsp;JS</li>
-                <li className='hover:text-cyan-500'>Tailwind&nbsp;CSS</li>
+              <ul className='text-lg text-foreground/80 flex items-center flex-wrap mt-2'>
+                <li className='hover:text-sky-500 block mr-2'>React&nbsp;JS</li>
+                <li className='hover:text-black dark:hover:text-white block mr-2'>Next&nbsp;JS</li>
+                <li className='hover:text-cyan-500 block mr-2'>Tailwind&nbsp;CSS</li>
+                <li className='hover:text-red-500 block mr-2'>Livewire</li>
               </ul>
             </div>
 
             <div>
               <h1 className='font-bold text-xl pb-2 border-b-2 border-foreground'>Backend</h1>
-              <ul className='text-lg text-foreground/80 flex items-center space-x-2 mt-2'>
-                <li className='hover:text-red-600'>Laravel</li>
-                <li className='hover:text-black dark:hover:text-white'>Next&nbsp;JS</li>
+              <ul className='text-lg text-foreground/80 flex items-center flex-wrap mt-2'>
+                <li className='hover:text-red-600 block mr-2'>Laravel</li>
+                <li className='hover:text-black dark:hover:text-white block mr-2'>Next&nbsp;JS</li>
               </ul>
             </div>
 
@@ -38,18 +39,18 @@ const SkillSection: React.FC = () => {
 
             <div>
               <h1 className='font-bold text-xl pb-2 border-b-2 border-foreground'>Database</h1>
-              <ul className='flex text-foreground/80 text-lg items-center space-x-2 mt-2'>
-                <li className='hover:text-blue-600'>MySQL</li>
-                <li className='hover:text-purple-500'>MariaDB</li>
+              <ul className='flex text-foreground/80 text-lg items-center flex-wrap mt-2'>
+                <li className='hover:text-blue-600 block mr-2'>MySQL</li>
+                <li className='hover:text-purple-500 block mr-2'>MariaDB</li>
               </ul>
             </div>
 
             <div className='pr-4'>
               <h1 className='font-bold text-xl pb-2 border-b-2 border-foreground'>Others</h1>
-              <ul className='flex text-foreground/80 text-lg items-center space-x-2 mt-2'>
-                <li className='hover:text-green-600'>Neovim&nbsp;(IDE)</li>
-                <li className='hover:text-orange-600'>Git</li>
-                <li className='hover:text-blue-800'>Linux</li>
+              <ul className='flex text-foreground/80 text-lg items-center flex-wrap mt-2'>
+                <li className='hover:text-green-600 block mr-2'>Neovim&nbsp;(IDE)</li>
+                <li className='hover:text-orange-600 block mr-2'>Git</li>
+                <li className='hover:text-blue-800 block mr-2'>Linux</li>
               </ul>
             </div>
 

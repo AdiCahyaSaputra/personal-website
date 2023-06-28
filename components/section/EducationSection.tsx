@@ -8,26 +8,29 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 import { Separator } from '@/components/ui/separator'
 import { ArrowRight } from 'lucide-react'
 
-const experiences: IExperienceEdu[] = require("../../asset/data/experience.json")
+const educations: IExperienceEdu[] = require("../../asset/data/education.json")
 
 const ExperienceSection: React.FC = () => {
 
   return (
-    <section className='pt-10 text-foreground'>
+    <section className='pt-10 pb-20 text-foreground'>
       <Container className={container({ size: 'large' })}>
+
+        <Separator className='mb-2 bg-foreground'/>
+        <Separator className='mb-10 bg-foreground'/>
 
         <div className='relative'>
 
           <div className='absolute overflow-hiden left-[100%] flex items-center space-x-2 top-0 rotate-90 pb-4 bg-background origin-top-left'>
-            <p className='text-lg font-bold text-foreground tracking-widest uppercase'>Experiences</p>
+            <p className='text-lg font-bold text-foreground tracking-widest uppercase'>Educations</p>
             <ArrowRight/>
           </div>
           <div>
-            {experiences.map((experience, index) => (
+            {educations.map((education, index) => (
               <Card key={index} className="w-full">
                 <CardHeader>
-                  <CardTitle className='text-lg'>{experience.title}</CardTitle>
-                  <CardDescription>{experience.year.start} - {experience.year.end}</CardDescription>
+                  <CardTitle className='text-lg'>{education.title}</CardTitle>
+                  <CardDescription>{education.year.start} - {education.year.end}</CardDescription>
                 </CardHeader>
 
                 <Separator className='mb-4' />

@@ -6,6 +6,7 @@ import AboutSection from "components/section/AboutSection"
 import SkillSection from "components/section/SkillSection"
 import ExperienceSection from "components/section/ExperienceSection"
 import FooterSection from "components/section/FooterSection"
+import EducationSection from "@/components/section/EducationSection"
 
 const Page: NextPage = () => {
   return (
@@ -16,6 +17,7 @@ const Page: NextPage = () => {
         <AboutSection />
         <SkillSection />
         <ExperienceSection />
+        <EducationSection />
       </main>
 
       <FooterSection />

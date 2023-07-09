@@ -4,13 +4,15 @@
     "year": {
       "start": "2017",
       "end": "2020"
-    }
+    },
+    "detail": "Sometimes it's fun"
   },
   {
     "title": "SMKS Wijaya Kusuma",
     "year": {
       "start": "2020",
       "end": "2023"
-    }
+    },
+    "detail": "Majored in Software Engineering"
   }
 ]

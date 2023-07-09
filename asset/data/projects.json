@@ -168,5 +168,45 @@
       }
     ],
     "readme": "First time trying Framer Motion I'm sorry for bad Animation"
+  },
+  {
+    "year": 2023,
+    "date": "Jul 3",
+    "title": "Sistem Antrian PPDB",
+    "shortDesc": "Organize your Waiting List without a paper",
+    "slug": "sap",
+    "status": "Done",
+    "peoples": [
+      {
+        "username": "@AdiCahyaSaputra",
+        "link": "https://github.com/AdiCahyaSaputra",
+        "note": "as a Backend"
+      },
+      {
+        "username": "@MuhammadRisky",
+        "link": "https://github.com/Octagram82",
+        "note": "as a Frontend"
+      }
+    ],
+    "links": [
+      {
+        "url": "https://github.com/AdiCahyaSaputra/sistem-antrian",
+        "label": "repository",
+        "note": "for you to try it on your machine"
+      }
+    ],
+    "techStack": [
+      {
+        "name": "Laravel 10",
+        "note": "Fullstack Framework",
+        "link": "https://laravel.com"
+      },
+      {
+        "name": "Socket IO",
+        "note": "Websocket",
+        "link": "https://socket.io/"
+      }
+    ],
+    "readme": "Idk if Livewire and Laravel Echo is Exists"
   }
 ]

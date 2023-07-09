@@ -3,5 +3,6 @@ export default interface IExperienceEdu {
   year: {
     start: string,
     end: string
-  }
+  },
+  detail: string
 }

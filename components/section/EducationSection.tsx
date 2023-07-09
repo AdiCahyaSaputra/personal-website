@@ -17,7 +17,7 @@ const ExperienceSection: React.FC = () => {
       <Container className={container({ size: 'large' })}>
 
         <Separator className='mb-2 bg-foreground'/>
-        <Separator className='mb-10 bg-foreground'/>
+        <Separator className='mb-10 bg-foreground h-2'/>
 
         <div className='relative'>
 
@@ -36,7 +36,7 @@ const ExperienceSection: React.FC = () => {
                 <Separator className='mb-4' />
 
                 <CardContent>
-                  <h3 className='text-lg'>Detail</h3>
+                  <h3 className='text-lg text-muted-foreground font-bold'>{education.detail}</h3>
                 </CardContent>
               </Card>
             ))}

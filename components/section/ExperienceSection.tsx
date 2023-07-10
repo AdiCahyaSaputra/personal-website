@@ -33,7 +33,7 @@ const ExperienceSection: React.FC = () => {
                 <Separator className='mb-4' />
 
                 <CardContent>
-                  <h3 className='text-lg text-muted-foreground font-bold'>{experience.detail}</h3>
+                  <h3 className='text-lg text-muted-foreground font-bold pr-6'>{experience.detail}</h3>
                 </CardContent>
               </Card>
             ))}

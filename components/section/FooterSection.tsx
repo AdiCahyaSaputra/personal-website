@@ -36,7 +36,7 @@ const FooterSection: React.FC = () => {
   }
 
   return (
-    <footer id="contact" className="p-4 dark:bg-black/20 bg-secondary select-none h-screen text-foreground relative border-t-2 border-primary/20">
+    <footer id="contact" className="p-4 dark:bg-black/20 bg-secondary select-none h-dvh text-foreground relative border-t-2 border-primary/20">
       <Container className={container({ size: "large" })}>
 
         <div className="mt-8">

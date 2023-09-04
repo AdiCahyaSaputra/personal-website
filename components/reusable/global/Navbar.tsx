@@ -6,6 +6,7 @@ import { Bars3CenterLeftIcon } from '@heroicons/react/24/outline'
 import { useEffect, useState } from "react"
 import { usePathname, useRouter } from "next/navigation"
 import { ThemeToggle } from "./ThemeToggle"
+import Link from "next/link"
 
 const navLink = cva("cursor-pointer text-sm uppercase tracking-widest md:w-max w-full inline-block", {
   variants: {
@@ -49,7 +50,7 @@ const Navbar: React.FC = () => {
 
   return (
     <>
-      <nav className={`select-none ${isActive ? 'dark:bg-black bg-secondary' : 'dark:bg-black/20 bg-secondary/40'} backdrop-blur-md z-50 border-b sticky inset-x-0 top-0 border-primary/20`}>
+      <nav className={`select-none ${isActive ? 'dark:bg-black bg-secondary' : 'supports-[backdrop-filter]:dark:bg-background/80 supports-[backdrop-filter]:bg-secondary/40 dark:bg-background bg-secondary'} supports-[backdrop-filter]:backdrop-blur-md z-50 border-b sticky inset-x-0 top-0 border-primary/20`}>
         <Container className={container({ size: "large" })}>
 
           <div className="flex items-center py-4 justify-between">
@@ -61,11 +62,9 @@ const Navbar: React.FC = () => {
             <ul className={`transition-all md:flex md:items-center md:space-x-4 md:static fixed md:translate-y-0 ${isActive ? 'top-0 translate-y-[65px]' : '-top-full -translate-y-full'} inset-x-0 p-8 md:p-0 md:bg-transparent md:dark:bg-transparent dark:bg-black bg-secondary md:border-none border-b border-primary/20 space-y-4 md:space-y-0`}>
               {navItems.map((nav, index) => (
                 <li key={index}>
-                  <a
-                    onClick={() => router.push(nav.link)}
-                    className={nav.className}>
+                  <Link href={nav.link} className={nav.className}>
                     {nav.name}
-                  </a>
+                  </Link>
                 </li>
               ))}
               <ThemeToggle />

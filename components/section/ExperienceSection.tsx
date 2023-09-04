@@ -24,15 +24,13 @@ const ExperienceSection: React.FC = () => {
           </div>
           <div>
             {experiences.map((experience, index) => (
-              <Card key={index} className="w-full">
-                <CardHeader>
+              <Card key={index} className="w-full border-none">
+                <CardHeader className='px-0'>
                   <CardTitle className='text-lg'>{experience.title}</CardTitle>
-                  <CardDescription>{experience.year.start} - {experience.year.end}</CardDescription>
+                  <CardDescription>From {experience.year.start} - {experience.year.end}</CardDescription>
                 </CardHeader>
 
-                <Separator className='mb-4' />
-
-                <CardContent>
+                <CardContent className='px-0'>
                   <h3 className='text-lg text-muted-foreground font-bold pr-6'>{experience.detail}</h3>
                 </CardContent>
               </Card>

@@ -8,12 +8,8 @@ const Page = () => {
         <span className="pb-1 border-b-4 border-primary">Adi</span>{" "}
         <span className="pb-1 border-b-4 border-secondary">Cahya Saputra</span>{" "}
       </h1>
-      <p className="text-foreground mt-4 leading-7">
-        <span className="line-through text-primary">Introvert</span> Nolep
-        Frontend Developer
-      </p>
 
-      <p className="text-foreground/60 mt-4 leading-7">
+      <p className="text-foreground/60 mt-8 leading-7">
         self-taught developer,{" "}
         <span className="py-1 px-2 bg-secondary select-none text-sm">
           NextJS
@@ -32,8 +28,9 @@ const Page = () => {
       <SkillsSection />
 
       <p className="text-foreground/60 mt-4 leading-7">
-        i graduated in 2023 from a vocational high school majoring in software
-        engineering and got my first job as IT support in 2023 until now
+        i was born in Jakarta in 2005, graduated in 2023 from a vocational high
+        school majoring in software engineering and got my first job as IT
+        support in 2023 until now
       </p>
 
       <p className="text-foreground/60 mt-4 leading-7">

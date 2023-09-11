@@ -9,7 +9,7 @@ const SkillsSection: React.FC = () => {
       <li>Postgresql</li>
       <li>Git</li>
       <li>Linux</li>
-      <li className="text-foreground/30">Still learning more...</li>
+      <li className="text-foreground/40">Still learning more...</li>
     </ul>
   );
 };

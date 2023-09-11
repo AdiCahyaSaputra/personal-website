@@ -30,7 +30,7 @@ const CardProject: React.FC<TProps> = ({
   techStack,
 }) => {
   return (
-    <Card className="rounded-none">
+    <Card className="rounded-none hover:border-primary">
       <CardHeader>
         <CardTitle>{title}</CardTitle>
         <CardDescription>{shortDesc}</CardDescription>

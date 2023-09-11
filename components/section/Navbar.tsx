@@ -34,8 +34,8 @@ const Navbar: React.FC = () => {
                     layoutId="navbar"
                     transition={{
                       type: "spring",
-                      stiffness: 350,
-                      damping: 30,
+                      stiffness: 400,
+                      damping: 50,
                     }}
                     className="absolute inset-0 bg-foreground -z-10"
                   />

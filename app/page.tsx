@@ -1,28 +1,86 @@
-import { NextPage } from "next"
-
-import Navbar from "components/reusable/global/Navbar"
-import HeroSection from "components/section/HeroSection"
-import AboutSection from "components/section/AboutSection"
-import SkillSection from "components/section/SkillSection"
-import ExperienceSection from "components/section/ExperienceSection"
-import FooterSection from "components/section/FooterSection"
-import EducationSection from "@/components/section/EducationSection"
+import { NextPage } from "next";
 
 const Page: NextPage = () => {
   return (
-    <>
-      <main className="bg-white dark:bg-background w-full">
-        <Navbar />
-        <HeroSection />
-        <AboutSection />
-        <SkillSection />
-        <ExperienceSection />
-        <EducationSection />
-      </main>
+    <main className="mt-10">
+      <h1 className="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl">
+        <span className="pb-2 border-b-2 border-primary">Adi</span>{" "}
+        <span className="pb-2 border-b-2 border-secondary">Cahya Saputra</span>{" "}
+      </h1>
+      <p className="text-foreground mt-4 leading-7">
+        Frontend Web Dev /{" "}
+        <span className="line-through text-primary">Introvert</span> Nolep
+      </p>
 
-      <FooterSection />
-    </>
-  )
-}
+      <p className="text-foreground/60 mt-4 leading-7">
+        self-taught developer,{" "}
+        <span className="py-1 px-2 bg-secondary select-none text-sm">
+          NextJS
+        </span>{" "}
+        and{" "}
+        <span className="py-1 px-2 bg-secondary select-none text-sm">
+          Laravel
+        </span>{" "}
+        enthusiast, passionate about making something useful using my magic
+        finger
+      </p>
+      <p className="text-foreground/60 mt-4 leading-7">
+        like other self-taught developers, I also master several technologies
+      </p>
 
-export default Page
+      <ul className="list-disc pl-4 mt-2">
+        <li>NextJS</li>
+        <li>Tailwind</li>
+        <li>Laravel</li>
+        <li>Livewire</li>
+        <li>tRPC</li>
+        <li>Postgresql</li>
+        <li>Git</li>
+        <li>Linux</li>
+        <li className="text-foreground/30">Still learning more...</li>
+      </ul>
+
+      <p className="text-foreground/60 mt-4 leading-7">
+        i graduated in 2023 from a vocational high school majoring in software
+        engineering and got my first job as IT support in 2023 until now
+      </p>
+
+      <p className="text-foreground/60 mt-4 leading-7">
+        recently I have completed a project called{" "}
+        <a className="text-sky-500 hover:underline underline-offset-4 transition-all cursor-pointer">
+          forumgw
+        </a>
+        , an informal community for public or even anonymous discussions
+      </p>
+
+      <p className="text-foreground/60 mt-4 leading-7">
+        let&apos;s collaborate with me, find me in another places
+      </p>
+
+      <ul className="mt-2 flex items-center gap-6 list-disc pl-4 flex-wrap">
+        <li>
+          <a className="text-sky-500 hover:underline underline-offset-4 transition-all cursor-pointer">
+            github
+          </a>
+        </li>
+        <li>
+          <a className="text-sky-500 hover:underline underline-offset-4 transition-all cursor-pointer">
+            linkedin
+          </a>
+        </li>
+        <li>
+          <a className="text-sky-500 hover:underline underline-offset-4 transition-all cursor-pointer">
+            youtube
+          </a>
+        </li>
+        <li>
+          <a className="text-sky-500 hover:underline underline-offset-4 transition-all cursor-pointer">
+            instagram
+          </a>
+        </li>
+      </ul>
+    </main>
+  );
+};
+
+export default Page;

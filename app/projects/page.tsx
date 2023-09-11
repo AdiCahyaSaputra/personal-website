@@ -1,42 +1,28 @@
-'use client'
+import projects from "@/asset/data/projects.json";
+import CardProject from "@/components/reusable/projects/CardProject";
+import { Metadata } from "next";
 
-import Container, { container } from 'components/reusable/global/Container'
-import React from 'react'
-
-import Article from 'components/reusable/project/Article'
-import IProjectArticle from '@/lib/interface/IProjectArticle'
-
-const data: IProjectArticle[] = require('../../asset/data/projects.json')
-const years: number[] = Array.from(new Set(data.map(article => article.year))).sort().reverse()
+export const metadata: Metadata = {
+  title: "Projects",
+};
 
 const Projects = () => {
   return (
-    <section className="bg-background text-foreground min-h-screen pb-10">
+    <main className="mt-10">
+      <h1 className="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl">
+        A web app <span className="text-primary">creation</span>: that that
+        I&apos;m truly proud to showcase.
+      </h1>
 
-      <Container className={container({ size: "medium" })}>
-
-        <div className="py-6">
-          <h1 className="text-2xl font-bold text-foreground">Here, The All Project</h1>
-          <p className="text-lg text-muted-foreground">That I have done before</p>
-        </div>
-
-        {years.map((year, index) => (
-          <div key={index} className='group'>
-
-            <h3 className="text-xl text-muted-foreground group-hover:text-foreground font-bold">{year}</h3>
-            <div className="divide-y-2 divide-y-foreground py-4 px-8 border-l ml-4 dark:border-red-600 border-blue-600 my-4">
-              {data.filter(article => article.year === year).map((article, index) => (
-                <Article {...article} key={index} />
-              ))}
-            </div>
-
-          </div>
+      <ul className="mt-10 space-y-4">
+        {projects.map((project, idx) => (
+          <li>
+            <CardProject {...project} key={idx} />
+          </li>
         ))}
+      </ul>
+    </main>
+  );
+};
 
-      </Container>
-
-    </section>
-  )
-}
-
-export default Projects
+export default Projects;

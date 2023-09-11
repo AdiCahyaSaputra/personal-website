@@ -1,212 +1,45 @@
 [
   {
-    "year": 2022,
-    "date": "Sep 6",
-    "title": "Rental Mobil",
-    "shortDesc": "The place to rent your car if you need emergency money",
-    "slug": "rental-mobil",
-    "status": "On Progress",
-    "peoples": [
-      {
-        "username": "@AdiCahyaSaputra",
-        "link": "https://github.com/AdiCahyaSaputra",
-        "note": "as a Frontend"
-      },
-      {
-        "username": "@26kito",
-        "link": "https://github.com/26kito",
-        "note": "as a Backend"
-      }
-    ],
-    "links": [
-      {
-        "url": "https://rental-mobil-fe.vercel.app/",
-        "label": "demo",
-        "note": "with dummy data"
-      },
-      {
-        "url": "https://github.com/AdiCahyaSaputra/rental-mobil-fe",
-        "label": "repository",
-        "note": "for frontend"
-      },
-      {
-        "url": "https://github.com/26kito/rental-mobil",
-        "label": "repository",
-        "note": "for backend"
-      }
-    ],
-    "techStack": [
-      {
-        "name": "Next JS 12",
-        "note": "Frontend",
-        "link": "https://nextjs.org"
-      },
-      {
-        "name": "Laravel 9",
-        "note": "Backend",
-        "link": "https://laravel.com/"
-      }
-    ],
-    "readme": "This project is still under maintenance because there is a problem when we trying to host the API"
-  },
-  {
-    "year": 2022,
-    "date": "May 29",
-    "title": "Toko Online",
-    "shortDesc": "Very minimalistic e-commerce ft.Discord friends",
-    "slug": "toko-online",
-    "status": "On Progress",
-    "peoples": [
-      {
-        "username": "@AdiCahyaSaputra",
-        "link": "https://github.com/AdiCahyaSaputra",
-        "note": "as a Frontend"
-      },
-      {
-        "username": "@pradana4648",
-        "link": "https://github.com/pradana4648",
-        "note": "as a Backend"
-      }
-    ],
-    "links": [
-      {
-        "url": "https://toko-online-dc.vercel.app/",
-        "label": "demo",
-        "note": "with dummy data"
-      },
-      {
-        "url": "https://github.com/AdiCahyaSaputra/toko-online-dc",
-        "label": "repository",
-        "note": "for frontend"
-      }
-    ],
-    "techStack": [
-      {
-        "name": "Next JS 12",
-        "note": "Frontend",
-        "link": "https://nextjs.org"
-      },
-      {
-        "name": "Spring Boot 3",
-        "note": "Backend",
-        "link": "https://spring.io/projects/spring-boot"
-      }
-    ],
-    "readme": "This project is still under maintenance because there is a problem when we trying to host the API"
-  },
-  {
-    "year": 2021,
-    "date": "Dec 6",
     "title": "Auto Manage Files",
     "shortDesc": "Manage your downloads folder programmatically",
-    "slug": "amf",
+    "slug": "auto-manage-files",
     "status": "Done",
-    "peoples": [
-      {
-        "username": "@AdiCahyaSaputra",
-        "link": "https://github.com/AdiCahyaSaputra",
-        "note": "as a Person"
-      }
-    ],
-    "links": [
-      {
-        "url": "https://auto-manage-files.vercel.app/",
-        "label": "see demo",
-        "note": "on landing page"
-      },
-      {
-        "url": "https://github.com/AdiCahyaSaputra/auto-manage-files",
-        "label": "repository",
-        "note": "for scipt"
-      }
-    ],
-    "techStack": [
-      {
-        "name": "Node JS 16",
-        "note": "Script",
-        "link": "https://nodejs.org/en/"
-      }
-    ],
-    "readme": "So, what are you waiting for ? Hire me now"
+    "links": {
+      "demo": "https://auto-manage-files.vercel.app/",
+      "repository": "https://github.com/AdiCahyaSaputra/auto-manage-files"
+    },
+    "techStack": ["NodeJS"]
   },
   {
-    "year": 2023,
-    "date": "Jan 29",
     "title": "Personal Branding",
     "shortDesc": "For my english practical examination",
-    "slug": "pbe",
+    "slug": "personal-branding",
     "status": "Done",
-    "peoples": [
-      {
-        "username": "@AdiCahyaSaputra",
-        "link": "https://github.com/AdiCahyaSaputra",
-        "note": "as a Person"
-      }
-    ],
-    "links": [
-      {
-        "url": "https://adics-pbe.vercel.app/rules",
-        "label": "see demo",
-        "note": "to interact with it"
-      },
-      {
-        "url": "https://github.com/AdiCahyaSaputra/personal-branding-english",
-        "label": "repository",
-        "note": "is currently private"
-      }
-    ],
-    "techStack": [
-      {
-        "name": "Next JS 12",
-        "note": "Frontend",
-        "link": "https://nextjs.org"
-      },
-      {
-        "name": "Framer Motion",
-        "note": "Animation Physics",
-        "link": "https://www.framer.com"
-      }
-    ],
-    "readme": "First time trying Framer Motion I'm sorry for bad Animation"
+    "links": {
+      "demo": "https://adics-pbe.vercel.app/rules",
+      "repository": "https://github.com/AdiCahyaSaputra/personal-branding-english"
+    },
+    "techStack": ["NextJS 12", "Frammer Motion"]
   },
   {
-    "year": 2023,
-    "date": "Jul 3",
     "title": "Sistem Antrian PPDB",
     "shortDesc": "Organize your Waiting List without a paper",
-    "slug": "sap",
+    "slug": "sistem-antrian",
     "status": "Done",
-    "peoples": [
-      {
-        "username": "@AdiCahyaSaputra",
-        "link": "https://github.com/AdiCahyaSaputra",
-        "note": "as a Backend"
-      },
-      {
-        "username": "@MuhammadRisky",
-        "link": "https://github.com/Octagram82",
-        "note": "as a Frontend"
-      }
-    ],
-    "links": [
-      {
-        "url": "https://github.com/AdiCahyaSaputra/sistem-antrian",
-        "label": "repository",
-        "note": "for you to try it on your machine"
-      }
-    ],
-    "techStack": [
-      {
-        "name": "Laravel 10",
-        "note": "Fullstack Framework",
-        "link": "https://laravel.com"
-      },
-      {
-        "name": "Socket IO",
-        "note": "Websocket",
-        "link": "https://socket.io/"
-      }
-    ],
-    "readme": "Idk if Livewire and Laravel Echo is Exists"
+    "links": {
+      "repository": "https://github.com/AdiCahyaSaputra/sistem-antrian"
+    },
+    "techStack": ["Laravel 10", "Socket IO", "Tailwind"]
+  },
+  {
+    "title": "ForumGW",
+    "shortDesc": "an informal community for public or even anonymous discussions",
+    "slug": "forum-gw",
+    "status": "Done",
+    "links": {
+      "repository": "https://github.com/AdiCahyaSaputra/forumgw",
+      "demo": "https://forumgw.vercel.app/"
+    },
+    "techStack": ["NextJS 13", "tRPC", "Prisma", "Supabase"]
   }
 ]

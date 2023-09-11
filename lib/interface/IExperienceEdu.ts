@@ -1,8 +1,8 @@
 export default interface IExperienceEdu {
-  title: string,
+  title: string;
   year: {
-    start: string,
-    end: string
-  },
-  detail: string
+    start: string;
+    end: string;
+  };
+  detail: string;
 }

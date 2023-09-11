@@ -1,7 +1,7 @@
-'use client'
+"use client";
 
-import React, { PropsWithChildren } from 'react'
-import { AppProgressBar as ProgressBar } from 'next-nprogress-bar';
+import React, { PropsWithChildren } from "react";
+import { AppProgressBar as ProgressBar } from "next-nprogress-bar";
 
 const ProgressProvider = (props: PropsWithChildren) => {
   return (
@@ -14,7 +14,7 @@ const ProgressProvider = (props: PropsWithChildren) => {
         shallowRouting
       />
     </>
-  )
-}
+  );
+};
 
-export default ProgressProvider
+export default ProgressProvider;

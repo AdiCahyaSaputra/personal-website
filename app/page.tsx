@@ -47,7 +47,10 @@ const Page: NextPage = () => {
 
       <p className="text-foreground/60 mt-4 leading-7">
         recently I have completed a project called{" "}
-        <a className="text-sky-500 hover:underline underline-offset-4 transition-all cursor-pointer">
+        <a
+          href="https://forumgw.vercel.app"
+          className="text-sky-500 hover:underline underline-offset-4 transition-all cursor-pointer"
+        >
           forumgw
         </a>
         , an informal community for public or even anonymous discussions
@@ -59,22 +62,34 @@ const Page: NextPage = () => {
 
       <ul className="mt-2 flex items-center gap-6 list-disc pl-4 flex-wrap">
         <li>
-          <a className="text-sky-500 hover:underline underline-offset-4 transition-all cursor-pointer">
+          <a
+            className="text-sky-500 hover:underline underline-offset-4 transition-all cursor-pointer"
+            href="https://github.com/AdiCahyaSaputra"
+          >
             github
           </a>
         </li>
         <li>
-          <a className="text-sky-500 hover:underline underline-offset-4 transition-all cursor-pointer">
+          <a
+            className="text-sky-500 hover:underline underline-offset-4 transition-all cursor-pointer"
+            href="https://www.linkedin.com/in/adi-cahya-saputra-746a8423b"
+          >
             linkedin
           </a>
         </li>
         <li>
-          <a className="text-sky-500 hover:underline underline-offset-4 transition-all cursor-pointer">
+          <a
+            className="text-sky-500 hover:underline underline-offset-4 transition-all cursor-pointer"
+            href="https://www.youtube.com/@adics"
+          >
             youtube
           </a>
         </li>
         <li>
-          <a className="text-sky-500 hover:underline underline-offset-4 transition-all cursor-pointer">
+          <a
+            className="text-sky-500 hover:underline underline-offset-4 transition-all cursor-pointer"
+            href="https://www.instagram.com/adi.tsx"
+          >
             instagram
           </a>
         </li>

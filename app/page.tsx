@@ -60,7 +60,7 @@ const Page: NextPage = () => {
         let&apos;s collaborate with me, find me in another places
       </p>
 
-      <ul className="mt-2 flex items-center gap-6 list-disc pl-4 flex-wrap">
+      <ul className="mt-2 flex items-center gap-x-6 gap-y-2 list-disc pl-4 flex-wrap">
         <li>
           <a
             className="text-sky-500 hover:underline underline-offset-4 transition-all cursor-pointer"

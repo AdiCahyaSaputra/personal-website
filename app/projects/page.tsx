@@ -10,7 +10,7 @@ const Projects = () => {
   return (
     <main className="mt-10">
       <h1 className="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl">
-        A web app <span className="text-primary">creation</span>: that I&apos;m
+        A web app <span className="text-primary">creation</span> that I&apos;m
         truly proud to showcase.
       </h1>
 

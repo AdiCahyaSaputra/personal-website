@@ -16,7 +16,7 @@ const Projects = () => {
 
       <ul className="mt-10 space-y-4">
         {projects.map((project, idx) => (
-          <li>
+          <li key={idx}>
             <CardProject {...project} key={idx} />
           </li>
         ))}

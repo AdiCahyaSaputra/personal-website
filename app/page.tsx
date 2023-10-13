@@ -11,11 +11,11 @@ const Page = () => {
 
       <p className="text-foreground/60 mt-8 leading-7">
         self-taught developer,{" "}
-        <span className="py-1 px-2 bg-secondary select-none text-sm">
+        <span className="py-1 px-2 bg-secondary text-white select-none text-sm">
           NextJS
         </span>{" "}
         and{" "}
-        <span className="py-1 px-2 bg-secondary select-none text-sm">
+        <span className="py-1 px-2 bg-secondary text-white select-none text-sm">
           Laravel
         </span>{" "}
         enthusiast, passionate about making something useful using my magic

@@ -28,7 +28,7 @@ const Page = () => {
       <SkillsSection />
 
       <p className="text-foreground/60 mt-4 leading-7">
-        i was born in Jakarta in 2005, graduated in 2023 from a vocational high
+        I was born in Jakarta in 2005, graduated in 2023 from a vocational high
         school majoring in software engineering and got my first job as IT
         support in 2023 until now
       </p>

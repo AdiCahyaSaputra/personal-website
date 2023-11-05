@@ -1,18 +1,34 @@
 "use client";
 
-import { LayoutGroup, motion } from "framer-motion";
+import { LayoutGroup } from "framer-motion";
+import { Menu, Ghost, LayoutList, LineChart } from "lucide-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import React from "react";
+import { Button } from "../ui/button";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuGroup,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from "../ui/dropdown-menu";
 
 const navItems = [
   {
-    name: "about",
-    url: "/",
+    name: "About",
+    url: "/about",
+    icon: <Ghost className="w-4 h-4 mr-2" />,
   },
   {
-    name: "projects",
+    name: "All Project",
     url: "/projects",
+    icon: <LayoutList className="w-4 h-4 mr-2" />,
+  },
+  {
+    name: "Experience",
+    url: "/experience",
+    icon: <LineChart className="w-4 h-4 mr-2" />,
   },
 ];
 
@@ -21,29 +37,56 @@ const Navbar: React.FC = () => {
 
   return (
     <LayoutGroup>
-      <nav>
-        <ul className="flex items-center gap-4">
-          {navItems.map((navItem, idx) => (
+      <nav className="sticky top-4 px-4 py-2 w-full border border-border bg-background supports-[backdrop-filter]:bg-background/80 z-10 supports-[backdrop-filter]:backdrop-blur-md rounded flex justify-between items-center">
+        <Link href="/" className="font-light">
+          <span className="font-bold">Adi</span>cs.
+        </Link>
+
+        <ul className="items-center space-x-4 hidden lg:flex">
+          {navItems.map((item, idx) => (
             <li key={idx}>
-              <Link href={navItem.url} className="py-2 px-4 relative">
-                <span className="mix-blend-exclusion leading-7">
-                  {navItem.name}
-                </span>
-                {path === navItem.url && (
-                  <motion.span
-                    layoutId="navbar"
-                    transition={{
-                      type: "spring",
-                      stiffness: 400,
-                      damping: 50,
-                    }}
-                    className="absolute inset-0 bg-foreground -z-10"
-                  />
-                )}
-              </Link>
+              <Button
+                asChild
+                variant="link"
+                className={`no-underline hover:no-underline ${
+                  path === item.url
+                    ? "text-foreground"
+                    : "hover:text-foreground text-foreground/40"
+                } p-0`}
+              >
+                <Link href={item.url}>{item.name}</Link>
+              </Button>
             </li>
           ))}
         </ul>
+
+        <DropdownMenu>
+          <DropdownMenuTrigger asChild>
+            <Button
+              variant="outline"
+              size="icon"
+              className="rounded border-none lg:hidden focus-visible:ring-secondary"
+            >
+              <Menu />
+            </Button>
+          </DropdownMenuTrigger>
+          <DropdownMenuContent className="border-border rounded" align="end">
+            <DropdownMenuGroup>
+              {navItems.map((item, idx) => (
+                <DropdownMenuItem
+                  className="rounded cursor-pointer"
+                  asChild
+                  key={idx}
+                >
+                  <Link href={item.url}>
+                    {item.icon}
+                    {item.name}
+                  </Link>
+                </DropdownMenuItem>
+              ))}
+            </DropdownMenuGroup>
+          </DropdownMenuContent>
+        </DropdownMenu>
       </nav>
     </LayoutGroup>
   );

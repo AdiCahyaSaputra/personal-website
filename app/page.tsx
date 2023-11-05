@@ -1,54 +1,134 @@
-import SkillsSection from "@/components/section/SkillsSection";
 import SocialMediaSection from "@/components/section/SocialMediaSection";
+import { Button } from "@/components/ui/button";
+import { Separator } from "@/components/ui/separator";
+import {
+  Coffee,
+  Cpu,
+  Github,
+  Image as ImageIcon,
+  Instagram,
+  Linkedin,
+  SmilePlus,
+} from "lucide-react";
+import Link from "next/link";
+
+const skills = [
+  "NextJS",
+  "Laravel",
+  "Tailwind",
+  "Prisma",
+  "tRPC",
+  "Livewire",
+  "Typescript",
+  "PostgreSQL",
+  "Git",
+  "Linux",
+  "Figma",
+  "Googling",
+];
 
 const Page = () => {
   return (
     <main className="mt-10">
-      <h1 className="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl">
-        <span className="pb-1 border-b-4 border-primary">Adi</span>{" "}
-        <span className="pb-1 border-b-4 border-secondary">Cahya Saputra</span>{" "}
-      </h1>
-
-      <p className="text-foreground/60 mt-8 leading-7">
-        self-taught developer,{" "}
-        <span className="py-1 px-2 bg-secondary text-white select-none text-sm">
-          NextJS
-        </span>{" "}
-        and{" "}
-        <span className="py-1 px-2 bg-secondary text-white select-none text-sm">
-          Laravel
-        </span>{" "}
-        enthusiast, passionate about making something useful using my magic
-        finger
-      </p>
-      <p className="text-foreground/60 mt-4 leading-7">
-        like other self-taught developers, I also master several technologies
+      <h1 className="text-lg lg:text-2xl font-bold">Adi Cahya Saputra</h1>
+      <p className="text-sm lg:text-base text-foreground/60">
+        IT Support &bull; Frontend Engineer
       </p>
 
-      <SkillsSection />
-
-      <p className="text-foreground/60 mt-4 leading-7">
-        I was born in Jakarta in 2005, graduated in 2023 from a vocational high
-        school majoring in software engineering and got my first job as IT
-        support in 2023 until now
+      <p className="mt-2">
+        Self-Taught Developer, NextJS and Laravel enthusiast. I graduated from a
+        vocational school, and currently work as a Full Time IT Support and
+        Frontend Engineer Freelancer. View my{" "}
+        <Link href="/projects" className="underline">
+          creations
+        </Link>
       </p>
 
-      <p className="text-foreground/60 mt-4 leading-7">
-        recently I have completed a project called{" "}
-        <a
-          href="https://forumgw.vercel.app"
-          className="text-sky-500 hover:underline underline-offset-4 transition-all cursor-pointer"
-        >
-          ForumGW
-        </a>
-        , an informal community for public or even anonymous discussions
-      </p>
+      <Separator className="my-4" />
 
-      <p className="text-foreground/60 mt-4 leading-7">
-        let&apos;s collaborate with me, find me in another places
-      </p>
+      <div className="grid lg:grid-cols-2 grid-cols-1 gap-4">
+        <div>
+          <h2 className="text-lg lg:text-2xl font-bold flex items-center gap-2">
+            <Coffee />
+            <span>Featured Project</span>
+          </h2>
+          <div className="mt-2">
+            <div className="w-full aspect-video flex items-center justify-center space-x-2 border border-border rounded">
+              <ImageIcon />
+              <span>ForumGW</span>
+            </div>
+            <p className="mt-2">
+              <a href="https://forumgw.vercel.app/" className="underline">
+                ForumGW
+              </a>{" "}
+              is informal community for public and anonymous discussion
+            </p>
+          </div>
+        </div>
 
-      <SocialMediaSection />
+        <div>
+          <h2 className="text-lg lg:text-2xl font-bold flex items-center gap-2">
+            <Cpu />
+            <span>Technical Skills</span>
+          </h2>
+          <div className="mt-2 flex flex-wrap gap-1">
+            {skills.map((skill, idx) => (
+              <p
+                className="px-4 py-2 text-xs lg:text-sm border border-border rounded w-max"
+                key={idx}
+              >
+                {skill}
+              </p>
+            ))}
+          </div>
+
+          <h2 className="text-lg lg:text-2xl font-bold flex items-center gap-2 mt-4">
+            <SmilePlus className="w-5 h-5" />
+            <span>Find me in another places</span>
+          </h2>
+
+          <ul className="mt-2 flex items-center gap-2">
+            <li>
+              <Button
+                asChild
+                variant="outline"
+                size="icon"
+                className="rounded focus-visible:ring-secondary p-2"
+              >
+                <a href="https://github.com/AdiCahyaSaputra">
+                  <Github />
+                </a>
+              </Button>
+            </li>
+
+            <li>
+              <Button
+                asChild
+                variant="outline"
+                size="icon"
+                className="rounded focus-visible:ring-secondary p-2"
+              >
+                <a href="https://www.instagram.com/adi.tsx/">
+                  <Instagram />
+                </a>
+              </Button>
+            </li>
+
+            <li>
+              <Button
+                asChild
+                variant="outline"
+                size="icon"
+                className="rounded focus-visible:ring-secondary p-2"
+              >
+                <a href="https://www.linkedin.com/in/adi-cahya-saputra-746a8423b/">
+                  <Linkedin />
+                </a>
+              </Button>
+            </li>
+          </ul>
+        </div>
+      </div>
     </main>
   );
 };

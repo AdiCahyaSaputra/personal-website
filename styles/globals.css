@@ -48,3 +48,9 @@
     --ring: 0 72.2% 50.6%;
   }
 }
+
+@layer utilities {
+  .underline {
+    @apply underline-offset-4;
+  }
+}

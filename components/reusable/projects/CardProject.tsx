@@ -12,8 +12,6 @@ import Link from "next/link";
 type TProps = {
   title: string;
   shortDesc: string;
-  slug: string;
-  status: string;
   links: {
     demo?: string;
     repository: string;
@@ -24,13 +22,11 @@ type TProps = {
 const CardProject: React.FC<TProps> = ({
   title,
   shortDesc,
-  slug,
-  status,
   links,
   techStack,
 }) => {
   return (
-    <Card className="rounded-none hover:border-primary">
+    <Card className="rounded hover:border-foreground border-border">
       <CardHeader>
         <CardTitle>{title}</CardTitle>
         <CardDescription>{shortDesc}</CardDescription>
@@ -40,7 +36,7 @@ const CardProject: React.FC<TProps> = ({
           {techStack?.reverse().map((tech, idx) => (
             <li
               key={idx}
-              className="py-1 px-2 text-sm bg-secondary w-max select-none"
+              className="py-1 px-2 text-sm rounded border border-border w-max select-none"
             >
               {tech}
             </li>
@@ -55,18 +51,14 @@ const CardProject: React.FC<TProps> = ({
               href={links.repository}
             >
               <GitHubLogoIcon />
-              <span className="text-sm text-sky-500 group-hover:underline underline-offset-4">
-                repository
-              </span>
+              <span className="text-sm group-hover:underline">repository</span>
             </Link>
           </li>
           {links.demo && (
             <li>
               <Link className="flex items-center gap-2 group" href={links.demo}>
                 <ExternalLinkIcon />
-                <span className="text-sm text-sky-500 group-hover:underline underline-offset-4">
-                  demo
-                </span>
+                <span className="text-sm group-hover:underline">demo</span>
               </Link>
             </li>
           )}

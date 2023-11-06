@@ -48,7 +48,7 @@ const Navbar: React.FC = () => {
               <Button
                 asChild
                 variant="link"
-                className={`no-underline hover:no-underline ${
+                className={`no-underline hover:no-underline focus-visible:ring-secondary ${
                   path === item.url
                     ? "text-foreground"
                     : "hover:text-foreground text-foreground/40"

@@ -1,4 +1,3 @@
-import SocialMediaSection from "@/components/section/SocialMediaSection";
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
 import {
@@ -35,11 +34,11 @@ const Page = () => {
         IT Support &bull; Frontend Engineer
       </p>
 
-      <p className="mt-2">
+      <p className="mt-2 text-foreground/80">
         Self-Taught Developer, NextJS and Laravel enthusiast. I graduated from a
         vocational school, and currently work as a Full Time IT Support and
         Frontend Engineer Freelancer. View my{" "}
-        <Link href="/projects" className="underline">
+        <Link href="/projects" className="underline text-foreground">
           creations
         </Link>
       </p>
@@ -57,8 +56,11 @@ const Page = () => {
               <ImageIcon />
               <span>ForumGW</span>
             </div>
-            <p className="mt-2">
-              <a href="https://forumgw.vercel.app/" className="underline">
+            <p className="mt-2 text-foreground/80">
+              <a
+                href="https://forumgw.vercel.app/"
+                className="underline text-foreground"
+              >
                 ForumGW
               </a>{" "}
               is informal community for public and anonymous discussion

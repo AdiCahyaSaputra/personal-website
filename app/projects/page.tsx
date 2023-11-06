@@ -9,10 +9,10 @@ export const metadata: Metadata = {
 const Projects = () => {
   return (
     <main className="mt-10">
-      <h1 className="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl">
-        A web app <span className="text-primary">creation</span> that I&apos;m
-        truly proud to showcase.
-      </h1>
+      <h1 className="text-lg lg:text-2xl font-bold">A web app Creation</h1>
+      <p className="text-foreground/80">
+        that I&apos;m truly proud to showcase.
+      </p>
 
       <ul className="mt-10 space-y-4">
         {projects.map((project, idx) => (

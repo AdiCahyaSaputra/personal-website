@@ -34,7 +34,7 @@ const Page = () => {
         IT Support &bull; Frontend Engineer
       </p>
 
-      <p className="mt-2 text-foreground/80">
+      <p className="mt-2 text-foreground/75">
         Self-Taught Developer, NextJS and Laravel enthusiast. I graduated from a
         vocational school, and currently work as a Full Time IT Support and
         Frontend Engineer Freelancer. View my{" "}
@@ -56,7 +56,7 @@ const Page = () => {
               <ImageIcon />
               <span>ForumGW</span>
             </div>
-            <p className="mt-2 text-foreground/80">
+            <p className="mt-2 text-foreground/75">
               <a
                 href="https://forumgw.vercel.app/"
                 className="underline text-foreground"

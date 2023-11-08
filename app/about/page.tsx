@@ -10,8 +10,9 @@ const About = () => {
   return (
     <main className="mt-10">
       <h1 className="text-lg lg:text-2xl font-bold">Get to Know Me {":)"}</h1>
+      <p className="text-foreground/60">Introduction</p>
 
-      <div className="text-foreground/80">
+      <div className="text-foreground/75 mb-4">
         <p className="mt-2">
           I&apos;m 18 y.o man from Jakarta, Indonesia. Graduated from{" "}
           <a
@@ -27,6 +28,12 @@ const About = () => {
           like to spend my day learning something new or digging deeper into
           what I&apos;ve learned before
         </p>
+      </div>
+
+      <h1 className="text-lg lg:text-2xl font-bold">But Why Tech?</h1>
+      <p className="text-foreground/60">Life Choices</p>
+
+      <div className="text-foreground/75">
         <p className="mt-2">
           Actually, I really like the world of VFX and Photography, but I
           didn&apos;t pass the selection to enter my dream vocational school.

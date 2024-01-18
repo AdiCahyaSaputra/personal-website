@@ -9,11 +9,15 @@ const ExperiencePage = () => {
   return (
     <main className="mt-10 min-h-screen">
       <h1 className="text-lg lg:text-2xl font-bold">Professional Journey</h1>
-      <p className="text-foreground/60">In My Life</p>
+      <p className="text-foreground/60 mt-2">
+        {'"'}Work is the dance of passion and perseverance, choreographed by the
+        footsteps of dedication and illuminated by the spotlight of achievement.
+        {'"'} - Benjamin Adams
+      </p>
 
       <ul className="mt-4 space-y-2">
-        <li className="flex items-start space-x-2 relative">
-          <p className="sticky top-20 font-bold text-foreground/60 self-start">
+        <li className="flex items-start space-x-4 relative">
+          <p className="sticky top-16 font-bold text-foreground self-start px-2 py-px border border-border rounded-full">
             2023
           </p>
           <ul className="space-y-2">
@@ -33,7 +37,7 @@ const ExperiencePage = () => {
 
             <li>
               <h2 className="font-bold">Freelance Frontend Developer</h2>
-              <p className="text-sm text-foreground/60">At internet</p>
+              <p className="text-sm text-foreground/60">At Mitrain id</p>
             </li>
           </ul>
         </li>

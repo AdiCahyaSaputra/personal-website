@@ -6,6 +6,23 @@ export const metadata: Metadata = {
   title: "About",
 };
 
+const calculateAge = () => {
+  const birth = new Date("2005-04-18");
+  const current = new Date();
+
+  const age = current.getFullYear() - birth.getFullYear();
+
+  if (
+    current.getMonth() < birth.getMonth() ||
+    (current.getMonth() === birth.getMonth() &&
+      current.getDate() < birth.getDate())
+  ) {
+    return age - 1;
+  }
+
+  return age;
+};
+
 const About = () => {
   return (
     <main className="mt-10">
@@ -14,7 +31,8 @@ const About = () => {
 
       <div className="text-foreground/75 mb-4">
         <p className="mt-2">
-          I&apos;m 18 y.o man from Jakarta, Indonesia. Graduated from{" "}
+          I&apos;m {calculateAge()} y.o man from Jakarta, Indonesia. Graduated
+          from{" "}
           <a
             href="https://sekolahwijayakusuma.sch.id/"
             className="underline text-foreground"

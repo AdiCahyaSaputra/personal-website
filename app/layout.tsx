@@ -26,7 +26,7 @@ const RootLayout = ({ children }: TProps) => {
             <Navbar />
             {children}
             <footer className="mt-14 flex justify-between items-center text-sm">
-              <p>&copy; 2023</p>
+              <p>&copy; {new Date().getFullYear()}</p>
               <p>Adi Cahya Saputra</p>
             </footer>
           </div>

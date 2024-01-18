@@ -10,9 +10,11 @@ import {
   SmilePlus,
 } from "lucide-react";
 import Link from "next/link";
+import Image from "next/image";
 
 const skills = [
   "NextJS",
+  "React Native",
   "Laravel",
   "Tailwind",
   "Prisma",
@@ -52,9 +54,13 @@ const Page = () => {
             <span>Featured Project</span>
           </h2>
           <div className="mt-2">
-            <div className="w-full aspect-video flex items-center justify-center space-x-2 border border-border rounded">
-              <ImageIcon />
-              <span>ForumGW</span>
+            <div className="w-full aspect-video border border-border rounded overflow-hidden">
+              <Image
+                src="/img/featured-project.jpg"
+                width={1920}
+                height={1080}
+                alt="Forumgw"
+              />
             </div>
             <p className="mt-2 text-foreground/75">
               <a

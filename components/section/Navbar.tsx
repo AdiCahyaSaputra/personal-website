@@ -16,11 +16,6 @@ import {
 
 const navItems = [
   {
-    name: "About",
-    url: "/about",
-    icon: <Ghost className="w-4 h-4 mr-2" />,
-  },
-  {
     name: "All Project",
     url: "/projects",
     icon: <LayoutList className="w-4 h-4 mr-2" />,
@@ -37,7 +32,7 @@ const Navbar: React.FC = () => {
 
   return (
     <LayoutGroup>
-      <nav className="sticky top-0 py-2 w-full bg-background supports-[backdrop-filter]:bg-background/80 z-10 supports-[backdrop-filter]:backdrop-blur-md flex justify-between items-center">
+      <nav className="sticky top-0 py-4 w-full bg-background supports-[backdrop-filter]:bg-background/80 z-10 supports-[backdrop-filter]:backdrop-blur-md flex justify-between items-center">
         <Link href="/" className="font-light">
           <span className="font-bold">Adi</span>cs.
         </Link>
@@ -48,10 +43,11 @@ const Navbar: React.FC = () => {
               <Button
                 asChild
                 variant="link"
-                className={`no-underline hover:no-underline focus-visible:ring-secondary ${path === item.url
+                className={`no-underline hover:no-underline focus-visible:ring-secondary ${
+                  path === item.url
                     ? "text-foreground"
                     : "hover:text-foreground text-foreground/40"
-                  } p-0`}
+                } p-0`}
               >
                 <Link href={item.url}>{item.name}</Link>
               </Button>

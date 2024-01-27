@@ -17,7 +17,7 @@ const ExperiencePage = () => {
 
       <ul className="mt-4 space-y-2">
         <li className="flex items-start space-x-4 relative">
-          <p className="sticky top-16 font-bold text-foreground self-start px-2 py-px border border-border rounded-full">
+          <p className="sticky top-20 font-bold text-foreground self-start px-2 py-px border border-border rounded-full">
             2023
           </p>
           <ul className="space-y-2">

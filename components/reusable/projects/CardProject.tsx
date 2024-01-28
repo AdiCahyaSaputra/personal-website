@@ -51,14 +51,14 @@ const CardProject: React.FC<TProps> = ({
               href={links.repository}
             >
               <GitHubLogoIcon />
-              <span className="text-sm group-hover:underline">repository</span>
+              <span className="text-sm underline">repository</span>
             </Link>
           </li>
           {links.demo && (
             <li>
               <Link className="flex items-center gap-2 group" href={links.demo}>
                 <ExternalLinkIcon />
-                <span className="text-sm group-hover:underline">demo</span>
+                <span className="text-sm underline">demo</span>
               </Link>
             </li>
           )}

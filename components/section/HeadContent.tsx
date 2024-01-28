@@ -13,7 +13,10 @@ const HeadContent = () => {
         Self-Taught Developer, NextJS and Laravel enthusiast. I graduated from a
         vocational school, and currently work as a Full Time IT Support and
         Frontend Engineer Freelancer. View my{" "}
-        <Link href="/projects" className="underline text-foreground">
+        <Link
+          href="/projects"
+          className="underline text-foreground hover:decoration-red-800"
+        >
           creations
         </Link>
       </p>

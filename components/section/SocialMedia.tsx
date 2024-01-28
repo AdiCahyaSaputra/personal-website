@@ -11,11 +11,9 @@ const SocialMediaLinks = [
 
 const SocialMedia = () => {
   return (
-    <section className="mt-4 gap-2 grid grid-cols-1 lg:grid-cols-2">
+    <section className="mt-10 gap-2 grid grid-cols-1 lg:grid-cols-2">
       <div>
-        <h1 className="text-lg lg:text-2xl font-bold">
-          Reach Me Now... or Later?
-        </h1>
+        <h1 className="text-lg lg:text-2xl font-bold">Reach Me Now</h1>
         <p className="text-foreground/60">Contact Person</p>
       </div>
 

@@ -13,6 +13,7 @@ const Page = () => {
 
       <div>
         <TechnicalSkills />
+        <Separator className="mt-10 mb-4" />
         <SocialMedia />
       </div>
     </main>

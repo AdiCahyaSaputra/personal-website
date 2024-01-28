@@ -5,7 +5,45 @@ export const metadata: Metadata = {
   title: "Experience",
 };
 
+type TExperience = {
+  experience: string;
+  year: number;
+  at: string;
+};
+
+const experiencesData = [
+  {
+    experience: "Graduate",
+    year: 2023,
+    at: "From vocational High School",
+  },
+  {
+    experience: "Fulltime IT Support",
+    year: 2023,
+    at: "In Vocational High School",
+  },
+  {
+    experience: "Frontend Developer (Freelance)",
+    year: 2023,
+    at: "at Mitrain ID",
+  },
+];
+
+const experiences: { [key: string]: TExperience[] } = {};
+
+for (const experience of experiencesData) {
+  const year = experience.year;
+
+  if (!Object.hasOwn(experiences, year)) {
+    experiences[year] = [];
+  }
+
+  experiences[year].push(experience);
+}
+
 const ExperiencePage = () => {
+  console.log(experiences);
+
   return (
     <main className="mt-10 min-h-screen">
       <h1 className="text-lg lg:text-2xl font-bold">Professional Journey</h1>
@@ -16,31 +54,21 @@ const ExperiencePage = () => {
       </p>
 
       <ul className="mt-4 space-y-2">
-        <li className="flex items-start space-x-4 relative">
-          <p className="sticky top-20 font-bold text-foreground self-start px-2 py-px border border-border rounded-full">
-            2023
-          </p>
-          <ul className="space-y-2">
-            <li>
-              <h2 className="font-bold">Graduate</h2>
-              <p className="text-sm text-foreground/60">
-                From vocational high school
-              </p>
-            </li>
-
-            <li>
-              <h2 className="font-bold">Fulltime IT Support</h2>
-              <p className="text-sm text-foreground/60">
-                At my vocational high school
-              </p>
-            </li>
-
-            <li>
-              <h2 className="font-bold">Freelance Frontend Developer</h2>
-              <p className="text-sm text-foreground/60">At Mitrain id</p>
-            </li>
-          </ul>
-        </li>
+        {Object.keys(experiences).map((year, idx) => (
+          <li key={idx} className="flex items-start space-x-4 relative">
+            <p className="sticky top-20 font-bold text-foreground self-start px-2 py-px border border-border rounded-full">
+              {year}
+            </p>
+            <ul className="space-y-2">
+              {experiences[year].map((experience, idx) => (
+                <li key={idx}>
+                  <h2 className="font-bold">{experience.experience}</h2>
+                  <p className="text-sm text-foreground/60">{experience.at}</p>
+                </li>
+              ))}
+            </ul>
+          </li>
+        ))}
       </ul>
     </main>
   );

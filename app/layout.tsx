@@ -42,6 +42,13 @@ export const metadata: Metadata = {
   icons: {
     icon: "/favicon.png",
   },
+  openGraph: {
+    url: "https://adics.xyz",
+    type: "website",
+    title: "Personal Website",
+    description: "Fullstuck Developer From Indonesia",
+    images: "/og.png",
+  },
 };
 
 export const viewport: Viewport = {

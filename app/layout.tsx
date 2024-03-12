@@ -22,13 +22,15 @@ const RootLayout = ({ children }: TProps) => {
         )}
       >
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
-          <div className="md:w-8/12 container py-10 relative">
+          <div className="relative">
             <Navbar />
-            {children}
-            <footer className="mt-14 flex justify-between items-center text-sm">
-              <p>&copy; {new Date().getFullYear()}</p>
-              <p>Adi Cahya Saputra</p>
-            </footer>
+            <div className="md:w-8/12 container pb-10">
+              {children}
+              <footer className="mt-14 flex justify-between items-center text-sm">
+                <p>&copy; {new Date().getFullYear()}</p>
+                <p>Adi Cahya Saputra</p>
+              </footer>
+            </div>
           </div>
         </ThemeProvider>
       </body>

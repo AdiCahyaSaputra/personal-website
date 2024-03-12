@@ -32,56 +32,57 @@ const Navbar: React.FC = () => {
 
   return (
     <LayoutGroup>
-      <nav className="sticky top-0 py-4 w-full bg-background supports-[backdrop-filter]:bg-background/80 z-10 supports-[backdrop-filter]:backdrop-blur-md flex justify-between items-center">
-        <Link href="/" className="font-light">
-          <span className="font-bold">Adi</span>cs.
-        </Link>
+      <nav className="sticky top-0 py-4 w-full bg-background supports-[backdrop-filter]:bg-background/80 z-10 supports-[backdrop-filter]:backdrop-blur-md">
+        <div className="md:w-8/12 container flex justify-between items-center">
+          <Link href="/" className="font-light">
+            <span className="font-bold">Adi</span>cs.
+          </Link>
 
-        <ul className="items-center space-x-4 hidden lg:flex">
-          {navItems.map((item, idx) => (
-            <li key={idx}>
-              <Button
-                asChild
-                variant="link"
-                className={`no-underline hover:no-underline focus-visible:ring-secondary ${
-                  path === item.url
-                    ? "text-foreground"
-                    : "hover:text-foreground text-foreground/40"
-                } p-0`}
-              >
-                <Link href={item.url}>{item.name}</Link>
-              </Button>
-            </li>
-          ))}
-        </ul>
-
-        <DropdownMenu>
-          <DropdownMenuTrigger asChild>
-            <Button
-              variant="outline"
-              size="icon"
-              className="rounded border-none lg:hidden focus-visible:ring-secondary"
-            >
-              <Menu />
-            </Button>
-          </DropdownMenuTrigger>
-          <DropdownMenuContent className="border-border rounded" align="end">
-            <DropdownMenuGroup>
-              {navItems.map((item, idx) => (
-                <DropdownMenuItem
-                  className="rounded cursor-pointer"
+          <ul className="items-center space-x-4 hidden lg:flex">
+            {navItems.map((item, idx) => (
+              <li key={idx}>
+                <Button
                   asChild
-                  key={idx}
+                  variant="link"
+                  className={`no-underline hover:no-underline focus-visible:ring-secondary ${path === item.url
+                      ? "text-foreground"
+                      : "hover:text-foreground text-foreground/40"
+                    } p-0`}
                 >
-                  <Link href={item.url}>
-                    {item.icon}
-                    {item.name}
-                  </Link>
-                </DropdownMenuItem>
-              ))}
-            </DropdownMenuGroup>
-          </DropdownMenuContent>
-        </DropdownMenu>
+                  <Link href={item.url}>{item.name}</Link>
+                </Button>
+              </li>
+            ))}
+          </ul>
+
+          <DropdownMenu>
+            <DropdownMenuTrigger asChild>
+              <Button
+                variant="outline"
+                size="icon"
+                className="rounded border-none lg:hidden focus-visible:ring-secondary"
+              >
+                <Menu />
+              </Button>
+            </DropdownMenuTrigger>
+            <DropdownMenuContent className="border-border rounded" align="end">
+              <DropdownMenuGroup>
+                {navItems.map((item, idx) => (
+                  <DropdownMenuItem
+                    className="rounded cursor-pointer"
+                    asChild
+                    key={idx}
+                  >
+                    <Link href={item.url}>
+                      {item.icon}
+                      {item.name}
+                    </Link>
+                  </DropdownMenuItem>
+                ))}
+              </DropdownMenuGroup>
+            </DropdownMenuContent>
+          </DropdownMenu>
+        </div>
       </nav>
     </LayoutGroup>
   );

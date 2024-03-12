@@ -15,12 +15,12 @@ const experiencesData = [
   {
     experience: "Graduate",
     year: 2023,
-    at: "From vocational High School",
+    at: "From Vocational High School",
   },
   {
     experience: "Fulltime IT Support",
     year: 2023,
-    at: "In Vocational High School",
+    at: "at Vocational High School",
   },
   {
     experience: "Frontend Developer (Freelance)",

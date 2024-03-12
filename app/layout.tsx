@@ -45,11 +45,19 @@ export const metadata: Metadata = {
     icon: "/favicon.png",
   },
   openGraph: {
-    url: "https://adics.xyz",
-    type: "website",
     title: "Personal Website",
-    description: "Fullstuck Developer From Indonesia",
-    images: "/og.png",
+    description: "IT Support | Fullstack Web Developer",
+    url: "https://adics.xyz",
+    siteName: "Adi Cahya Saputra",
+    images: [
+      {
+        url: "https://adics.xyz/og.png", // Must be an absolute URL
+        width: 1920,
+        height: 1080,
+      },
+    ],
+    locale: "en_US",
+    type: "website",
   },
 };
 

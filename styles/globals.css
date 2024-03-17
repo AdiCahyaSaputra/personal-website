@@ -51,6 +51,6 @@
 
 @layer utilities {
   .underline {
-    @apply underline-offset-2 decoration-red-800 decoration-2;
+    @apply underline-offset-4 decoration-red-800 decoration-2;
   }
 }

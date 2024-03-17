@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 const Projects = () => {
   return (
     <main className="mt-10">
-      <h1 className="text-lg lg:text-2xl font-bold">A web app Creation</h1>
+      <h1 className="text-lg lg:text-2xl font-bold">A web-app Creation</h1>
       <p className="text-foreground/75">
         that I&apos;m truly proud to showcase.
       </p>

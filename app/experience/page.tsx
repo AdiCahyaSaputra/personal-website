@@ -23,7 +23,7 @@ const experiencesData = [
     at: "at Vocational High School",
   },
   {
-    experience: "Frontend Developer (Freelance)",
+    experience: "Fullstack Developer (Freelance)",
     year: 2023,
     at: "at Mitrain ID",
   },
@@ -42,8 +42,6 @@ for (const experience of experiencesData) {
 }
 
 const ExperiencePage = () => {
-  console.log(experiences);
-
   return (
     <main className="mt-10 min-h-screen">
       <h1 className="text-lg lg:text-2xl font-bold">Professional Journey</h1>

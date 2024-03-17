@@ -1,5 +1,4 @@
 import React from "react";
-import { Cpu } from "lucide-react";
 
 const skills = [
   "NextJS",
@@ -11,20 +10,21 @@ const skills = [
   "Livewire",
   "Typescript",
   "PostgreSQL",
+  "Supabase",
   "Git",
+  "Docker",
   "Linux",
+  "Nginx",
   "Figma",
-  "Googling",
+  "ChatGPT",
 ];
 
 const TechnicalSkills = () => {
   return (
     <section className="grid gap-2 grid-cols-1 lg:grid-cols-2">
       <div>
-        <h1 className="text-lg lg:text-2xl font-bold">
-          Tools I Use (and I Love it)
-        </h1>
-        <p className="text-foreground/60">Technical Skill</p>
+        <h1 className="text-lg lg:text-2xl font-bold">Technical Skill</h1>
+        <p className="text-foreground/60">Tools I Use (and I Love it)</p>
       </div>
       <div className="mt-2 flex flex-wrap gap-1 self-start">
         {skills.map((skill, idx) => (

@@ -23,9 +23,14 @@ const experiencesData = [
     at: "at Vocational High School",
   },
   {
-    experience: "Fullstack Developer (Freelance)",
+    experience: "Fullstack Developer",
     year: 2023,
     at: "at Mitrain ID",
+  },
+  {
+    experience: "Junior Software Engineer",
+    year: 2024,
+    at: "at PT Pertamina Bina Medika IHC",
   },
 ];
 
@@ -51,7 +56,7 @@ const ExperiencePage = () => {
         {'"'} - Benjamin Adams
       </p>
 
-      <ul className="mt-4 space-y-2">
+      <ul className="mt-4 space-y-4">
         {Object.keys(experiences).map((year, idx) => (
           <li key={idx} className="flex items-start space-x-4 relative">
             <p className="sticky top-20 font-bold text-foreground self-start px-2 py-px border border-border rounded-full">

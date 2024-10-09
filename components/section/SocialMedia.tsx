@@ -5,7 +5,7 @@ const SocialMediaLinks = [
   { name: "/instagram", link: "https://www.instagram.com/adi.tsx" },
   {
     name: "/linkedin",
-    link: "https://www.linkedin.com/in/adi-cahya-saputra/",
+    link: "https://www.linkedin.com/in/adi-cs/",
   },
 ];
 

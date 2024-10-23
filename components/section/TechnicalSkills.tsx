@@ -2,6 +2,7 @@ import React from "react";
 
 const skills = [
   "NextJS",
+  "NuxtJS",
   "React Native",
   "Laravel",
   "Tailwind",

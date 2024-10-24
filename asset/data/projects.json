@@ -41,5 +41,16 @@
       "demo": "https://forumgw.vercel.app/"
     },
     "techStack": ["NextJS 13", "tRPC", "Prisma", "Supabase"]
+  },
+  {
+    "title": "DuitKu",
+    "shortDesc": "Manage your expense or income on DuitKu with OCR features, generate report quickly and more",
+    "slug": "duit-ku",
+    "status": "Done",
+    "links": {
+      "repository": "https://github.com/AdiCahyaSaputra/duitku",
+      "demo": "https://duit-ku.vercel.app/"
+    },
+    "techStack": ["NuxtJS", "ASP.NET Core 8", "PostgreSQL"]
   }
 ]

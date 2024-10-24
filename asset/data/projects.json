@@ -1,16 +1,5 @@
 [
   {
-    "title": "Auto Manage Files",
-    "shortDesc": "Manage your downloads folder programmatically",
-    "slug": "auto-manage-files",
-    "status": "Done",
-    "links": {
-      "demo": "https://auto-manage-files.vercel.app/",
-      "repository": "https://github.com/AdiCahyaSaputra/auto-manage-files"
-    },
-    "techStack": ["NodeJS"]
-  },
-  {
     "title": "Personal Branding",
     "shortDesc": "For my english practical examination",
     "slug": "personal-branding",

@@ -32,6 +32,11 @@ const experiencesData = [
     year: 2024,
     at: "at PT Pertamina Bina Medika IHC",
   },
+  {
+    experience: "Fullstack Developer",
+    year: 2024,
+    at: "at PT Enakans Media Teknologi",
+  },
 ];
 
 const experiences: { [key: string]: TExperience[] } = {};

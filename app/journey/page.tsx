@@ -62,7 +62,7 @@ const Journey = () => {
       <p className="text-foreground/60 mt-4">
         Btw check my{" "}
         <a
-          href="https://sekolahwijayakusuma.sch.id/"
+          href="https://www.linkedin.com/in/adi-cs/"
           className="underline text-foreground"
         >
           Linkedin

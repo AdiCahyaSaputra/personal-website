@@ -23,7 +23,7 @@ const experiencesData = [
     at: "at Vocational High School",
   },
   {
-    experience: "Fullstack Developer",
+    experience: "Fullstack Web Developer",
     year: 2023,
     at: "at Mitrain ID",
   },
@@ -56,19 +56,27 @@ const Journey = () => {
     <main className="mt-10 min-h-screen">
       <h1 className="text-lg lg:text-2xl font-bold">Professional Journey</h1>
       <p className="text-foreground/60 mt-2">
-        {'"'}Work is the dance of passion and perseverance, choreographed by the
-        footsteps of dedication and illuminated by the spotlight of achievement.
-        {'"'} - Benjamin Adams
+        Nothing is fun on the first try. <br/>It's all seems like Impossible until it's done (Nelson Mandela).
       </p>
 
-      <ul className="mt-4 space-y-4">
+      <p className="text-foreground/60 mt-4">
+        Btw check my{" "}
+        <a
+          href="https://sekolahwijayakusuma.sch.id/"
+          className="underline text-foreground"
+        >
+          Linkedin
+        </a> for more detail
+      </p>
+
+      <ul className="mt-8 space-y-4">
         {Object.keys(experiences).reverse().map((year, idx) => (
           <li key={idx} className="flex items-start space-x-4 relative">
             <p className="sticky top-20 font-bold text-foreground self-start px-2 py-px border border-border rounded-full">
               {year}
             </p>
             <ul className="space-y-2">
-              {experiences[year].map((experience, idx) => (
+              {experiences[year].reverse().map((experience, idx) => (
                 <li key={idx}>
                   <h2 className="font-bold">{experience.experience}</h2>
                   <p className="text-sm text-foreground/60">{experience.at}</p>

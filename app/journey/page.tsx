@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import React from "react";
 
 export const metadata: Metadata = {
-  title: "Experience",
+  title: "Journey",
 };
 
 type TExperience = {
@@ -51,7 +51,7 @@ for (const experience of experiencesData) {
   experiences[year].push(experience);
 }
 
-const ExperiencePage = () => {
+const Journey = () => {
   return (
     <main className="mt-10 min-h-screen">
       <h1 className="text-lg lg:text-2xl font-bold">Professional Journey</h1>
@@ -62,7 +62,7 @@ const ExperiencePage = () => {
       </p>
 
       <ul className="mt-4 space-y-4">
-        {Object.keys(experiences).map((year, idx) => (
+        {Object.keys(experiences).reverse().map((year, idx) => (
           <li key={idx} className="flex items-start space-x-4 relative">
             <p className="sticky top-20 font-bold text-foreground self-start px-2 py-px border border-border rounded-full">
               {year}
@@ -82,4 +82,4 @@ const ExperiencePage = () => {
   );
 };
 
-export default ExperiencePage;
+export default Journey;

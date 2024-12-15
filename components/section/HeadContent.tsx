@@ -6,17 +6,22 @@ const HeadContent = () => {
     <section>
       <h1 className="text-lg lg:text-2xl font-bold">Adi Cahya Saputra</h1>
       <p className="text-sm lg:text-base text-foreground/60">
-        Software Engineer
+        Fullstack Developer
       </p>
 
       <p className="mt-2 text-foreground/75">
-        Self-Taught Developer, NextJS and Laravel enthusiast. I graduated from a
-        vocational school, and currently work as a Software Engineer. View my{" "}
+        Self-taught developer, not yet a university graduate (completed vocational high school in 2023) and currently working as a full-stack developer. View my{" "}
         <Link
           href="/projects"
           className="underline text-foreground hover:decoration-red-800"
         >
           creations
+        </Link> or my{" "}
+        <Link
+          href="/experience"
+          className="underline text-foreground hover:decoration-red-800"
+        >
+          journey
         </Link>
       </p>
     </section>

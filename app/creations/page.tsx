@@ -3,13 +3,13 @@ import CardProject from "@/components/reusable/projects/CardProject";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Projects",
+  title: "Creations",
 };
 
-const Projects = () => {
+const Creations = () => {
   return (
     <main className="mt-10">
-      <h1 className="text-lg lg:text-2xl font-bold">A web-app Creation</h1>
+      <h1 className="text-lg lg:text-2xl font-bold">Some Creations</h1>
       <p className="text-foreground/75">
         that I&apos;m truly proud to showcase.
       </p>
@@ -25,4 +25,4 @@ const Projects = () => {
   );
 };
 
-export default Projects;
+export default Creations;

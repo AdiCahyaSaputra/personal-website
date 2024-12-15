@@ -35,11 +35,10 @@ const AboutMe = () => {
           >
             Wijaya Kusuma
           </a>{" "}
-          Vocational High School majoring in Software Enginering.
+          Vocational High School majoring in Software Enginering (2023).
         </p>
         <p className="mt-2">
-          {new Date().getFullYear() - 2020} Years experience of learning to code
-          and make something useful.
+          Learning to code and make something useful since 2020.
         </p>
         <p className="mt-2">
           I like to spend my day learning something new or digging deeper into

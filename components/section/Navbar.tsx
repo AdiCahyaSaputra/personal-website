@@ -16,13 +16,13 @@ import {
 
 const navItems = [
   {
-    name: "All Project",
-    url: "/projects",
+    name: "Creations",
+    url: "/creations",
     icon: <LayoutList className="w-4 h-4 mr-2" />,
   },
   {
-    name: "Experience",
-    url: "/experience",
+    name: "Journey",
+    url: "/journey",
     icon: <LineChart className="w-4 h-4 mr-2" />,
   },
 ];

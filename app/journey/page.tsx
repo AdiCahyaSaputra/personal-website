@@ -56,7 +56,7 @@ const Journey = () => {
     <main className="mt-10 min-h-screen">
       <h1 className="text-lg lg:text-2xl font-bold">Professional Journey</h1>
       <p className="text-foreground/60 mt-2">
-        Nothing is fun on the first try. <br/>It's all seems like Impossible until it's done (Nelson Mandela).
+        Nothing is fun on the first try. <br/>It&apos;s all seems like Impossible until it&apos;s done (Nelson Mandela).
       </p>
 
       <p className="text-foreground/60 mt-4">
@@ -70,13 +70,13 @@ const Journey = () => {
       </p>
 
       <ul className="mt-8 space-y-4">
-        {Object.keys(experiences).reverse().map((year, idx) => (
+        {[...Object.keys(experiences)].reverse().map((year, idx) => (
           <li key={idx} className="flex items-start space-x-4 relative">
             <p className="sticky top-20 font-bold text-foreground self-start px-2 py-px border border-border rounded-full">
               {year}
             </p>
             <ul className="space-y-2">
-              {experiences[year].reverse().map((experience, idx) => (
+              {[...experiences[year]].reverse().map((experience, idx) => (
                 <li key={idx}>
                   <h2 className="font-bold">{experience.experience}</h2>
                   <p className="text-sm text-foreground/60">{experience.at}</p>

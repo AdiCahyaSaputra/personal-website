@@ -15,7 +15,7 @@ const Creations = () => {
       </p>
 
       <ul className="mt-10 space-y-4">
-        {projects.reverse().map((project, idx) => (
+        {[...projects].reverse().map((project, idx) => (
           <li key={idx}>
             <CardProject {...project} key={idx} />
           </li>

@@ -5,9 +5,9 @@ const skills = [
   "NuxtJS",
   "React Native",
   "Kotlin",
+  "Flutter",
   "Python",
   "Laravel",
-  "Django",
   "Fast API",
   "ASP.Net Core",
   "Tailwind",
@@ -20,9 +20,7 @@ const skills = [
   "Git",
   "Docker",
   "Linux",
-  "Nginx",
   "Figma",
-  "ChatGPT",
 ];
 
 const TechnicalSkills = () => {
@@ -35,7 +33,7 @@ const TechnicalSkills = () => {
       <div className="mt-2 flex flex-wrap gap-1 self-start">
         {skills.map((skill, idx) => (
           <p
-            className="px-4 py-2 text-xs lg:text-sm border border-border rounded w-max"
+            className="px-4 py-2 text-xs lg:text-sm border border-border rounded"
             key={idx}
           >
             {skill}

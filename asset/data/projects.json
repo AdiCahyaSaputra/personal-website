@@ -19,21 +19,10 @@
       "repository": "https://github.com/AdiCahyaSaputra/sistem-antrian"
     },
     "techStack": ["Laravel 10", "Socket IO", "Tailwind"]
-  },
-  {
-    "title": "ForumGW",
-    "shortDesc": "an informal community for public or even anonymous discussions",
-    "slug": "forum-gw",
-    "status": "Done",
-    "links": {
-      "repository": "https://github.com/AdiCahyaSaputra/forumgw",
-      "demo": "https://forumgw.vercel.app/"
-    },
-    "techStack": ["NextJS 13", "tRPC", "Prisma", "Supabase"]
-  },
+  },  
   {
     "title": "DuitKu",
-    "shortDesc": "Manage your expense or income on DuitKu with OCR features, generate report quickly and more",
+    "shortDesc": "Manage your expense or income on DuitKu with OCR features, generate report quickly and more (VPS already shutdown)",
     "slug": "duit-ku",
     "status": "Done",
     "links": {
@@ -41,5 +30,16 @@
       "demo": "https://www.linkedin.com/posts/adi-cs_setelah-3-minggu-belajar-nuxtjs-vue-dan-activity-7254413256344182784-PaCY?utm_source=share&utm_medium=member_desktop"
     },
     "techStack": ["NuxtJS 3", "ASP.NET Core 8", "PostgreSQL"]
+  },
+  {
+    "title": "ForumGW",
+    "shortDesc": "an informal community for public or even anonymous discussions (Redesign)",
+    "slug": "forum-gw",
+    "status": "Done",
+    "links": {
+      "repository": "https://github.com/AdiCahyaSaputra/forumgw-v2",
+      "demo": "https://forumgw.vercel.app/"
+    },
+    "techStack": ["SvelteKit 1", "tRPC", "Drizzle", "Supabase", "Shadcn/UI"]
   }
 ]

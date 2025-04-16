@@ -32,7 +32,7 @@ const Navbar: React.FC = () => {
 
   return (
     <LayoutGroup>
-      <nav className="sticky top-0 py-4 w-full bg-background supports-[backdrop-filter]:bg-background/80 z-10 supports-[backdrop-filter]:backdrop-blur-md">
+      <nav className="sticky top-0 py-4 w-full bg-background supports-backdrop-filter:bg-background/80 z-10 supports-backdrop-filter:backdrop-blur-md">
         <div className="md:w-8/12 container flex justify-between items-center">
           <Link href="/" className="font-light">
             <span className="font-bold">Adi</span>cs.

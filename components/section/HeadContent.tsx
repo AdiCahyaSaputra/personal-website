@@ -10,13 +10,18 @@ const HeadContent = () => {
       </p>
 
       <p className="mt-2 text-foreground/75">
-        Self-taught developer, not yet a university graduate (completed vocational high school in 2023) and currently working as a full-stack developer. View my{" "}
+        Self-taught developer, graduate from vocational high school in 2023 and
+        currently working as a full-stack developer and UI/UX Designer.
+      </p>
+      <p className="mt-2 text-foreground/75">
+        View my{" "}
         <Link
           href="/creations"
           className="underline text-foreground hover:decoration-red-800"
         >
           creations
-        </Link> or my{" "}
+        </Link>{" "}
+        or {" "}
         <Link
           href="/journey"
           className="underline text-foreground hover:decoration-red-800"

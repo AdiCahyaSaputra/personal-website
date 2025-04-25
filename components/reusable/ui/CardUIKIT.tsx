@@ -1,57 +1,50 @@
 import {
   Card,
   CardContent,
-  CardDescription,
   CardFooter,
   CardHeader,
-  CardTitle,
 } from "@/components/ui/card";
 import { ExternalLinkIcon, GitHubLogoIcon } from "@radix-ui/react-icons";
+import Image from "next/image";
 import Link from "next/link";
 
 type TProps = {
   title: string;
-  shortDesc: string;
+  image: string;
   links: {
     demo?: string;
-    repository: string;
+    figma: string;
   };
-  techStack?: string[];
 };
 
-const CardProject: React.FC<TProps> = ({
+const CardUIKIT: React.FC<TProps> = ({
   title,
-  shortDesc,
+  image,
   links,
-  techStack,
 }) => {
   return (
     <Card className="rounded hover:border-foreground border-border bg-background">
       <CardHeader>
-        <CardTitle>{title}</CardTitle>
-        <CardDescription>{shortDesc}</CardDescription>
+        <Image
+          src={image}
+          alt={title}
+          width={1920}
+          height={1080}
+          className="w-full aspect-video"
+        />
       </CardHeader>
       <CardContent>
-        <ul className="flex items-center gap-1 flex-wrap">
-          {techStack?.reverse().map((tech, idx) => (
-            <li
-              key={idx}
-              className="py-1 px-2 text-sm rounded border border-border w-max select-none"
-            >
-              {tech}
-            </li>
-          ))}
-        </ul>
+        <h1 className="text-lg font-bold">{title}</h1>
       </CardContent>
       <CardFooter>
         <ul className="flex items-center gap-4">
           <li>
             <Link
               className="flex items-center gap-2 group"
-              href={links.repository}
+              href={links.figma}
             >
               <GitHubLogoIcon />
-              <span className="text-sm underline">Repository</span>
+              <span className="text-sm underline">Figma</span>
             </Link>
           </li>
           {links.demo && (
@@ -68,4 +61,4 @@ const CardProject: React.FC<TProps> = ({
   );
 };
 
-export default CardProject;
+export default CardUIKIT;

@@ -1,5 +1,5 @@
-import projects from "@/asset/data/projects.json";
-import CardProject from "@/components/reusable/projects/CardProject";
+import uikit from "@/asset/data/uikit.json";
+import CardUIKIT from "@/components/reusable/ui/CardUIKIT";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -11,13 +11,13 @@ const UI = () => {
     <main className="mt-10">
       <h1 className="text-lg lg:text-2xl font-bold">Sharing UI Kit</h1>
       <p className="text-foreground/75">
-        Built by developer (me) for developer
+        Built by developer for developer
       </p>
 
-      <ul className="mt-10 space-y-4">
-        {[...projects].reverse().map((project, idx) => (
+      <ul className="mt-10 grid grid-cols-1 lg:grid-cols-2 gap-4">
+        {[...uikit].reverse().map((ui, idx) => (
           <li key={idx}>
-            <CardProject {...project} key={idx} />
+            <CardUIKIT {...ui} key={idx} />
           </li>
         ))}
       </ul>

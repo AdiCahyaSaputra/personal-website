@@ -1,7 +1,7 @@
 "use client";
 
 import { LayoutGroup } from "framer-motion";
-import { Menu, Ghost, LayoutList, LineChart, AppWindow } from "lucide-react";
+import { Menu, LayoutList, LineChart, AppWindow } from "lucide-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import React from "react";
@@ -15,11 +15,11 @@ import {
 } from "../ui/dropdown-menu";
 
 const navItems = [
-  // {
-  //   name: "UI",
-  //   url: "/ui",
-  //   icon: <AppWindow className="w-4 h-4 mr-2" />,
-  // },
+  {
+    name: "UI",
+    url: "/ui",
+    icon: <AppWindow className="w-4 h-4 mr-2" />,
+  },
   {
     name: "Creations",
     url: "/creations",

@@ -1,0 +1,17 @@
+[
+  {
+    "title": "ForumGW",
+    "image": "/img/ui/forumgw.png",
+    "links": {
+      "demo": "https://forumgw.vercel.app",
+      "figma": "https://www.figma.com/community/file/1490962127835734938/forumgw"
+    }
+  },
+  {
+    "title": "PoS Dashboard UIKIT",
+    "image": "/img/ui/posgreez.png",
+    "links": {
+      "figma": "https://www.figma.com/community/file/1497604621626356906/posgreez-dashboard"
+    }
+  }
+]

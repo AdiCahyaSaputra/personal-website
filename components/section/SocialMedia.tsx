@@ -1,11 +1,24 @@
-import React from "react";
+import {
+  GitHubLogoIcon,
+  InstagramLogoIcon,
+  LinkedInLogoIcon,
+} from "@radix-ui/react-icons";
 
 const SocialMediaLinks = [
-  { name: "/github", link: "https://github.com/AdiCahyaSaputra" },
-  { name: "/instagram", link: "https://www.instagram.com/adi.tsx" },
   {
-    name: "/linkedin",
+    name: "github",
+    link: "https://github.com/AdiCahyaSaputra",
+    icon: <GitHubLogoIcon />,
+  },
+  {
+    name: "instagram",
+    link: "https://www.instagram.com/adi.tsx",
+    icon: <InstagramLogoIcon />,
+  },
+  {
+    name: "linkedin",
     link: "https://www.linkedin.com/in/adi-cs/",
+    icon: <LinkedInLogoIcon />,
   },
 ];
 
@@ -19,8 +32,9 @@ const SocialMedia = () => {
 
       <div>
         <ul className="space-y-2">
-          {SocialMediaLinks.map(({ name, link }, idx) => (
-            <li key={idx}>
+          {SocialMediaLinks.map(({ name, link, icon }, idx) => (
+            <li key={idx} className="flex items-center gap-2">
+              {icon}
               <a href={link} className="underline text-foreground">
                 {name}
               </a>

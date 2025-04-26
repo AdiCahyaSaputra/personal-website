@@ -1,4 +1,4 @@
-import React from "react";
+import Link from "next/link";
 
 const calculateAge = () => {
   const birth = new Date("2005-04-18");
@@ -21,7 +21,7 @@ const AboutMe = () => {
   return (
     <section className="mt-10 grid gap-2 grid-cols-1 lg:grid-cols-2">
       <div>
-        <h1 className="text-lg lg:text-2xl font-bold">Introduction</h1>
+        <h1 className="text-lg lg:text-2xl font-bold">Details</h1>
         <p className="text-foreground/60">Get to Know Me {":)"}</p>
       </div>
 
@@ -37,12 +37,33 @@ const AboutMe = () => {
           </a>{" "}
           Vocational High School majoring in Software Enginering (2023).
         </p>
-        <p className="mt-2">
-          Learning to code and make something useful since 2020.
+        <p className="mt-2 text-foreground/75">
+          I like to share{" "}
+          <Link
+            href="/ui"
+            className="underline text-foreground hover:decoration-red-800"
+          >
+            UI Kits
+          </Link>{" "}
+          that play nicely with popular frontend frameworks like shadcn-ui,
+          Tailwind CSS, Bootstrap, and more. No need to sweat over customizing
+          the frontend
         </p>
-        <p className="mt-2">
-          I like to spend my day learning something new or digging deeper into
-          what I&apos;ve learned before
+        <p className="mt-2 text-foreground/75">
+          To explore my past projects, check out my{" "}
+          <Link
+            href="/creations"
+            className="underline text-foreground hover:decoration-red-800"
+          >
+            creations
+          </Link>{" "}
+          or let me tell you about my interesting {" "}
+          <Link
+            href="/journey"
+            className="underline text-foreground hover:decoration-red-800"
+          >
+            journey
+          </Link>
         </p>
       </div>
     </section>

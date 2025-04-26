@@ -68,9 +68,6 @@ importers:
       tailwindcss-animate:
         specifier: ^1.0.7
         version: 1.0.7(tailwindcss@4.1.4)
-      tw-animate-css:
-        specifier: ^1.2.5
-        version: 1.2.5
       typescript:
         specifier: 4.9.4
         version: 4.9.4
@@ -102,6 +99,9 @@ importers:
       tailwindcss:
         specifier: ^4.1.4
         version: 4.1.4
+      tw-animate-css:
+        specifier: ^1.2.5
+        version: 1.2.5
 
 packages:
 

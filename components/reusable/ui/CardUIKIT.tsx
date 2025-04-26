@@ -4,7 +4,7 @@ import {
   CardFooter,
   CardHeader,
 } from "@/components/ui/card";
-import { ExternalLinkIcon, GitHubLogoIcon } from "@radix-ui/react-icons";
+import { ExternalLinkIcon, FigmaLogoIcon } from "@radix-ui/react-icons";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -30,7 +30,7 @@ const CardUIKIT: React.FC<TProps> = ({
           alt={title}
           width={1920}
           height={1080}
-          className="w-full aspect-video"
+          className="w-full aspect-video rounded-md"
         />
       </CardHeader>
       <CardContent>
@@ -43,7 +43,7 @@ const CardUIKIT: React.FC<TProps> = ({
               className="flex items-center gap-2 group"
               href={links.figma}
             >
-              <GitHubLogoIcon />
+              <FigmaLogoIcon />
               <span className="text-sm underline">Figma</span>
             </Link>
           </li>

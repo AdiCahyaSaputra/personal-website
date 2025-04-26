@@ -1,5 +1,20 @@
-import React from "react";
-import Link from "next/link";
+function formatYearDuration() {
+  const startDate = new Date(2023, 6, 1); // July 1, 2023 (months are 0-indexed)
+  const currentDate = new Date();
+
+  const totalMonths =
+    (currentDate.getFullYear() - startDate.getFullYear()) * 12 +
+    (currentDate.getMonth() - startDate.getMonth());
+  const totalYears = Math.floor(totalMonths / 12);
+
+  if (totalYears === 0) {
+    return "Less than 1 year";
+  } else if (totalMonths % 12 === 0) {
+    return `${totalYears} ${totalYears === 1 ? "year" : "years"}`;
+  } else {
+    return `${totalYears}+ years`;
+  }
+}
 
 const HeadContent = () => {
   return (
@@ -10,24 +25,9 @@ const HeadContent = () => {
       </p>
 
       <p className="mt-2 text-foreground/75">
-        Self-taught developer, graduate from vocational high school in 2023 and
-        currently working as a full-stack developer and UI/UX Designer.
-      </p>
-      <p className="mt-2 text-foreground/75">
-        View my{" "}
-        <Link
-          href="/creations"
-          className="underline text-foreground hover:decoration-red-800"
-        >
-          creations
-        </Link>{" "}
-        or {" "}
-        <Link
-          href="/journey"
-          className="underline text-foreground hover:decoration-red-800"
-        >
-          journey
-        </Link>
+        Self-taught developer with {formatYearDuration()} of hands-on
+        experience. <br />
+        Currently working as a full-stack developer and UI/UX Designer.
       </p>
     </section>
   );

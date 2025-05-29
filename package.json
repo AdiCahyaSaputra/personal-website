@@ -29,6 +29,7 @@
     "react-dom": "19.1.0",
     "tailwind-merge": "^1.14.0",
     "tailwindcss-animate": "^1.0.7",
+    "tech-stack-icons": "^2.1.0",
     "typescript": "4.9.4"
   },
   "devDependencies": {

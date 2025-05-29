@@ -68,6 +68,9 @@ importers:
       tailwindcss-animate:
         specifier: ^1.0.7
         version: 1.0.7(tailwindcss@4.1.4)
+      tech-stack-icons:
+        specifier: ^2.1.0
+        version: 2.1.0(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       typescript:
         specifier: 4.9.4
         version: 4.9.4
@@ -2342,6 +2345,12 @@ packages:
   tapable@2.2.1:
     resolution: {integrity: sha512-GNzQvQTOIP6RyTfE2Qxb8ZVlNmw0n88vp1szwWRimP02mnTsx3Wtn5qRdqY9w2XduFNUgvOwhNnQsjwCp+kqaQ==}
     engines: {node: '>=6'}
+
+  tech-stack-icons@2.1.0:
+    resolution: {integrity: sha512-6L8WPegruqXfS6U7oLPE2VBCJGXsXW4P97iorZpyI4DWBQxt0m+rLeGHpuu2tWb5jcyrIq1FEfDfron+DMSj/Q==}
+    peerDependencies:
+      react: ^18.2.0
+      react-dom: ^18.2.0
 
   text-table@0.2.0:
     resolution: {integrity: sha512-N+8UisAXDGk8PFXP4HAzVR9nbfmVJ3zYLAWiTIoqC5v5isinhr+r5uaO8+7r3BMfuNIufIsA7RdpVgacC2cSpw==}
@@ -5145,6 +5154,11 @@ snapshots:
   tailwindcss@4.1.4: {}
 
   tapable@2.2.1: {}
+
+  tech-stack-icons@2.1.0(react-dom@19.1.0(react@19.1.0))(react@19.1.0):
+    dependencies:
+      react: 19.1.0
+      react-dom: 19.1.0(react@19.1.0)
 
   text-table@0.2.0: {}
 

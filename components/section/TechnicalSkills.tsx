@@ -1,26 +1,27 @@
 import React from "react";
+import StackIcon from "tech-stack-icons";
 
 const skills = [
-  "NextJS",
-  "NuxtJS",
-  "React Native",
-  "Kotlin",
-  "Flutter",
-  "Python",
-  "Laravel",
-  "Fast API",
-  "ASP.Net Core",
-  "Tailwind",
-  "Prisma",
+  "nextjs2",
+  "nuxtjs",
+  "sveltejs",
+  "reactjs",
+  "kotlin",
+  "flutter",
+  "python",
+  "laravel",
+  "tailwindcss",
+  "bootstrap5",
+  "jquery",
+  "prisma",
   "tRPC",
-  "Livewire",
-  "Typescript",
-  "PostgreSQL",
-  "Supabase",
-  "Git",
-  "Docker",
-  "Linux",
-  "Figma",
+  "typescript",
+  "postgresql",
+  "supabase",
+  "git",
+  "docker",
+  "linux",
+  "figma",
 ];
 
 const TechnicalSkills = () => {
@@ -32,12 +33,9 @@ const TechnicalSkills = () => {
       </div>
       <div className="mt-2 flex flex-wrap gap-1 self-start">
         {skills.map((skill, idx) => (
-          <p
-            className="px-4 py-2 text-xs lg:text-sm border border-border rounded"
-            key={idx}
-          >
-            {skill}
-          </p>
+          <div key={idx} className="p-4 bg-foreground/5 rounded-md flex items-center justify-center border hover:border-white">
+            <StackIcon className="w-6" name={skill} />
+          </div>
         ))}
       </div>
     </section>

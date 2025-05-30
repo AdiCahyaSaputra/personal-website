@@ -31,10 +31,10 @@ const TechnicalSkills = () => {
         <h1 className="text-lg lg:text-2xl font-bold">Technical Skill</h1>
         <p className="text-foreground/60">Tools I Use (and I Love it)</p>
       </div>
-      <div className="mt-2 flex flex-wrap gap-1 self-start">
+      <div className="mt-2 grid grid-cols-5 md:grid-cols-8 lg:grid-cols-10 gap-1 self-start">
         {skills.map((skill, idx) => (
-          <div key={idx} className="p-4 bg-foreground/5 rounded-md flex items-center justify-center border hover:border-white">
-            <StackIcon className="w-6" name={skill} />
+          <div key={idx} className="p-4 w-full bg-foreground/5 rounded-md flex items-center justify-center border hover:border-white">
+            <StackIcon className="w-full" name={skill} />
           </div>
         ))}
       </div>

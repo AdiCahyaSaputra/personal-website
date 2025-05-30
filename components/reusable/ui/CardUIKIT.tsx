@@ -17,13 +17,9 @@ type TProps = {
   };
 };
 
-const CardUIKIT: React.FC<TProps> = ({
-  title,
-  image,
-  links,
-}) => {
+const CardUIKIT: React.FC<TProps> = ({ title, image, links }) => {
   return (
-    <Card className="rounded hover:border-foreground border-border bg-background">
+    <Card className="rounded hover:border-foreground border-border bg-foreground/5">
       <CardHeader>
         <Image
           src={image}
@@ -39,10 +35,7 @@ const CardUIKIT: React.FC<TProps> = ({
       <CardFooter>
         <ul className="flex items-center gap-4">
           <li>
-            <Link
-              className="flex items-center gap-2 group"
-              href={links.figma}
-            >
+            <Link className="flex items-center gap-2 group" href={links.figma}>
               <FigmaLogoIcon />
               <span className="text-sm underline">Figma</span>
             </Link>

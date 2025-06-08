@@ -1,3 +1,7 @@
+"use client";
+
+import { useEffect, useState } from "react";
+
 function formatYearDuration() {
   const startDate = new Date(2023, 6, 1); // July 1, 2023 (months are 0-indexed)
   const currentDate = new Date();
@@ -17,11 +21,19 @@ function formatYearDuration() {
 }
 
 const HeadContent = () => {
+  const [emoji, setEmoji] = useState("😎😋👊🙏✅🔥😁😭🦦🤖");
+
+  useEffect(() => {
+    // @ts-ignore
+    const shuffled = [...emoji].sort(() => Math.random() - 0.5).join("");
+    setEmoji(shuffled);
+  }, []);
+
   return (
     <section>
       <h1 className="text-lg lg:text-2xl font-bold">Adi Cahya Saputra</h1>
       <p className="text-sm lg:text-base text-foreground/60">
-        Fullstack Developer
+        {emoji}
       </p>
 
       <p className="mt-2 text-foreground/75">

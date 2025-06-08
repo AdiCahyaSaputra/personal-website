@@ -28,14 +28,7 @@ const AboutMe = () => {
       <div className="text-foreground/75 mb-4">
         <p>
           I&apos;m {calculateAge()} y.o man from Jakarta, Indonesia. Graduated
-          from{" "}
-          <a
-            href="https://sekolahwijayakusuma.sch.id/"
-            className="underline text-foreground"
-          >
-            Wijaya Kusuma
-          </a>{" "}
-          Vocational High School majoring in Software Enginering (2023).
+          at 2023 from Vocational High School majoring in Software Enginering.
         </p>
         <p className="mt-2 text-foreground/75">
           I like to share{" "}
@@ -57,7 +50,7 @@ const AboutMe = () => {
           >
             creations
           </Link>{" "}
-          or let me tell you about my interesting {" "}
+          or about my interesting{" "}
           <Link
             href="/journey"
             className="underline text-foreground hover:decoration-red-800"

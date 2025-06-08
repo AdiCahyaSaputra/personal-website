@@ -26,7 +26,7 @@ const CardUIKIT: React.FC<TProps> = ({ title, image, links }) => {
           alt={title}
           width={1920}
           height={1080}
-          className="w-full aspect-video rounded-md"
+          className="w-full aspect-video rounded-sm"
         />
       </CardHeader>
       <CardContent>

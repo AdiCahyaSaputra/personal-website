@@ -1,27 +1,29 @@
-import React from "react";
-import StackIcon from "tech-stack-icons";
+import StackIcon from 'tech-stack-icons';
 
 const skills = [
   "nextjs2",
   "nuxtjs",
   "sveltejs",
-  "reactjs",
-  "kotlin",
+  "react",
   "flutter",
-  "python",
+  "nestjs",
   "laravel",
+  "shadcnui",
   "tailwindcss",
   "bootstrap5",
   "jquery",
   "prisma",
   "tRPC",
+  "reactquery",
+  "zod",
   "typescript",
   "postgresql",
-  "supabase",
   "git",
   "docker",
   "linux",
+  "framer",
   "figma",
+  "canva",
 ];
 
 const TechnicalSkills = () => {
@@ -34,7 +36,7 @@ const TechnicalSkills = () => {
       <div className="mt-2 grid grid-cols-5 md:grid-cols-8 lg:grid-cols-10 gap-1 self-start">
         {skills.map((skill, idx) => (
           <div key={idx} className="p-4 w-full bg-foreground/5 rounded-md flex items-center justify-center border hover:border-white">
-            <StackIcon className="w-full" name={skill} />
+            <StackIcon variant="dark" className="w-full" name={skill} />
           </div>
         ))}
       </div>

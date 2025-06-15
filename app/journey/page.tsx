@@ -76,7 +76,7 @@ const Journey = () => {
       <ul className="mt-8 space-y-4">
         {[...Object.keys(experiences)].reverse().map((year, yearIdx) => (
           <li key={yearIdx} className="flex items-start space-x-4 relative">
-            <p className="sticky top-20 font-bold text-foreground self-start px-2 py-px border border-border rounded-full">
+            <p className="sticky top-24 font-bold text-foreground self-start px-2 py-px border border-border rounded-full">
               {year}
             </p>
             <ul className="space-y-2">

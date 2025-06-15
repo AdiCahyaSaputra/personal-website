@@ -10,12 +10,9 @@ const Page = () => {
       <HeadContent />
       <Separator className="my-4" />
       <AboutMe />
-
-      <div>
-        <TechnicalSkills />
-        <Separator className="mt-10 mb-4" />
-        <SocialMedia />
-      </div>
+      <TechnicalSkills />
+      <Separator className="mt-10 mb-4" />
+      <SocialMedia />
     </main>
   );
 };

@@ -93,11 +93,11 @@ const Navbar: React.FC = () => {
         </filter>
       </svg>
       <nav className="sticky top-0 w-full z-10 py-4">
-        <div className="liquidGlass-wrapper bg-card/10 py-4 rounded-full md:w-8/12 w-11/12 container">
+        <div className="liquidGlass-wrapper bg-card/10 py-4 rounded-md md:w-8/12 w-11/12 container">
           <div className="liquidGlass-effect"></div>
           <div className="liquidGlass-tint bg-card/25"></div>
           <div className="liquidGlass-shine rounded-full"></div>
-          <div className="relative z-10 w-full flex justify-between items-center ">
+          <div className="relative z-10 w-full flex justify-between items-center">
             <Link href="/" className="font-light">
               <span className="font-bold">Adi</span>cs.
             </Link>

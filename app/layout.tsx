@@ -4,9 +4,17 @@ import "styles/globals.css";
 
 import ThemeProvider from "@/components/provider/theme-provider";
 import Navbar from "@/components/section/Navbar";
-import { Inter } from "next/font/google";
+import { Architects_Daughter, Inter, Poppins } from "next/font/google";
 
 const inter = Inter({ subsets: ["latin"] });
+const architectDaughter = Architects_Daughter({
+  subsets: ["latin"],
+  weight: ["400"],
+});
+// const poppins = Poppins({
+//   subsets: ["latin"],
+//   weight: ["400", "500", "600", "700"],
+// });
 
 type TProps = {
   children: React.ReactNode;
@@ -19,6 +27,8 @@ const RootLayout = ({ children }: TProps) => {
         className={cn(
           "min-h-screen bg-background antialiased selection:text-background selection:bg-foreground",
           inter.className,
+          architectDaughter.className,
+          // poppins.className
         )}
       >
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>

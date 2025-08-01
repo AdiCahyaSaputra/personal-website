@@ -92,8 +92,8 @@ const Navbar: React.FC = () => {
           />
         </filter>
       </svg>
-      <nav className="sticky top-0 w-full z-10 py-4">
-        <div className="liquidGlass-wrapper bg-card/10 py-4 rounded-md md:w-8/12 w-11/12 container">
+      <nav className="sticky top-0 w-full z-10 p-0 liquidGlass-wrapper bg-background/10 border-b-1">
+        <div className="p-5 rounded-md w-full container">
           <div className="liquidGlass-effect"></div>
           <div className="liquidGlass-tint bg-card/25"></div>
           <div className="liquidGlass-shine rounded-full"></div>

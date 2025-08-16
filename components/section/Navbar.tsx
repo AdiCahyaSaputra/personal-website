@@ -7,11 +7,11 @@ import { usePathname } from "next/navigation";
 import React from "react";
 import { Button } from "../ui/button";
 import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuGroup,
-  DropdownMenuItem,
-  DropdownMenuTrigger,
+    DropdownMenu,
+    DropdownMenuContent,
+    DropdownMenuGroup,
+    DropdownMenuItem,
+    DropdownMenuTrigger,
 } from "../ui/dropdown-menu";
 
 const navItems = [
@@ -96,7 +96,7 @@ const Navbar: React.FC = () => {
         <div className="p-5 rounded-md w-full container">
           <div className="liquidGlass-effect"></div>
           <div className="liquidGlass-tint bg-card/25"></div>
-          <div className="liquidGlass-shine rounded-full"></div>
+          <div className="liquidGlass-shine rounded-md"></div>
           <div className="relative z-10 w-full flex justify-between items-center">
             <Link href="/" className="font-light">
               <span className="font-bold">Adi</span>cs.
@@ -124,19 +124,19 @@ const Navbar: React.FC = () => {
                 <Button
                   variant="outline"
                   size="icon"
-                  className="rounded border-none lg:hidden focus-visible:ring-secondary"
+                  className="rounded-md border-none lg:hidden focus-visible:ring-secondary"
                 >
                   <Menu />
                 </Button>
               </DropdownMenuTrigger>
               <DropdownMenuContent
-                className="border-border rounded"
+                className="border-border rounded-md"
                 align="end"
               >
                 <DropdownMenuGroup>
                   {navItems.map((item, idx) => (
                     <DropdownMenuItem
-                      className="rounded cursor-pointer"
+                      className="rounded-md cursor-pointer"
                       asChild
                       key={idx}
                     >

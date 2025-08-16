@@ -1,6 +1,5 @@
 import { Badge } from "@/components/ui/badge";
 import { Metadata } from "next";
-import React from "react";
 
 export const metadata: Metadata = {
   title: "Journey",
@@ -76,13 +75,13 @@ const Journey = () => {
       <ul className="mt-8 space-y-4">
         {[...Object.keys(experiences)].reverse().map((year, yearIdx) => (
           <li key={yearIdx} className="flex items-start space-x-4 relative">
-            <p className="sticky top-24 font-bold text-foreground self-start px-2 py-px border border-border rounded-full">
+            <p className="sticky top-24 font-bold text-foreground self-start px-2 py-px border border-border rounded-lg">
               {year}
             </p>
             <ul className="space-y-2">
               {[...experiences[year]].reverse().map((experience, expIdx) => (
                 <li key={expIdx}>
-                  {expIdx === 0 && yearIdx === 0 && (<Badge className="mb-2">Present</Badge>)}
+                  {expIdx === 0 && yearIdx === 0 && (<Badge className="mb-2 rounded-lg bg-red-600">Present</Badge>)}
                   <h2 className="font-bold">{experience.experience}</h2>
                   <p className="text-sm text-foreground/60">{experience.at}</p>
                 </li>

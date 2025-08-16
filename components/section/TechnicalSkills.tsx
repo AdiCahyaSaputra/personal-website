@@ -35,7 +35,7 @@ const TechnicalSkills = () => {
       </div>
       <div className="mt-2 grid grid-cols-5 md:grid-cols-8 lg:grid-cols-10 gap-1 self-start">
         {skills.map((skill, idx) => (
-          <div key={idx} className="p-4 w-full bg-foreground/5 rounded-md flex items-center justify-center border hover:border-white">
+          <div key={idx} className="p-4 w-full bg-foreground/5 rounded-lg flex items-center justify-center border hover:border-white">
             <StackIcon variant="dark" className="w-full" name={skill} />
           </div>
         ))}

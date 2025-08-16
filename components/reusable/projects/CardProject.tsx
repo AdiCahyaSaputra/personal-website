@@ -26,7 +26,7 @@ const CardProject: React.FC<TProps> = ({
   techStack,
 }) => {
   return (
-    <Card className="rounded hover:border-foreground border-border bg-foreground/5">
+    <Card className="rounded-lg hover:border-foreground border-border bg-foreground/5">
       <CardHeader>
         <CardTitle>{title}</CardTitle>
         <CardDescription>{shortDesc}</CardDescription>
@@ -36,7 +36,7 @@ const CardProject: React.FC<TProps> = ({
           {techStack?.reverse().map((tech, idx) => (
             <li
               key={idx}
-              className="py-1 px-2 text-sm rounded border border-border w-max select-none"
+              className="py-1 px-2 text-sm rounded-lg border border-border w-max select-none"
             >
               {tech}
             </li>

@@ -92,8 +92,8 @@ const Navbar: React.FC = () => {
           />
         </filter>
       </svg>
-      <nav className="sticky top-0 w-full z-10 p-0 liquidGlass-wrapper bg-background/10 border-b-1">
-        <div className="p-5 rounded-md w-full container">
+      <nav className="sticky top-0 w-full z-10 p-0 liquidGlass-wrapper bg-background/20 border-b-1">
+        <div className="p-5 rounded-lg w-full container">
           <div className="liquidGlass-effect"></div>
           <div className="liquidGlass-tint bg-card/25"></div>
           <div className="liquidGlass-shine rounded-md"></div>
@@ -124,19 +124,19 @@ const Navbar: React.FC = () => {
                 <Button
                   variant="outline"
                   size="icon"
-                  className="rounded-md border-none lg:hidden focus-visible:ring-secondary"
+                  className="rounded-lg border-none lg:hidden focus-visible:ring-secondary"
                 >
                   <Menu />
                 </Button>
               </DropdownMenuTrigger>
               <DropdownMenuContent
-                className="border-border rounded-md"
+                className="border-border rounded-lg"
                 align="end"
               >
                 <DropdownMenuGroup>
                   {navItems.map((item, idx) => (
                     <DropdownMenuItem
-                      className="rounded-md cursor-pointer"
+                      className="rounded-lg cursor-pointer"
                       asChild
                       key={idx}
                     >

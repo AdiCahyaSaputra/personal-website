@@ -35,6 +35,8 @@ const navItems = [
 const Navbar: React.FC = () => {
   const path = usePathname() || "/";
 
+  console.log(path)
+
   return (
     <LayoutGroup>
       <svg className="hidden">

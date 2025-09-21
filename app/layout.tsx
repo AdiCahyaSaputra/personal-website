@@ -11,11 +11,11 @@ import {
   Poppins,
 } from "next/font/google";
 
-// const inter = Inter({ subsets: ["latin"] });
-// const architectDaughter = Architects_Daughter({
-//   subsets: ["latin"],
-//   weight: ["400"],
-// });
+const inter = Inter({ subsets: ["latin"] });
+const architectDaughter = Architects_Daughter({
+  subsets: ["latin"],
+  weight: ["400"],
+});
 // const poppins = Poppins({
 //   subsets: ["latin"],
 //   weight: ["400", "500", "600", "700"],
@@ -35,7 +35,7 @@ const RootLayout = ({ children }: TProps) => {
       <body
         className={cn(
           "min-h-screen bg-background antialiased selection:text-background selection:bg-foreground gradient-bg",
-          geistMono.className,
+          inter.className,
         )}
       >
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>

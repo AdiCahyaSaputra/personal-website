@@ -81,8 +81,14 @@ const Journey = () => {
             <ul className="space-y-2">
               {[...experiences[year]].reverse().map((experience, expIdx) => (
                 <li key={expIdx}>
-                  {expIdx === 0 && yearIdx === 0 && (<Badge className="mb-2 rounded-lg bg-red-600">Present</Badge>)}
-                  <h2 className="font-bold">{experience.experience}</h2>
+                  <div className="flex items-center gap-2">
+                    <h2 className="font-bold">{experience.experience}</h2>
+                    {expIdx === 0 && yearIdx === 0 && (
+                      <p className="text-xs font-bold bg-gradient-to-r from-emerald-400 via-teal-400 to-cyan-400 text-transparent bg-clip-text">
+                        PRESENT
+                      </p>
+                    )}
+                  </div>
                   <p className="text-sm text-foreground/60">{experience.at}</p>
                 </li>
               ))}

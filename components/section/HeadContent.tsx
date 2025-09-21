@@ -1,5 +1,6 @@
 "use client";
 
+import { ArrowLeft } from "lucide-react";
 import { useEffect, useState } from "react";
 
 function formatYearDuration() {
@@ -32,9 +33,7 @@ const HeadContent = () => {
   return (
     <section>
       <h1 className="text-lg lg:text-2xl font-bold">Adi Cahya Saputra</h1>
-      <p className="text-sm lg:text-base text-foreground/60">
-        {emoji}
-      </p>
+      <p className="text-sm lg:text-base text-foreground/60">{emoji}</p>
 
       <p className="mt-2 text-foreground/75">
         Self-taught developer with {formatYearDuration()} of hands-on

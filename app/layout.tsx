@@ -4,12 +4,8 @@ import "styles/globals.css";
 
 import ThemeProvider from "@/components/provider/theme-provider";
 import Navbar from "@/components/section/Navbar";
-import {
-  Architects_Daughter,
-  Geist_Mono,
-  Inter,
-  Poppins,
-} from "next/font/google";
+import { Architects_Daughter, Geist_Mono, Inter } from "next/font/google";
+import FloatingLines from "@/components/react-bits/floating-lines";
 
 const inter = Inter({ subsets: ["latin"] });
 const architectDaughter = Architects_Daughter({
@@ -35,18 +31,39 @@ const RootLayout = ({ children }: TProps) => {
       <body
         className={cn(
           "min-h-screen bg-background antialiased selection:text-background selection:bg-foreground gradient-bg",
-          inter.className,
+          inter.className
         )}
       >
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
           <div className="relative">
-            <Navbar />
-            <div className="md:w-8/12 container pb-10">
-              {children}
-              <footer className="mt-14 flex justify-between items-center text-sm">
-                <p>&copy; {new Date().getFullYear()}</p>
-                <p>Adi Cahya Saputra</p>
-              </footer>
+            <div
+              style={{
+                width: "100%",
+                height: "100vh",
+                position: "fixed",
+                zIndex: 1,
+              }}
+            >
+              <FloatingLines
+                enabledWaves={["top", "bottom"]}
+                lineCount={[5, 5]}
+                lineDistance={[5, 5]}
+                bendRadius={5.0}
+                bendStrength={-3}
+                interactive={false}
+                parallax={false}
+                mixBlendMode="multiply"
+              />
+            </div>
+            <div className="relative z-20">
+              <Navbar />
+              <div className="md:w-8/12 container pb-10">
+                {children}
+                <footer className="mt-14 flex justify-between items-center text-sm">
+                  <p>&copy; {new Date().getFullYear()}</p>
+                  <p>Adi Cahya Saputra</p>
+                </footer>
+              </div>
             </div>
           </div>
         </ThemeProvider>

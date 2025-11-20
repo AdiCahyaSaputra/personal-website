@@ -278,6 +278,14 @@ export default function FloatingLines({
   const middleLineDistance = enabledWaves.includes('middle') ? getLineDistance('middle') * 0.01 : 0.01;
   const bottomLineDistance = enabledWaves.includes('bottom') ? getLineDistance('bottom') * 0.01 : 0.01;
 
+  const stringifiedLinesGradient = JSON.stringify(linesGradient);
+  const stringifiedEnabledWaves = JSON.stringify(enabledWaves);
+  const stringifiedLineCount = JSON.stringify(lineCount);
+  const stringifiedLineDistance = JSON.stringify(lineDistance);
+  const stringifiedTopWavePosition = JSON.stringify(topWavePosition);
+  const stringifiedMiddleWavePosition = JSON.stringify(middleWavePosition);
+  const stringifiedBottomWavePosition = JSON.stringify(bottomWavePosition);
+
   useEffect(() => {
     if (!containerRef.current) return;
 
@@ -455,20 +463,20 @@ export default function FloatingLines({
     };
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [
-    linesGradient,
-    enabledWaves,
-    lineCount,
-    lineDistance,
-    topWavePosition,
-    middleWavePosition,
-    bottomWavePosition,
     animationSpeed,
     interactive,
     bendRadius,
     bendStrength,
     mouseDamping,
     parallax,
-    parallaxStrength
+    parallaxStrength,
+    stringifiedLinesGradient,
+    stringifiedEnabledWaves,
+    stringifiedLineCount,
+    stringifiedLineDistance,
+    stringifiedTopWavePosition,
+    stringifiedMiddleWavePosition,
+    stringifiedBottomWavePosition
   ]);
 
   return (

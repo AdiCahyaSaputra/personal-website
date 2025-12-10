@@ -39,8 +39,7 @@ const AboutMe = () => {
             UI Kits
           </Link>{" "}
           that play nicely with popular frontend frameworks like shadcn-ui,
-          Tailwind CSS, Bootstrap, and more. No need to sweat over customizing
-          the frontend
+          Tailwind CSS, Bootstrap, and more.
         </p>
         <p className="mt-2 text-foreground/75">
           To explore my past projects, check out my{" "}

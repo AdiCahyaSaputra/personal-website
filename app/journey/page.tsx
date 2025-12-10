@@ -1,4 +1,3 @@
-import { Badge } from "@/components/ui/badge";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -36,6 +35,11 @@ const experiencesData = [
     experience: "Fullstack Developer",
     year: 2024,
     at: "at PT Enakans Media Teknologi",
+  },
+  {
+    experience: "Fullstack Developer",
+    year: 2025,
+    at: "at Crosva",
   },
 ];
 

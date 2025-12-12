@@ -37,7 +37,7 @@ const Navbar: React.FC = () => {
 
   return (
     <LayoutGroup>
-      <nav className="sticky top-0 w-full z-10 p-0 backdrop-blur-lg bg-background/20 border-b-1">
+      <nav className="sticky top-0 w-full z-10 p-0 bg-background/20 border-b backdrop-blur-sm">
         <div className="p-5 rounded-lg w-full container">
           <div className="relative z-10 w-full flex justify-between items-center">
             <Link href="/" className="font-light">
@@ -51,8 +51,8 @@ const Navbar: React.FC = () => {
                     asChild
                     variant="link"
                     className={`no-underline hover:no-underline focus-visible:ring-secondary ${path === item.url
-                        ? "text-foreground"
-                        : "hover:text-foreground text-foreground/40"
+                      ? "text-foreground"
+                      : "hover:text-foreground text-foreground/40"
                       } p-0`}
                   >
                     <Link href={item.url}>{item.name}</Link>

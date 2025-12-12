@@ -5,7 +5,7 @@ import "styles/globals.css";
 import ThemeProvider from "@/components/provider/theme-provider";
 import Navbar from "@/components/section/Navbar";
 import { Inter } from "next/font/google";
-// import FloatingLines from "@/components/react-bits/floating-lines";
+import FloatingLines from "@/components/react-bits/floating-lines";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -24,6 +24,25 @@ const RootLayout = ({ children }: TProps) => {
       >
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
           <div className="relative">
+            <div
+              style={{
+                width: "100%",
+                height: "100vh",
+                position: "fixed",
+                zIndex: 1,
+              }}
+            >
+              <FloatingLines
+                enabledWaves={["top", "bottom"]}
+                lineCount={[5, 5]}
+                lineDistance={[5, 5]}
+                bendRadius={5.0}
+                bendStrength={-3}
+                interactive={false}
+                parallax={false}
+                mixBlendMode="multiply"
+              />
+            </div>
             <div className="relative z-20">
               <Navbar />
               <div className="md:w-8/12 container pb-10">

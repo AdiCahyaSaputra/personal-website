@@ -19,7 +19,7 @@ type TProps = {
 
 const CardUIKIT: React.FC<TProps> = ({ title, image, links }) => {
   return (
-    <Card className="rounded-lg hover:border-foreground border-border bg-foreground/5 backdrop-blur-lg">
+    <Card className="rounded-lg hover:border-foreground border-border bg-foreground/5">
       <CardHeader>
         <Image
           src={image}

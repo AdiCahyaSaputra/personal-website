@@ -26,7 +26,7 @@ const CardProject: React.FC<TProps> = ({
   techStack,
 }) => {
   return (
-    <Card className="rounded-lg hover:border-foreground border-border bg-foreground/5 backdrop-blur-lg">
+    <Card className="rounded-lg hover:border-foreground border-border bg-foreground/5">
       <CardHeader>
         <CardTitle>{title}</CardTitle>
         <CardDescription>{shortDesc}</CardDescription>

@@ -1,10 +1,32 @@
 [
   {
-    "title": "IT Support",
-    "year": {
-      "start": "2023",
-      "end": "Now"
-    },
-    "detail": "Working on various digital projects and system maintenance"
+    "experience": "Graduate",
+    "year": 2023,
+    "at": "From Vocational High School"
+  },
+  {
+    "experience": "Fulltime IT Support",
+    "year": 2023,
+    "at": "at Vocational High School"
+  },
+  {
+    "experience": "Fullstack Web Developer",
+    "year": 2023,
+    "at": "at Mitrain ID"
+  },
+  {
+    "experience": "Junior Software Engineer",
+    "year": 2024,
+    "at": "at PT Pertamina Bina Medika IHC"
+  },
+  {
+    "experience": "Fullstack Developer",
+    "year": 2024,
+    "at": "at PT Enakans Media Teknologi"
+  },
+  {
+    "experience": "Fullstack Developer",
+    "year": 2025,
+    "at": "at Crosva"
   }
 ]

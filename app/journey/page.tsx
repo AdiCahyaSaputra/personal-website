@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import experiencesData from "@/asset/data/experience.json";
 
 export const metadata: Metadata = {
   title: "Journey",
@@ -9,39 +10,6 @@ type TExperience = {
   year: number;
   at: string;
 };
-
-const experiencesData = [
-  {
-    experience: "Graduate",
-    year: 2023,
-    at: "From Vocational High School",
-  },
-  {
-    experience: "Fulltime IT Support",
-    year: 2023,
-    at: "at Vocational High School",
-  },
-  {
-    experience: "Fullstack Web Developer",
-    year: 2023,
-    at: "at Mitrain ID",
-  },
-  {
-    experience: "Junior Software Engineer",
-    year: 2024,
-    at: "at PT Pertamina Bina Medika IHC",
-  },
-  {
-    experience: "Fullstack Developer",
-    year: 2024,
-    at: "at PT Enakans Media Teknologi",
-  },
-  {
-    experience: "Fullstack Developer",
-    year: 2025,
-    at: "at Crosva",
-  },
-];
 
 const experiences: { [key: string]: TExperience[] } = {};
 
@@ -60,13 +28,9 @@ const Journey = () => {
     <main className="mt-10 min-h-screen">
       <h1 className="text-lg lg:text-2xl font-bold">Professional Journey</h1>
       <p className="text-foreground/60 mt-2">
-        Nothing is fun on the first try. <br />
-        It&apos;s all seems like Impossible until it&apos;s done (Nelson
-        Mandela).
-      </p>
-
-      <p className="text-foreground/60 mt-4">
-        Btw check my{" "}
+        Here you can find a list of my work experiences and career growth along
+        the way.
+        <br /> Btw check my{" "}
         <a
           href="https://www.linkedin.com/in/adi-cs/"
           target="_blank"

@@ -69,13 +69,13 @@ const Navbar: React.FC = () => {
                 <Button
                   variant="outline"
                   size="icon"
-                  className="rounded-lg border-none lg:hidden focus-visible:ring-secondary"
+                  className="rounded-full border-none lg:hidden focus-visible:ring-secondary"
                 >
                   <Menu />
                 </Button>
               </DropdownMenuTrigger>
               <DropdownMenuContent
-                className="border-border rounded-lg"
+                className="border-border rounded-xl"
                 align="end"
               >
                 <DropdownMenuGroup>

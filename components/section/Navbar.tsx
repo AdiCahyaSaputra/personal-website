@@ -55,7 +55,10 @@ const Navbar: React.FC = () => {
                       : "hover:text-foreground text-foreground/40"
                       } p-0`}
                   >
-                    <Link href={item.url}>{item.name}</Link>
+                    <Link href={item.url}>
+                      {item.icon}
+                      {item.name}
+                    </Link>
                   </Button>
                 </li>
               ))}

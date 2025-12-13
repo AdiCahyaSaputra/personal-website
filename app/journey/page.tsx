@@ -69,7 +69,9 @@ const Journey = () => {
         Btw check my{" "}
         <a
           href="https://www.linkedin.com/in/adi-cs/"
-          className="underline text-foreground"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="underline text-foreground hover:decoration-red-800"
         >
           Linkedin
         </a>{" "}

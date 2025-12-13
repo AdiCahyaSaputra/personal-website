@@ -68,6 +68,8 @@ const AboutMe = () => {
             <Link
               href={work.link}
               key={idx}
+              target="_blank"
+              rel="noopener noreferrer"
               className="underline text-foreground hover:decoration-red-800"
             >
               {work.name}

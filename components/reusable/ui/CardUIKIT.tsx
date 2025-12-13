@@ -35,14 +35,24 @@ const CardUIKIT: React.FC<TProps> = ({ title, image, links }) => {
       <CardFooter>
         <ul className="flex items-center gap-4">
           <li>
-            <Link className="flex items-center gap-2 group" href={links.figma}>
+            <Link
+              className="flex items-center gap-2 group"
+              href={links.figma}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FigmaLogoIcon />
               <span className="text-sm underline">Figma</span>
             </Link>
           </li>
           {links.demo && (
             <li>
-              <Link className="flex items-center gap-2 group" href={links.demo}>
+              <Link
+                className="flex items-center gap-2 group"
+                href={links.demo}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <ExternalLinkIcon />
                 <span className="text-sm underline">Demo</span>
               </Link>

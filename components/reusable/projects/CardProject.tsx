@@ -54,6 +54,8 @@ const CardProject: React.FC<TProps> = ({
             <Link
               className="flex items-center gap-2 group"
               href={links.repository}
+              target="_blank"
+              rel="noopener noreferrer"
             >
               <GitHubLogoIcon />
               <span className="text-sm underline">Repository</span>
@@ -61,7 +63,12 @@ const CardProject: React.FC<TProps> = ({
           </li>
           {links.demo && (
             <li>
-              <Link className="flex items-center gap-2 group" href={links.demo}>
+              <Link
+                className="flex items-center gap-2 group"
+                href={links.demo}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <ExternalLinkIcon />
                 <span className="text-sm underline">Demo</span>
               </Link>
@@ -72,6 +79,8 @@ const CardProject: React.FC<TProps> = ({
               <Link
                 className="flex items-center gap-2 group"
                 href={links.linkedinPost}
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 <LinkedInLogoIcon />
                 <span className="text-sm underline">LinkedIn Post</span>

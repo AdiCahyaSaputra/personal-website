@@ -35,7 +35,12 @@ const SocialMedia = () => {
           {SocialMediaLinks.map(({ name, link, icon }, idx) => (
             <li key={idx} className="flex items-center gap-2">
               {icon}
-              <a href={link} className="underline text-foreground cursor-pointer">
+              <a
+                href={link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="underline text-foreground cursor-pointer hover:decoration-red-800"
+              >
                 {name}
               </a>
             </li>

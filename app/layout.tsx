@@ -19,7 +19,7 @@ const RootLayout = ({ children }: TProps) => {
       <body
         className={cn(
           "min-h-screen bg-background antialiased selection:text-background selection:bg-foreground gradient-bg",
-          inter.className,
+          inter.className
         )}
       >
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>

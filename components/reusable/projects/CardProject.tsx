@@ -6,7 +6,11 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import { ExternalLinkIcon, GitHubLogoIcon } from "@radix-ui/react-icons";
+import {
+  ExternalLinkIcon,
+  GitHubLogoIcon,
+  LinkedInLogoIcon,
+} from "@radix-ui/react-icons";
 import Link from "next/link";
 
 type TProps = {
@@ -14,6 +18,7 @@ type TProps = {
   shortDesc: string;
   links: {
     demo?: string;
+    linkedinPost?: string;
     repository: string;
   };
   techStack?: string[];
@@ -26,7 +31,7 @@ const CardProject: React.FC<TProps> = ({
   techStack,
 }) => {
   return (
-    <Card className="rounded-lg hover:border-foreground border-border bg-foreground/5">
+    <Card className="rounded-xl hover:border-foreground border-border bg-foreground/5">
       <CardHeader>
         <CardTitle>{title}</CardTitle>
         <CardDescription>{shortDesc}</CardDescription>
@@ -36,7 +41,7 @@ const CardProject: React.FC<TProps> = ({
           {techStack?.reverse().map((tech, idx) => (
             <li
               key={idx}
-              className="py-1 px-2 text-sm rounded-lg border border-border w-max select-none"
+              className="py-1 px-2 text-sm rounded-full border border-border w-max select-none"
             >
               {tech}
             </li>
@@ -59,6 +64,17 @@ const CardProject: React.FC<TProps> = ({
               <Link className="flex items-center gap-2 group" href={links.demo}>
                 <ExternalLinkIcon />
                 <span className="text-sm underline">Demo</span>
+              </Link>
+            </li>
+          )}
+          {links.linkedinPost && (
+            <li>
+              <Link
+                className="flex items-center gap-2 group"
+                href={links.linkedinPost}
+              >
+                <LinkedInLogoIcon />
+                <span className="text-sm underline">LinkedIn Post</span>
               </Link>
             </li>
           )}

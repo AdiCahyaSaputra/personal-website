@@ -7,10 +7,10 @@ const Page = () => {
   return (
     <main className="mt-10">
       <HeadContent />
-      <div className="py-4" />
+      <div className="py-4 border-b" />
       <AboutMe />
       <TechnicalSkills />
-      <div className="pt-10 pb-4" />
+      <div className="pt-10 pb-4 border-b" />
       <SocialMedia />
     </main>
   );

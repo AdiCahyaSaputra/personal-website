@@ -27,7 +27,7 @@
     "status": "Done",
     "links": {
       "repository": "https://github.com/AdiCahyaSaputra/duitku",
-      "demo": "https://www.linkedin.com/posts/adi-cs_setelah-3-minggu-belajar-nuxtjs-vue-dan-activity-7254413256344182784-PaCY?utm_source=share&utm_medium=member_desktop"
+      "linkedinPost": "https://www.linkedin.com/posts/adi-cs_setelah-3-minggu-belajar-nuxtjs-vue-dan-activity-7254413256344182784-PaCY?utm_source=share&utm_medium=member_desktop"
     },
     "techStack": ["NuxtJS 3", "ASP.NET Core 8", "PostgreSQL"]
   },

@@ -79,7 +79,7 @@ const Journey = () => {
       <ul className="mt-8 space-y-4">
         {[...Object.keys(experiences)].reverse().map((year, yearIdx) => (
           <li key={yearIdx} className="flex items-start space-x-4 relative">
-            <p className="sticky top-24 font-bold text-foreground self-start px-2 py-px border border-border rounded-lg">
+            <p className="sticky top-24 bg-foreground/5 font-bold text-foreground self-start px-2 py-px border border-border rounded-full">
               {year}
             </p>
             <ul className="space-y-2">
@@ -88,7 +88,7 @@ const Journey = () => {
                   <div className="flex items-center gap-2">
                     <h2 className="font-bold">{experience.experience}</h2>
                     {expIdx === 0 && yearIdx === 0 && (
-                      <p className="text-xs font-bold bg-gradient-to-r from-emerald-400 via-teal-400 to-cyan-400 text-transparent bg-clip-text">
+                      <p className="text-xs font-bold bg-linear-to-r from-emerald-400 via-teal-400 to-cyan-400 text-transparent bg-clip-text">
                         PRESENT
                       </p>
                     )}

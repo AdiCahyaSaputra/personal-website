@@ -17,46 +17,66 @@ const calculateAge = () => {
   return age;
 };
 
+const recentWorks = [
+  {
+    name: "Twillink",
+    link: "https://twillink.com/",
+  },
+  {
+    name: "Yufo Trade",
+    link: "https://yufotrade.com/",
+  },
+  {
+    name: "Workace",
+    link: "https://workace.io/",
+  },
+];
+
 const AboutMe = () => {
   return (
     <section className="mt-10 grid gap-2 grid-cols-1 lg:grid-cols-2">
       <div>
-        <h1 className="text-lg lg:text-2xl font-bold">Details</h1>
+        <h1 className="text-lg lg:text-2xl font-bold">About</h1>
         <p className="text-foreground/60">Get to Know Me {":)"}</p>
       </div>
 
       <div className="text-foreground/75 mb-4">
         <p>
           I&apos;m {calculateAge()} y.o man from Jakarta, Indonesia. Graduated
-          at 2023 from Vocational High School majoring in Software Enginering.
-        </p>
-        <p className="mt-2 text-foreground/75">
-          I like to share{" "}
-          <Link
-            href="/ui"
-            className="underline text-foreground hover:decoration-red-800"
-          >
-            UI Kits
-          </Link>{" "}
-          that play nicely with popular frontend frameworks like shadcn-ui,
-          Tailwind CSS, Bootstrap, and more.
-        </p>
-        <p className="mt-2 text-foreground/75">
-          To explore my past projects, check out my{" "}
+          at 2023 from <b className="text-foreground">Vocational High School</b>{" "}
+          majoring in <b className="text-foreground">Software Enginering</b>.
+          Explore my{" "}
           <Link
             href="/creations"
             className="underline text-foreground hover:decoration-red-800"
           >
             creations
           </Link>{" "}
-          or about my interesting{" "}
+          and interesting{" "}
           <Link
             href="/journey"
             className="underline text-foreground hover:decoration-red-800"
           >
             journey
           </Link>
+          .
         </p>
+
+        <div className="mt-4 flex items-center gap-1 flex-wrap">
+          <p className="text-foreground/75">Recent professional works :</p>
+          {recentWorks.map((work, idx) => (
+            <Link
+              href={work.link}
+              key={idx}
+              className="underline text-foreground hover:decoration-red-800"
+            >
+              {work.name}
+              {idx < recentWorks.length - 1 && (
+                <span className="text-foreground/75">,</span>
+              )}
+            </Link>
+          ))}
+        </div>
       </div>
     </section>
   );

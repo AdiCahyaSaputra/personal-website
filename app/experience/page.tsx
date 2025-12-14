@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import experiencesData from "@/asset/data/experience.json";
 
 export const metadata: Metadata = {
-  title: "Journey",
+  title: "Experience",
 };
 
 type TExperience = {
@@ -23,14 +23,14 @@ for (const experience of experiencesData) {
   experiences[year].push(experience);
 }
 
-const Journey = () => {
+const Experience = () => {
   return (
     <main className="mt-10 min-h-screen">
-      <h1 className="text-lg lg:text-2xl font-bold">Professional Journey</h1>
+      <h1 className="text-lg lg:text-2xl font-bold">Professional Experience</h1>
       <p className="text-foreground/60 mt-2">
-        Here you can find a list of my work experiences and career growth along
+        List of my work experiences and career growth along
         the way.
-        <br /> Btw check my{" "}
+        <br /> Check my{" "}
         <a
           href="https://www.linkedin.com/in/adi-cs/"
           target="_blank"
@@ -70,4 +70,4 @@ const Journey = () => {
   );
 };
 
-export default Journey;
+export default Experience;

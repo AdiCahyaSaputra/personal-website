@@ -11,7 +11,9 @@ const UI = () => {
     <main className="mt-10">
       <h1 className="text-lg lg:text-2xl font-bold">Sharing UI Kit</h1>
       <p className="text-foreground/75">
-        Built by developer for developer
+        Beside of my professional works as a Fullstack Developer, I also like{" "}
+        <br />
+        to share my UI/UX creations here.
       </p>
 
       <ul className="mt-10 grid grid-cols-1 lg:grid-cols-2 gap-4">

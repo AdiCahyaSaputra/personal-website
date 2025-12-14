@@ -3,8 +3,14 @@ import {
   InstagramLogoIcon,
   LinkedInLogoIcon,
 } from "@radix-ui/react-icons";
+import { MailIcon } from "lucide-react";
 
 const SocialMediaLinks = [
+  {
+    name: "email",
+    link: "mailto:adi631@gmail.com",
+    icon: <MailIcon className="w-4 h-4" />,
+  },
   {
     name: "github",
     link: "https://github.com/AdiCahyaSaputra",

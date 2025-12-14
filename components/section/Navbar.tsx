@@ -16,19 +16,19 @@ import {
 
 const navItems = [
   {
-    name: "UI",
+    name: "Projects",
+    url: "/projects",
+    icon: <LayoutList className="w-4 h-4" />,
+  },
+  {
+    name: "Experience",
+    url: "/experience",
+    icon: <LineChart className="w-4 h-4" />,
+  },
+  {
+    name: "UI Kit",
     url: "/ui",
-    icon: <AppWindow className="w-4 h-4 mr-2" />,
-  },
-  {
-    name: "Creations",
-    url: "/creations",
-    icon: <LayoutList className="w-4 h-4 mr-2" />,
-  },
-  {
-    name: "Journey",
-    url: "/journey",
-    icon: <LineChart className="w-4 h-4 mr-2" />,
+    icon: <AppWindow className="w-4 h-4" />,
   },
 ];
 
@@ -55,7 +55,7 @@ const Navbar: React.FC = () => {
                       : "hover:text-foreground text-foreground/40"
                       } p-0`}
                   >
-                    <Link href={item.url}>
+                    <Link href={item.url} className="has-[>svg]:px-0">
                       {item.icon}
                       {item.name}
                     </Link>

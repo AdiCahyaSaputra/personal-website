@@ -1,22 +1,5 @@
 import Link from "next/link";
 
-const calculateAge = () => {
-  const birth = new Date("2005-04-18");
-  const current = new Date();
-
-  const age = current.getFullYear() - birth.getFullYear();
-
-  if (
-    current.getMonth() < birth.getMonth() ||
-    (current.getMonth() === birth.getMonth() &&
-      current.getDate() < birth.getDate())
-  ) {
-    return age - 1;
-  }
-
-  return age;
-};
-
 const recentWorks = [
   {
     name: "Twillink",
@@ -42,42 +25,46 @@ const AboutMe = () => {
 
       <div className="text-foreground/75 mb-4">
         <p>
-          I&apos;m {calculateAge()} y.o man from Jakarta, Indonesia. Graduated
-          at 2023 from <b className="text-foreground">Vocational High School</b>{" "}
-          majoring in <b className="text-foreground">Software Enginering</b>.
-          Explore my{" "}
-          <Link
-            href="/creations"
-            className="underline text-foreground hover:decoration-red-800"
-          >
-            creations
-          </Link>{" "}
-          and interesting{" "}
-          <Link
-            href="/journey"
-            className="underline text-foreground hover:decoration-red-800"
-          >
-            journey
-          </Link>
-          .
-        </p>
-
-        <div className="mt-4 flex items-center gap-1 flex-wrap">
-          <p className="text-foreground/75">Recent professional works :</p>
+          I&apos;m from Jakarta, Indonesia. Graduated at 2023 from{" "}
+          <b className="text-foreground">Vocational High School</b> majoring in{" "}
+          <b className="text-foreground">Software Enginering</b>. My recent
+          works :{" "}
           {recentWorks.map((work, idx) => (
             <Link
               href={work.link}
               key={idx}
               target="_blank"
               rel="noopener noreferrer"
-              className="underline text-foreground hover:decoration-red-800"
+              className="underline text-foreground hover:decoration-red-800 mr-1"
             >
               {work.name}
-              {idx < recentWorks.length - 1 && (
+              {idx < recentWorks.length - 1 ? (
                 <span className="text-foreground/75">,</span>
+              ) : (
+                <span className="text-foreground/75">.</span>
               )}
             </Link>
           ))}
+        </p>
+
+        <div className="mt-4 flex items-center gap-1 flex-wrap">
+          <p>
+            Explore my other{" "}
+            <Link
+              href="/projects"
+              className="underline text-foreground hover:decoration-red-800"
+            >
+              projects
+            </Link>{" "}
+            or see my{" "}
+            <Link
+              href="/experience"
+              className="underline text-foreground hover:decoration-red-800"
+            >
+              experience
+            </Link>
+            .
+          </p>
         </div>
       </div>
     </section>

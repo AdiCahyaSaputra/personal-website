@@ -8,12 +8,10 @@ export const metadata: Metadata = {
 
 const UI = () => {
   return (
-    <main className="mt-10">
+    <main className="mt-10 min-h-screen">
       <h1 className="text-lg lg:text-2xl font-bold">Sharing UI Kit</h1>
       <p className="text-foreground/75">
-        Beside of my professional works as a Fullstack Developer, I also like{" "}
-        <br />
-        to share my UI/UX creations here.
+        I also like to share my UI/UX creations.
       </p>
 
       <ul className="mt-10 grid grid-cols-1 lg:grid-cols-2 gap-4">

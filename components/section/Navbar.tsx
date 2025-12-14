@@ -38,7 +38,7 @@ const Navbar: React.FC = () => {
   return (
     <LayoutGroup>
       <nav className="sticky top-0 w-full z-10 p-4">
-        <div className="px-8 py-4 rounded-full w-full container bg-background/20 border backdrop-blur-sm">
+        <div className="px-8 py-4 rounded-full w-full container bg-background/60 border backdrop-blur-sm">
           <div className="relative z-10 w-full flex justify-between items-center">
             <Link href="/" className="font-light">
               <span className="font-bold">Adi</span>cs.

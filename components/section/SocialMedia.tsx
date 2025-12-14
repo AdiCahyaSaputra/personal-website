@@ -33,7 +33,7 @@ const SocialMedia = () => {
     <section className="mt-10 gap-2 grid grid-cols-1 lg:grid-cols-2">
       <div>
         <h1 className="text-lg lg:text-2xl font-bold">Contact Person</h1>
-        <p className="text-foreground/60">Reach Me Now</p>
+        <p className="text-foreground/60">Get in touch with me</p>
       </div>
 
       <div>

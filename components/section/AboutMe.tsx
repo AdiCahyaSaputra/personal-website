@@ -19,8 +19,8 @@ const AboutMe = () => {
   return (
     <section className="mt-10 grid gap-2 grid-cols-1 lg:grid-cols-2">
       <div>
-        <h1 className="text-lg lg:text-2xl font-bold">About</h1>
-        <p className="text-foreground/60">Get to Know Me {":)"}</p>
+        <h1 className="text-lg lg:text-2xl font-bold">About Me</h1>
+        <p className="text-foreground/60">A brief introduction</p>
       </div>
 
       <div className="text-foreground/75 mb-4">

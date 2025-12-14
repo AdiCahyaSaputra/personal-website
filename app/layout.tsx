@@ -62,13 +62,13 @@ const RootLayout = ({ children }: TProps) => {
 
 export const metadata: Metadata = {
   title: "Adics",
-  description: "Fullstuck Developer From Indonesia",
+  description: "Full Stack Developer From Indonesia",
   icons: {
     icon: "/favicon.png",
   },
   openGraph: {
     title: "Personal Website",
-    description: "Fullstack Developer",
+    description: "Full Stack Developer",
     url: "https://adics.xyz",
     siteName: "Adi Cahya Saputra",
     images: [

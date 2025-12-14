@@ -1,8 +1,5 @@
 "use client";
 
-import { ArrowLeft } from "lucide-react";
-import { useEffect, useState } from "react";
-
 function formatYearDuration() {
   const startDate = new Date(2023, 6, 1); // July 1, 2023 (months are 0-indexed)
   const currentDate = new Date();
@@ -30,7 +27,7 @@ const HeadContent = () => {
         Self-taught developer with {formatYearDuration()} of hands-on
         experience. <br />
         Currently working as a{" "}
-        <b className="text-foreground">fullstack developer</b>.
+        <b className="text-foreground">full stack developer</b>.
       </p>
     </section>
   );

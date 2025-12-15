@@ -1,7 +1,7 @@
 "use client";
 
 import { LayoutGroup } from "framer-motion";
-import { Menu, LayoutList, LineChart, AppWindow } from "lucide-react";
+import { Menu, LayoutList, LineChart, Cpu } from "lucide-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import React from "react";
@@ -17,18 +17,18 @@ import {
 const navItems = [
   {
     name: "Projects",
-    url: "/projects",
+    url: "#projects",
     icon: <LayoutList className="w-4 h-4" />,
   },
   {
     name: "Experience",
-    url: "/experience",
+    url: "#experience",
     icon: <LineChart className="w-4 h-4" />,
   },
   {
-    name: "UI Kit",
-    url: "/ui",
-    icon: <AppWindow className="w-4 h-4" />,
+    name: "Tech Skills",
+    url: "#tech-skills",
+    icon: <Cpu className="w-4 h-4" />,
   },
 ];
 
@@ -40,7 +40,19 @@ const Navbar: React.FC = () => {
       <nav className="sticky top-0 w-full z-10 p-4">
         <div className="px-8 py-4 rounded-full w-full container bg-background/60 border backdrop-blur-sm">
           <div className="relative z-10 w-full flex justify-between items-center">
-            <Link href="/" className="font-light">
+            <Link
+              href="/"
+              onClick={(e) => {
+                // When already on the homepage (even if URL is /#something),
+                // avoid Next navigation/scroll restoration fighting our scrollTo.
+                if (path === "/") {
+                  e.preventDefault();
+                  window.history.replaceState(null, "", "/"); // remove hash
+                  window.scrollTo({ top: 0, behavior: "smooth" });
+                }
+              }}
+              className="font-light"
+            >
               <span className="font-bold">Adi</span>cs.
             </Link>
 

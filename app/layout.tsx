@@ -30,6 +30,7 @@ const RootLayout = ({ children }: TProps) => {
                 height: "100vh",
                 position: "fixed",
                 zIndex: 1,
+                opacity: 0.7,
               }}
             >
               <FloatingLines
@@ -40,7 +41,6 @@ const RootLayout = ({ children }: TProps) => {
                 bendStrength={-3}
                 interactive={false}
                 parallax={false}
-                mixBlendMode="multiply"
               />
             </div>
             <div className="relative z-20">

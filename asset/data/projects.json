@@ -1,14 +1,17 @@
 [
   {
-    "title": "Personal Branding",
+    "title": "Personal Presentation",
     "shortDesc": "For my english practical examination",
-    "slug": "personal-branding",
+    "slug": "personal-presentation",
     "status": "Done",
     "links": {
       "demo": "https://adics-pbe.vercel.app/rules",
       "repository": "https://github.com/AdiCahyaSaputra/personal-branding-english"
     },
-    "techStack": ["NextJS 12", "Frammer Motion"]
+    "techStack": [
+      { "label": "NextJS 12", "icon": "nextjs2" },
+      { "label": "Frammer Motion", "icon": "framer" }
+    ]
   },
   {
     "title": "Sistem Antrian PPDB",
@@ -18,28 +21,25 @@
     "links": {
       "repository": "https://github.com/AdiCahyaSaputra/sistem-antrian"
     },
-    "techStack": ["Laravel 10", "Socket IO", "Tailwind"]
+    "techStack": [
+      { "label": "Laravel 10", "icon": "laravel" },
+      { "label": "Tailwind", "icon": "tailwindcss" }
+    ]
   },  
   {
-    "title": "DuitKu",
-    "shortDesc": "Manage your expense or income on DuitKu with OCR features, generate report quickly and more (VPS already shutdown)",
-    "slug": "duit-ku",
-    "status": "Done",
-    "links": {
-      "repository": "https://github.com/AdiCahyaSaputra/duitku",
-      "linkedinPost": "https://www.linkedin.com/posts/adi-cs_setelah-3-minggu-belajar-nuxtjs-vue-dan-activity-7254413256344182784-PaCY?utm_source=share&utm_medium=member_desktop"
-    },
-    "techStack": ["NuxtJS 3", "ASP.NET Core 8", "PostgreSQL"]
-  },
-  {
     "title": "ForumGW",
-    "shortDesc": "An informal community for public or even anonymous discussions (Redesign)",
+    "shortDesc": "An informal community for public or even anonymous discussions",
     "slug": "forum-gw",
     "status": "Done",
     "links": {
       "repository": "https://github.com/AdiCahyaSaputra/forumgw-v2",
       "demo": "https://forumgw.vercel.app/"
     },
-    "techStack": ["SvelteKit 1", "tRPC", "Drizzle", "Supabase", "Shadcn/UI"]
+    "techStack": [
+      { "label": "SvelteKit", "icon": "sveltejs" },
+      { "label": "tRPC", "icon": "tRPC" },
+      { "label": "Supabase", "icon": "supabase" },
+      { "label": "Shadcn/UI", "icon": "shadcnui" }
+    ]
   }
 ]

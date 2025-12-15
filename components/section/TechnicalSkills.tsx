@@ -14,7 +14,7 @@ const skills = [
   { icon: "jquery", label: "jQuery" },
   { icon: "prisma", label: "Prisma" },
   { icon: "tRPC", label: "tRPC" },
-  { icon: "reactquery", label: "React Query" },
+  { icon: "reactquery", label: "Tanstack" },
   { icon: "zod", label: "Zod" },
   { icon: "typescript", label: "TypeScript" },
   { icon: "postgresql", label: "PostgreSQL" },
@@ -28,7 +28,7 @@ const skills = [
 
 const TechnicalSkills = () => {
   return (
-    <section className="grid gap-2 grid-cols-1 lg:grid-cols-2">
+    <section id="tech-skills" className="grid gap-4 grid-cols-1 lg:grid-cols-2 scroll-mt-26">
       <div>
         <h1 className="text-lg lg:text-2xl font-bold">Technical Skills</h1>
         <p className="text-foreground/60">I utilize professionally</p>

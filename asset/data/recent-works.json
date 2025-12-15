@@ -1,0 +1,42 @@
+[
+  {
+    "title": "Workace",
+    "shortDesc": "Fixing some issues from the existing system",
+    "slug": "workace",
+    "status": "Done",
+    "links": {
+      "demo": "https://workace.io"
+    },
+    "techStack": [
+      { "label": "NextJS", "icon": "nextjs2" },
+      { "label": "NestJS", "icon": "nestjs" }
+    ]
+  },
+  {
+    "title": "Yufo Trade",
+    "shortDesc": "Create a mobile apps, landing page and also the backend system",
+    "slug": "yufo-trade",
+    "status": "Done",
+    "links": {
+      "demo": "https://yufotrade.com"
+    },
+    "techStack": [
+      { "label": "NextJS", "icon": "nextjs2" },
+      { "label": "NestJS", "icon": "nestjs" },
+      { "label": "React Native Expo", "icon": "react" }
+    ]
+  },
+  {
+    "title": "Twillink",
+    "shortDesc": "Responsible to make an API for the core system from scratch",
+    "slug": "twillink",
+    "status": "Ongoing",
+    "links": {
+      "demo": "https://twillink.com"
+    },
+    "techStack": [
+      { "label": "Tanstack", "icon": "reactquery" },
+      { "label": "NestJS", "icon": "nestjs" }
+    ]
+  }
+]

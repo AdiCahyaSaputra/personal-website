@@ -50,7 +50,7 @@ const Experience = () => {
                 {[...experiences[year]].reverse().map((experience, expIdx) => (
                   <li key={expIdx}>
                     <div className="flex items-center gap-2">
-                      <h2 className="font-bold">{experience.experience}</h2>
+                      <h2 className="font-bold text-foreground">{experience.experience}</h2>
                       {expIdx === 0 && yearIdx === 0 && (
                         <p className="text-xs font-bold bg-linear-to-r from-emerald-400 via-teal-400 to-cyan-400 text-transparent bg-clip-text">
                           PRESENT

@@ -3,7 +3,7 @@ import CardProject from "../reusable/projects/CardProject";
 
 const AboutMe = () => {
   return (
-    <section className="mt-10 grid gap-4 grid-cols-1 lg:grid-cols-2">
+    <section id="about" className="mt-10 grid gap-4 grid-cols-1 lg:grid-cols-2 scroll-mt-26">
       <div>
         <h1 className="text-lg lg:text-2xl font-bold">About Me</h1>
         <p className="text-foreground/60">A brief introduction</p>

@@ -1,10 +1,9 @@
 "use client";
 
 import { LayoutGroup } from "framer-motion";
-import { Menu, LayoutList, LineChart, Cpu } from "lucide-react";
+import { Menu, LayoutList, LineChart, Cpu, Ghost } from "lucide-react";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Button } from "../ui/button";
 import {
   DropdownMenu,
@@ -13,8 +12,14 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "../ui/dropdown-menu";
+import { usePathname } from "next/navigation";
 
 const navItems = [
+  {
+    name: "About",
+    url: "#about",
+    icon: <Ghost className="w-4 h-4" />,
+  },
   {
     name: "Projects",
     url: "#projects",
@@ -33,7 +38,15 @@ const navItems = [
 ];
 
 const Navbar: React.FC = () => {
-  const path = usePathname() || "/";
+  const path = usePathname();
+  const [activeHash, setActiveHash] = useState<string>("");
+
+  useEffect(() => {
+    const updateHash = () => setActiveHash(window.location.hash || "");
+    updateHash();
+    window.addEventListener("hashchange", updateHash);
+    return () => window.removeEventListener("hashchange", updateHash);
+  }, []);
 
   return (
     <LayoutGroup>
@@ -49,6 +62,7 @@ const Navbar: React.FC = () => {
                   e.preventDefault();
                   window.history.replaceState(null, "", "/"); // remove hash
                   window.scrollTo({ top: 0, behavior: "smooth" });
+                  setActiveHash("");
                 }
               }}
               className="font-light"
@@ -62,12 +76,17 @@ const Navbar: React.FC = () => {
                   <Button
                     asChild
                     variant="link"
-                    className={`no-underline hover:no-underline focus-visible:ring-secondary ${path === item.url
-                      ? "text-foreground"
-                      : "hover:text-foreground text-foreground/40"
-                      } p-0`}
+                    className={`no-underline hover:no-underline focus-visible:ring-secondary ${
+                      activeHash === item.url
+                        ? "text-foreground"
+                        : "hover:text-foreground text-foreground/40"
+                    } p-0`}
                   >
-                    <Link href={item.url} className="has-[>svg]:px-0">
+                    <Link
+                      href={item.url}
+                      className="has-[>svg]:px-0"
+                      onClick={() => setActiveHash(item.url)}
+                    >
                       {item.icon}
                       {item.name}
                     </Link>

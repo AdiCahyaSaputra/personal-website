@@ -19,23 +19,16 @@ for (const experience of experiencesData) {
 
 const Experience = () => {
   return (
-    <section id="experience" className="grid gap-4 grid-cols-1 lg:grid-cols-2 scroll-mt-26">
+    <section
+      id="experience"
+      className="grid gap-4 grid-cols-1 lg:grid-cols-2 scroll-mt-26"
+    >
       <div>
         <h1 className="text-lg lg:text-2xl font-bold">
           Professional Experience
         </h1>
         <p className="text-foreground/60">
-          List of my work experiences and career growth along the way.
-          <br /> Check my{" "}
-          <a
-            href="https://www.linkedin.com/in/adi-cs/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="underline text-foreground hover:decoration-red-800"
-          >
-            Linkedin
-          </a>{" "}
-          for more detail
+          Work experiences and career growth along the way.
         </p>
       </div>
 
@@ -50,7 +43,9 @@ const Experience = () => {
                 {[...experiences[year]].reverse().map((experience, expIdx) => (
                   <li key={expIdx}>
                     <div className="flex items-center gap-2">
-                      <h2 className="font-bold text-foreground">{experience.experience}</h2>
+                      <h2 className="font-bold text-foreground">
+                        {experience.experience}
+                      </h2>
                       {expIdx === 0 && yearIdx === 0 && (
                         <p className="text-xs font-bold bg-linear-to-r from-emerald-400 via-teal-400 to-cyan-400 text-transparent bg-clip-text">
                           PRESENT

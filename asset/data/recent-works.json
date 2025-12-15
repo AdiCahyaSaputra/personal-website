@@ -1,7 +1,7 @@
 [
   {
     "title": "Workace",
-    "shortDesc": "Fixing some issues from the existing system",
+    "shortDesc": "Fixing some issues from the existing system and adjusting the UI based on Figma design",
     "slug": "workace",
     "status": "Done",
     "links": {
@@ -14,7 +14,7 @@
   },
   {
     "title": "Yufo Trade",
-    "shortDesc": "Create a mobile apps, landing page and also the backend system",
+    "shortDesc": "Create a mobile apps, landing page and the backend system",
     "slug": "yufo-trade",
     "status": "Done",
     "links": {

@@ -1,5 +1,8 @@
 "use client";
 
+import { Download } from "lucide-react";
+import { Button } from "../ui/button";
+
 function formatYearDuration() {
   const startDate = new Date(2023, 6, 1); // July 1, 2023 (months are 0-indexed)
   const currentDate = new Date();
@@ -29,6 +32,13 @@ const HeadContent = () => {
         Currently working as a{" "}
         <b className="text-foreground">full stack developer</b>.
       </p>
+
+      <Button variant="outline" className="mt-4 rounded-full cursor-pointer" onClick={() => {
+        window.open("/resume-adi-cahya-saputra.pdf", "_blank");
+      }}>
+        <Download />
+        Download Resume
+      </Button>
     </section>
   );
 };

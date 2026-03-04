@@ -18,7 +18,7 @@ const Projects = () => {
             <li
               key={idx}
               className={`h-full ${
-                idx === projects.length - 1 && projects.length % 2 !== 0
+                idx === 0
                   ? "lg:col-span-2"
                   : ""
               }`}

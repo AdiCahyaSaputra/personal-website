@@ -55,16 +55,15 @@ const CardProject: React.FC<TProps> = ({
           {techStack?.map((tech, idx) => (
             <li
               key={idx}
-              className="py-1 px-2 text-sm rounded-full border border-border w-max select-none flex items-center gap-2"
+              className="p-2 text-sm rounded-full border border-border w-max select-none flex items-center gap-2 bg-white/5"
             >
               {tech.icon && <StackIcon variant="dark" className="w-4" name={tech.icon} />}
-              {tech.label}
             </li>
           ))}
         </ul>
       </CardContent>
       <CardFooter className="mt-auto">
-        <ul className="flex items-center gap-4">
+        <ul className="flex flex-wrap items-center gap-4">
           {links.repository && (
             <li>
               <Link

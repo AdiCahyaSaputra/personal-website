@@ -1,6 +1,7 @@
 {
   "name": "personal-website",
   "version": "0.1.0",
+	"packageManager": "pnpm@10.34.4",
   "private": true,
   "scripts": {
     "dev": "next dev --turbopack",

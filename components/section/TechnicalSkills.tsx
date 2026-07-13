@@ -46,12 +46,9 @@ const TechnicalSkills = () => {
 
         <div className="relative z-10 mx-auto w-full max-w-4xl p-4 sm:p-6">
           <div className="mb-6">
-            <p className="mb-2 text-xs font-medium uppercase tracking-[0.2em] text-red-400">
-              Toolbox
-            </p>
             <h1 className="text-xl font-bold sm:text-2xl">Technical Skills</h1>
             <p className="mt-1 text-sm text-zinc-400">
-              Technologies I use to build production products.
+              Technologies I use to build production-ready apps.
             </p>
           </div>
 

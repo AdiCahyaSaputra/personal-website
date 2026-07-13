@@ -16,9 +16,9 @@ const AboutMe = () => {
           backend services and integrations.
         </p>
         <p>
-          I graduated from vocational high school in 2023 with a focus on
-          software engineering. Since then, I&apos;ve continued learning by
-          building production products and working with teams on practical
+          I graduated from vocational high school in 2023 majoring in
+          software engineering. Since then, I&apos;ve been learning by
+          building production products and working with teams to solve practical
           business problems.
         </p>
       </div>

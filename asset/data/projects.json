@@ -1,19 +1,5 @@
 [
   {
-    "title": "Personal Presentation",
-    "shortDesc": "An interactive personal presentation built for my final high-school English examination.",
-    "slug": "personal-presentation",
-    "status": "Done",
-    "links": {
-      "demo": "https://adics-pbe.vercel.app/rules",
-      "repository": "https://github.com/AdiCahyaSaputra/personal-branding-english"
-    },
-    "techStack": [
-      { "label": "NextJS 12", "icon": "nextjs2" },
-      { "label": "Framer Motion", "icon": "framer" }
-    ]
-  },
-  {
     "title": "Sistem Antrian PPDB",
     "shortDesc": "A paperless queue system for managing student admissions and waiting lists.",
     "slug": "sistem-antrian",
@@ -40,6 +26,21 @@
       { "label": "tRPC", "icon": "tRPC" },
       { "label": "Supabase", "icon": "supabase" },
       { "label": "Shadcn/UI", "icon": "shadcnui" }
+    ]
+  },
+  {
+    "title": "Double Ratchet NextJS",
+    "shortDesc": "Double Ratchet implementation using NextJS from Scratch (Research Purpose Only) ",
+    "slug": "double-ratchet-algorithm",
+    "status": "Done",
+    "links": {
+      "repository": "https://github.com/AdiCahyaSaputra/double-ratchet-next"
+    },
+    "techStack": [
+      { "label": "NextJS", "icon": "nextjs2" },
+      { "label": "TypeScript", "icon": "typescript" },
+      { "label": "Tailwind", "icon": "tailwindcss" },
+      { "label": "ConvexDB", "icon": "convex" }
     ]
   }
 ]

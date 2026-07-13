@@ -29,7 +29,7 @@ const Projects = () => {
         </ul>
 
         <p className="mb-3 mt-8 text-xs font-medium uppercase tracking-widest text-foreground/50">
-          Earlier builds
+          Passion Projects
         </p>
         <ul className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
           {[...projects].reverse().map((project) => (

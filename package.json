@@ -1,7 +1,7 @@
 {
   "name": "personal-website",
   "version": "0.1.0",
-	"packageManager": "pnpm@10.34.4",
+  "packageManager": "pnpm@10.34.4",
   "private": true,
   "scripts": {
     "dev": "next dev --turbopack",
@@ -31,7 +31,7 @@
     "react-dom": "19.2.1",
     "tailwind-merge": "^3.4.0",
     "tailwindcss-animate": "^1.0.7",
-    "tech-stack-icons": "^3.3.2",
+    "tech-stack-icons": "^3.7.1",
     "three": "^0.181.2",
     "typescript": "5.9.3"
   },

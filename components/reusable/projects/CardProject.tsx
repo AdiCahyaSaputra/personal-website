@@ -47,7 +47,7 @@ const CardProject: React.FC<TProps> = ({
   return (
     <Card
       className={cn(
-        "group gap-0 overflow-hidden rounded-xl border-border bg-foreground/5 py-0 w-full h-full transition-colors hover:bg-foreground/8",
+        "group gap-0 overflow-hidden rounded-xl border-border bg-black/50 py-0 w-full h-full transition-colors hover:bg-black/60",
         className
       )}
     >
@@ -58,7 +58,7 @@ const CardProject: React.FC<TProps> = ({
             alt={`${title} website preview`}
             fill
             sizes="(min-width: 1024px) 33vw, 100vw"
-            className="object-cover transition-transform duration-500 group-hover:scale-[1.02]"
+            className="object-cover transition-transform duration-500"
           />
         </div>
       )}

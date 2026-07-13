@@ -1,3 +1,4 @@
+import { GitHubLogoIcon, LinkedInLogoIcon } from "@radix-ui/react-icons";
 import { ArrowDown, Mail } from "lucide-react";
 import Link from "next/link";
 import { Button } from "../ui/button";
@@ -20,12 +21,42 @@ function formatYearDuration() {
   }
 }
 
+const socialButtons = [
+  {
+    icon: GitHubLogoIcon,
+    href: "https://github.com/AdiCahyaSaputra",
+    label: "GitHub",
+  },
+  {
+    icon: LinkedInLogoIcon,
+    href: "https://www.linkedin.com/in/adi-cs/",
+    label: "LinkedIn",
+  }
+]
+
 const HeadContent = () => {
   return (
     <section className="py-6 lg:py-12">
-      <p className="mb-3 text-sm font-medium text-foreground/60">
-        Adi Cahya Saputra · Jakarta, Indonesia
-      </p>
+      <div className="mb-3 flex flex-col gap-3">
+        <div className="flex items-center gap-1">
+          {socialButtons.map((button) => (
+            <Button
+              key={button.label}
+              asChild
+              variant="outline"
+              size="icon"
+              className="rounded-full"
+            >
+              <a href={button.href} target="_blank" rel="noopener noreferrer" aria-label={button.label}>
+                <button.icon />
+              </a>
+            </Button>
+          ))}
+        </div>
+        <p className="text-sm font-medium text-foreground/60">
+          Adi Cahya Saputra · Jakarta, Indonesia
+        </p>
+      </div>
       <h1 className="max-w-3xl text-3xl font-bold leading-tight tracking-tight lg:text-5xl">
         I Build Practical Web and Mobile Products.
       </h1>
@@ -36,7 +67,10 @@ const HeadContent = () => {
       </p>
 
       <div className="mt-6 flex flex-wrap gap-3">
-        <Button asChild className="rounded-full px-4 bg-red-800 hover:bg-red-900 text-white">
+        <Button
+          asChild
+          className="rounded-full px-4 bg-red-800 hover:bg-red-900 text-white"
+        >
           <Link href="#projects">
             View Projects
             <ArrowDown />

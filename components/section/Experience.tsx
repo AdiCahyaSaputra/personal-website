@@ -33,11 +33,11 @@ const Experience = () => {
       </div>
 
       <div className="text-foreground/75 mb-6">
-        <ul className="space-y-6">
+        <ul className="space-y-6 divide-y divide-border">
           {[...Object.keys(experiences)].reverse().map((year, yearIdx) => (
             <li
               key={yearIdx}
-              className="flex items-start justify-between space-x-4 relative pb-4 border-b border-border"
+              className="flex items-start justify-between space-x-4 relative pb-4"
             >
               <ul className="space-y-2">
                 {[...experiences[year]].reverse().map((experience, expIdx) => (

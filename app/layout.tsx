@@ -18,7 +18,7 @@ const RootLayout = ({ children }: TProps) => {
     <html lang="en" suppressHydrationWarning>
       <body
         className={cn(
-          "min-h-screen bg-background antialiased selection:text-background selection:bg-foreground gradient-bg",
+          "min-h-screen bg-black antialiased selection:text-background selection:bg-foreground gradient-bg",
           inter.className
         )}
       >

@@ -47,7 +47,7 @@ const Experience = () => {
                         {experience.experience}
                       </h2>
                       {expIdx === 0 && yearIdx === 0 && (
-                        <p className="text-xs font-bold bg-linear-to-r from-emerald-400 via-teal-400 to-cyan-400 text-transparent bg-clip-text">
+                        <p className="text-xs font-bold bg-linear-to-r from-red-500 via-red-400 to-red-500 text-transparent bg-clip-text">
                           PRESENT
                         </p>
                       )}

@@ -1,7 +1,7 @@
 import {
-  GitHubLogoIcon,
-  InstagramLogoIcon,
-  LinkedInLogoIcon,
+    GitHubLogoIcon,
+    InstagramLogoIcon,
+    LinkedInLogoIcon,
 } from "@radix-ui/react-icons";
 import { MailIcon } from "lucide-react";
 

@@ -45,7 +45,7 @@ const HeadContent = () => {
         <Button asChild variant="outline" className="rounded-full">
           <Link href="mailto:adi631@gmail.com">
             <Mail />
-            Get in touch
+            Let's Talk
           </Link>
         </Button>
       </div>

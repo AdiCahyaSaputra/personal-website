@@ -61,23 +61,15 @@ const RootLayout = ({ children }: TProps) => {
 };
 
 export const metadata: Metadata = {
-  title: "Adics",
-  description: "Full Stack Developer From Indonesia",
-  icons: {
-    icon: "/favicon.png",
-  },
+  title: "Adi Cahya Saputra — Full-Stack Developer",
+  description:
+    "Portfolio of Adi Cahya Saputra, a full-stack developer in Jakarta building web and mobile products.",
   openGraph: {
-    title: "Personal Website",
-    description: "Full Stack Developer",
+    title: "Adi Cahya Saputra — Full-Stack Developer",
+    description:
+      "Selected web and mobile product work by Adi Cahya Saputra.",
     url: "https://adics.xyz",
     siteName: "Adi Cahya Saputra",
-    images: [
-      {
-        url: "https://adics.xyz/og.png", // Must be an absolute URL
-        width: 1920,
-        height: 1080,
-      },
-    ],
     locale: "en_US",
     type: "website",
   },

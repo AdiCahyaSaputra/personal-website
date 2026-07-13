@@ -1,9 +1,10 @@
 [
   {
     "title": "Yufo Trade",
-    "shortDesc": "The all in one tradie supply app",
+    "shortDesc": "A supply platform for tradies, connecting product ordering, delivery, and supplier workflows across web and mobile.",
     "slug": "yufo-trade",
-    "status": "Done",
+    "status": "Live",
+    "image": "/project/yufo.png",
     "links": {
       "demo": "https://yufotrade.com"
     },
@@ -15,9 +16,10 @@
   },
   {
     "title": "Twillink",
-    "shortDesc": "UGC Storefront platform for collaboration",
+    "shortDesc": "A UGC storefront where brands and creators collaborate and turn social content into a shoppable experience.",
     "slug": "twillink",
-    "status": "Ongoing",
+    "status": "In progress",
+    "image": "/project/twillink.png",
     "links": {
       "demo": "https://twillink.com"
     },

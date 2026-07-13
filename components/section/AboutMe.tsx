@@ -1,39 +1,26 @@
-import recentWorks from "@/asset/data/recent-works.json";
-import CardProject from "../reusable/projects/CardProject";
-
 const AboutMe = () => {
   return (
-    <section id="about" className="mt-10 grid gap-4 grid-cols-1 lg:grid-cols-2 scroll-mt-26">
+    <section
+      id="about"
+      className="mt-10 grid grid-cols-1 gap-4 scroll-mt-26 lg:grid-cols-2"
+    >
       <div>
         <h1 className="text-lg lg:text-2xl font-bold">About Me</h1>
-        <p className="text-foreground/60">A brief introduction</p>
+        <p className="text-foreground/60">A little context about my work.</p>
       </div>
 
-      <div className="text-foreground/75 mb-6">
+      <div className="mb-10 space-y-4 leading-relaxed text-foreground/75">
         <p>
-          I&apos;m from Jakarta, Indonesia. Graduated at 2023 from{" "}
-          <b className="text-foreground">Vocational High School</b> majoring in{" "}
-          <b className="text-foreground">Software Enginering</b>.
+          I&apos;m a full-stack developer based in Jakarta, Indonesia. I work
+          across web and mobile products, from customer-facing interfaces to
+          backend services and integrations.
         </p>
-
-        <div className="mt-4">
-          <p>My recent works : </p>
-
-          <ul className="mt-4 grid grid-cols-1 lg:grid-cols-2 gap-4">
-            {[...recentWorks].reverse().map((work, idx) => (
-              <li
-                key={idx}
-                className={`h-full ${
-                  idx === recentWorks.length - 1 && recentWorks.length % 2 !== 0
-                    ? "lg:col-span-2"
-                    : ""
-                }`}
-              >
-                <CardProject {...work} />
-              </li>
-            ))}
-          </ul>
-        </div>
+        <p>
+          I graduated from vocational high school in 2023 with a focus on
+          software engineering. Since then, I&apos;ve continued learning by
+          building production products and working with teams on practical
+          business problems.
+        </p>
       </div>
     </section>
   );

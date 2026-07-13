@@ -28,25 +28,52 @@ const skills = [
 
 const TechnicalSkills = () => {
   return (
-    <section id="tech-skills" className="grid gap-4 grid-cols-1 lg:grid-cols-2 scroll-mt-26">
-      <div>
-        <h1 className="text-lg lg:text-2xl font-bold">Technical Skills</h1>
-        <p className="text-foreground/60">I utilize professionally</p>
-      </div>
-      <div className="mt-2 grid grid-cols-1 lg:grid-cols-3 gap-1 self-start">
-        {skills.map((skill, idx) => (
-          <div
-            key={idx}
-            className="py-2 px-4 w-full bg-foreground/5 rounded-full flex gap-2 items-center justify-start border"
-          >
-            <StackIcon variant="dark" className="w-5" name={skill.icon} />
-            <p>{skill.label}</p>
-          </div>
-        ))}
+    <section id="tech-skills" className="mb-14 scroll-mt-26">
+      <div className="relative isolate min-h-[34rem] overflow-hidden rounded-2xl border border-white/10 bg-zinc-950 px-4 py-10 text-white shadow-2xl sm:px-8 lg:flex lg:items-center">
         <div
-          className="py-2 px-4 w-full bg-foreground/5 rounded-full flex gap-2 items-center justify-start border"
-        >
-          <p className="text-foreground/60">Can learn more...</p>
+          aria-hidden="true"
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          style={{
+            backgroundImage:
+              "url('/skill/ascii-bg.gif'), url('/skill/ascii-bg-fallback.jpg')",
+          }}
+        />
+        <div
+          aria-hidden="true"
+          className="absolute inset-0 bg-[linear-gradient(to_bottom,rgba(9,9,11,0.15),rgba(9,9,11,0.8))]"
+        />
+
+        <div className="relative z-10 mx-auto w-full max-w-4xl p-4 sm:p-6">
+          <div className="mb-6">
+            <p className="mb-2 text-xs font-medium uppercase tracking-[0.2em] text-red-400">
+              Toolbox
+            </p>
+            <h1 className="text-xl font-bold sm:text-2xl">Technical Skills</h1>
+            <p className="mt-1 text-sm text-zinc-400">
+              Technologies I use to build production products.
+            </p>
+          </div>
+
+          <ul className="grid grid-cols-2 gap-2 sm:grid-cols-3 lg:grid-cols-4">
+            {skills.map((skill) => (
+              <li
+                key={skill.label}
+                className="flex min-w-0 items-center gap-2 rounded-md border border-white/10 px-3 py-2.5 transition-colors hover:border-red-400/40 hover:bg-red-500/10"
+              >
+                <StackIcon
+                  variant="dark"
+                  className="h-5 w-5 shrink-0"
+                  name={skill.icon}
+                />
+                <span className="truncate text-sm text-zinc-200">
+                  {skill.label}
+                </span>
+              </li>
+            ))}
+            <li className="col-span-2 flex items-center rounded-md border border-dashed border-white/15 bg-black/20 px-3 py-2.5 text-sm text-zinc-500 sm:col-span-1">
+              Always learning more...
+            </li>
+          </ul>
         </div>
       </div>
     </section>

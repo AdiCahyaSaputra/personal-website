@@ -1,7 +1,7 @@
 [
   {
     "title": "Personal Presentation",
-    "shortDesc": "For my final english practical examination (12th grade)",
+    "shortDesc": "An interactive personal presentation built for my final high-school English examination.",
     "slug": "personal-presentation",
     "status": "Done",
     "links": {
@@ -10,12 +10,12 @@
     },
     "techStack": [
       { "label": "NextJS 12", "icon": "nextjs2" },
-      { "label": "Frammer Motion", "icon": "framer" }
+      { "label": "Framer Motion", "icon": "framer" }
     ]
   },
   {
     "title": "Sistem Antrian PPDB",
-    "shortDesc": "Organize your Waiting List without a paper",
+    "shortDesc": "A paperless queue system for managing student admissions and waiting lists.",
     "slug": "sistem-antrian",
     "status": "Done",
     "links": {
@@ -28,7 +28,7 @@
   },  
   {
     "title": "ForumGW",
-    "shortDesc": "An informal community for public or even anonymous discussions",
+    "shortDesc": "A community forum for open and anonymous discussions, built with a type-safe web stack.",
     "slug": "forum-gw",
     "status": "Done",
     "links": {

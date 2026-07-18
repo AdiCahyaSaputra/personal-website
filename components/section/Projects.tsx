@@ -21,7 +21,7 @@ const Projects = () => {
           Recent work
         </p>
         <ul className="grid grid-cols-1 gap-4 lg:grid-cols-2">
-          {recentWorks.map((project) => (
+          {recentWorks.sort((a, b) => b.id - a.id).map((project) => (
             <li key={project.slug} className="h-full">
               <CardProject {...project} />
             </li>

@@ -34,7 +34,8 @@
     "slug": "double-ratchet-algorithm",
     "status": "Done",
     "links": {
-      "repository": "https://github.com/AdiCahyaSaputra/double-ratchet-next"
+      "repository": "https://github.com/AdiCahyaSaputra/double-ratchet-next",
+			"thread": "https://www.threads.com/@adi.tsx/post/Da4rny-EaWS?xmt=AQG0YQwXjDzBqQnCbVuuMLVXJOLBJPhfxlR1aKv-jnPy9w"
     },
     "techStack": [
       { "label": "NextJS", "icon": "nextjs2" },
